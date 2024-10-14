@@ -13,7 +13,11 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
-    mainwindow.h
+    Estructuras/listaOrdenada.h \
+    Estructuras/nodoOrdenado.h \
+    mainwindow.h \
+    persona.h \
+    reencarnacion.h
 
 FORMS += \
     mainwindow.ui
