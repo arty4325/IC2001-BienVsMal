@@ -1,24 +1,24 @@
-#ifndef NODOORDENADO_H
-#define NODOORDENADO_H
+#ifndef NodoOrdenado_H
+#define NodoOrdenado_H
 
 
 template <typename T>
-class nodoOrdenado {
+class NodoOrdenado {
 public:
     T data;
-    nodoOrdenado* next; // Siguiente (Por ser una lista ordenada)
-    nodoOrdenado* previous; // Anterior
+    NodoOrdenado* next; // Siguiente (Por ser una lista ordenada)
+    NodoOrdenado* previous; // Anterior
 
-    nodoOrdenado(){
+    NodoOrdenado(){
         data = 0;
         next = nullptr;
     }
 
-    nodoOrdenado(T _data){
+    NodoOrdenado(T _data){
         data = _data;
         next = nullptr;
     }
 };
 
 
-#endif // NODOORDENADO_H
+#endif // NodoOrdenado_H
