@@ -109,7 +109,7 @@ public:
         return nodoActual->data;  // Retorna el dato del nodo en el índice
     }
 
-    NodoOrdenado<T> verNodo(int indice){ //Lo mismo que el anterior pero devuelve el nodo, no su data.
+    NodoOrdenado<T>* verNodo(int indice){ //Lo mismo que el anterior pero devuelve el nodo, no su data.
         if(indice < 0 || indice >= cantItems){
             return T();  // Devuelve un objeto por defecto si el índice es inválido
         }
@@ -119,7 +119,7 @@ public:
             nodoActual = nodoActual->next;
         }
 
-        return nodoActual->data;  // Retorna el nodo en el índice
+        return nodoActual;  // Retorna el nodo en el índice
     }
 
     // Método que devuelve el tamaño de la lista
