@@ -1,6 +1,6 @@
 #ifndef LISTAORDENADA_H
 #define LISTAORDENADA_H
-#include "nodoOrdenado.h"
+#include "NodoOrdenado.h"
 #include <QList>
 #include <QDebug>
 #include <QObject>
@@ -11,18 +11,18 @@ template <typename T>
 class ListaOrdenada {
 public:
     int cantItems = 0;
-    nodoOrdenado<T>* primerNodo = nullptr;
-    nodoOrdenado<T>* ultimoNodo = nullptr;
+    NodoOrdenado<T>* primerNodo = nullptr;
+    NodoOrdenado<T>* ultimoNodo = nullptr;
 
     // Método para insertar un nuevo nodo en la lista
     void insert(T _data){
-        nodoOrdenado<T>* nodo = new nodoOrdenado<T>();
+        NodoOrdenado<T>* nodo = new NodoOrdenado<T>();
         nodo->data = _data;
         if(cantItems == 0){
             primerNodo = ultimoNodo = nodo;
         } else {
             // Agregar el nuevo nodo después del último nodo
-            nodoOrdenado<T>* tempNodo = ultimoNodo;
+            NodoOrdenado<T>* tempNodo = ultimoNodo;
             ultimoNodo = nodo;
             ultimoNodo->previous = tempNodo;
             tempNodo->next = ultimoNodo;
@@ -38,7 +38,7 @@ public:
 
         // Caso especial: si la lista tiene un solo elemento
         if (cantItems == 1) {
-            nodoOrdenado<T>* nodoAEliminar = primerNodo;  // El único nodo
+            NodoOrdenado<T>* nodoAEliminar = primerNodo;  // El único nodo
 
             // Actualizar primerNodo y ultimoNodo a nullptr ya que estamos eliminando el único nodo
             primerNodo = nullptr;
@@ -53,7 +53,7 @@ public:
 
         // Caso especial: eliminar el primer nodo (índice 0)
         if (indice == 0) {
-            nodoOrdenado<T>* nodoAEliminar = primerNodo;
+            NodoOrdenado<T>* nodoAEliminar = primerNodo;
             T dataEliminada = nodoAEliminar->data;
 
             primerNodo = nodoAEliminar->next;  // Actualizar el primer nodo
@@ -68,7 +68,7 @@ public:
         }
 
         // Caso general: eliminar un nodo que no es el primero
-        nodoOrdenado<T>* nodoActual = primerNodo;
+        NodoOrdenado<T>* nodoActual = primerNodo;
 
         // Avanza hasta el nodo a eliminar
         for (int i = 0; i < indice; i++) {
@@ -101,12 +101,25 @@ public:
             return T();  // Devuelve un objeto por defecto si el índice es inválido
         }
 
-        nodoOrdenado<T>* nodoActual = primerNodo;
+        NodoOrdenado<T>* nodoActual = primerNodo;
         for(int i = 0; i < indice; i++){
             nodoActual = nodoActual->next;
         }
 
         return nodoActual->data;  // Retorna el dato del nodo en el índice
+    }
+
+    NodoOrdenado<T>* verNodo(int indice){ //Lo mismo que el anterior pero devuelve el nodo, no su data.
+        if(indice < 0 || indice >= cantItems){
+            return T();  // Devuelve un objeto por defecto si el índice es inválido
+        }
+
+        NodoOrdenado<T>* nodoActual = primerNodo;
+        for(int i = 0; i < indice; i++){
+            nodoActual = nodoActual->next;
+        }
+
+        return nodoActual;  // Retorna el nodo en el índice
     }
 
     // Método que devuelve el tamaño de la lista
