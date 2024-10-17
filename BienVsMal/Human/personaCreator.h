@@ -40,7 +40,7 @@ public:
         QStringList listaProfesiones = profesionString.split('\n');
 
         while (humanosGenerados < cantHumanos) {
-            int ranID = QRandomGenerator::global()->bounded(1, 999999);
+            int ranID = QRandomGenerator::global()->bounded(0, 999999);
             if (!existeID(ranID)) {
                 // Generar índices aleatorios para cada atributo
                 int ranNombre = QRandomGenerator::global()->bounded(0, cantNombres); // Index starts from 0
