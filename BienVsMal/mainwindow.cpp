@@ -3,9 +3,10 @@
 #include "Estructuras/listaOrdenada.h"
 #include "Human/persona.h"
 #include "Human/personaCreator.h"
-
+#include "Estructuras/arbolBinario.h"
+#include <QSpinBox>
 ListaOrdenada<Persona*>* _listaHumanos = new ListaOrdenada<Persona*>();
-
+ArbolBinario* arbolBinario;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -31,5 +32,17 @@ void MainWindow::on_pushButton_clicked()
     }
     **/
 
+}
+
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    arbolBinario = new ArbolBinario(_listaHumanos);
+}
+
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    arbolBinario->buscarNodoEnListaConID(ui->spinBox->value());
 }
 
