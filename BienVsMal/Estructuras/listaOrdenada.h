@@ -30,6 +30,50 @@ public:
         cantItems += 1;
     }
 
+    // Método para insertar un nuevo nodo en la lista de forma ordenada
+    void insertOrdenado(T _data) {
+        NodoOrdenado<T>* nuevoNodo = new NodoOrdenado<T>();
+        nuevoNodo->data = _data;
+
+        // Caso 1: La lista está vacía
+        if (cantItems == 0) {
+            primerNodo = ultimoNodo = nuevoNodo;
+        } else {
+            NodoOrdenado<T>* nodoActual = primerNodo;
+
+            // Buscar la posición de inserción
+            while (nodoActual != nullptr && nodoActual->data->ID < _data->ID) { // Suponiendo que la clase T tiene un atributo ID
+                nodoActual = nodoActual->next;
+            }
+
+            // Caso 2: Insertar al inicio
+            if (nodoActual == primerNodo) {
+                nuevoNodo->next = primerNodo;
+                primerNodo->previous = nuevoNodo;
+                primerNodo = nuevoNodo; // Actualizar el primer nodo
+            }
+            // Caso 3: Insertar al final
+            else if (nodoActual == nullptr) {
+                ultimoNodo->next = nuevoNodo;
+                nuevoNodo->previous = ultimoNodo;
+                ultimoNodo = nuevoNodo; // Actualizar el último nodo
+            }
+            // Caso 4: Insertar en el medio
+            else {
+                nuevoNodo->previous = nodoActual->previous;
+                nuevoNodo->next = nodoActual;
+
+                if (nodoActual->previous != nullptr) {
+                    nodoActual->previous->next = nuevoNodo; // Actualizar el siguiente del nodo anterior
+                }
+                nodoActual->previous = nuevoNodo; // Actualizar el anterior del nodo actual
+            }
+        }
+
+        cantItems += 1; // Incrementar el contador de items
+    }
+
+
     T borrar(int indice) {
         // Verificar si el índice está dentro del rango
         if (indice < 0 || indice >= cantItems) {
