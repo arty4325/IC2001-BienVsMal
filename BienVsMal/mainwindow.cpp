@@ -27,8 +27,9 @@ void MainWindow::on_pushButton_clicked()
     /**
     for(int i = 0; i < 10000; i++){
         qDebug() << _listaHumanos->ver(i)->ID << " " << _listaHumanos->ver(i)->nombre << " " << _listaHumanos->ver(i)->apellido << " " << _listaHumanos->ver(i)->pais << " " <<
-            _listaHumanos->ver(i)->creencia << " " << _listaHumanos->ver(i)->profesion << " ";
+            _listaHumanos->ver(i)->creencia << " " << _listaHumanos->ver(i)->profesion << " " << _listaHumanos ->ver(i) ->timestampNacimiento;
     }
     **/
+
 }
 
