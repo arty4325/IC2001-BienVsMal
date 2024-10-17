@@ -155,7 +155,7 @@ public:
 
     NodoOrdenado<T>* verNodo(int indice){ //Lo mismo que el anterior pero devuelve el nodo, no su data.
         if(indice < 0 || indice >= cantItems){
-            return T();  // Devuelve un objeto por defecto si el índice es inválido
+            return new NodoOrdenado<T>();  // Devuelve un objeto por defecto si el índice es inválido
         }
 
         NodoOrdenado<T>* nodoActual = primerNodo;
