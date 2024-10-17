@@ -8,6 +8,7 @@
 #include <QDebug>
 #include <QObject>
 #include <QRandomGenerator>
+#include <QDateTime>
 
 class PersonaCreator {
 public:
@@ -56,8 +57,11 @@ public:
                 QString creencia = listaCreencias[ranCreencia];
                 QString profesion = listaProfesiones[ranProfesion];
 
+                // Fecha y hora actuales
+                QString fechaActual = QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss");
+
                 // Crear la nueva persona con los atributos generados
-                Persona* nuevaPersona = new Persona(ranID, nombre, apellido, pais, creencia, profesion, "");
+                Persona* nuevaPersona = new Persona(ranID, nombre, apellido, pais, creencia, profesion, fechaActual);
                 listaHumanos->insertOrdenado(nuevaPersona);
 
                 // Insertar en la cubeta
