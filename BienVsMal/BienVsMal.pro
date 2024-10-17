@@ -9,16 +9,20 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Lector/lectorarchivos.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     Estructuras/arbolBinario.h \
+    Estructuras/cubetas.h \
     Estructuras/listaOrdenada.h \
     Estructuras/nodoAB.h \
     Estructuras/nodoOrdenado.h \
+    Human/persona.h \
+    Human/personaCreator.h \
+    Lector/lectorarchivos.h \
     mainwindow.h \
-    persona.h \
     reencarnacion.h
 
 FORMS += \
@@ -28,3 +32,9 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    Archivos/apellidos.txt \
+    Archivos/paises.txt \
+    Archivos/profesiones.txt \
+    Archivos/religiones.txt

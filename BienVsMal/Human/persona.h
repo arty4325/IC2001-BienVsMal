@@ -2,7 +2,7 @@
 #define PERSONA_H
 
 #include <QString>
-#include "/Estructuras/listaOrdenada.h"
+#include "../Estructuras/listaOrdenada.h"
 
 struct Persona{
     int ID;
