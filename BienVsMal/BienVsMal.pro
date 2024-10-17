@@ -13,7 +13,9 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    Estructuras/arbolBinario.h \
     Estructuras/listaOrdenada.h \
+    Estructuras/nodoAB.h \
     Estructuras/nodoOrdenado.h \
     mainwindow.h \
     persona.h \
