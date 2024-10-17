@@ -43,7 +43,7 @@ public:
             int ranID = QRandomGenerator::global()->bounded(0, 999999);
             if (!existeID(ranID)) {
                 // Generar índices aleatorios para cada atributo
-                int ranNombre = QRandomGenerator::global()->bounded(0, cantNombres); // Index starts from 0
+                int ranNombre = QRandomGenerator::global()->bounded(0, cantNombres);
                 int ranApellido = QRandomGenerator::global()->bounded(0, cantApellidos);
                 int ranPais = QRandomGenerator::global()->bounded(0, cantPais);
                 int ranCreencia = QRandomGenerator::global()->bounded(0, cantCreencia);

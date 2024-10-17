@@ -42,7 +42,7 @@ public:
             NodoOrdenado<T>* nodoActual = primerNodo;
 
             // Buscar la posición de inserción
-            while (nodoActual != nullptr && nodoActual->data->ID < _data->ID) { // Suponiendo que la clase T tiene un atributo ID
+            while (nodoActual != nullptr && nodoActual->data->ID < _data->ID) { // Suponiendo que la clase T tiene un atributo ID (Pensado para personas)
                 nodoActual = nodoActual->next;
             }
 
