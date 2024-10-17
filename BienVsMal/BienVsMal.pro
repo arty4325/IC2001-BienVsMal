@@ -14,8 +14,10 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    Estructuras/arbolBinario.h \
     Estructuras/cubetas.h \
     Estructuras/listaOrdenada.h \
+    Estructuras/nodoAB.h \
     Estructuras/nodoOrdenado.h \
     Human/persona.h \
     Human/personaCreator.h \

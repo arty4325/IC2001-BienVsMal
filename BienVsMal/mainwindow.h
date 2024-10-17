@@ -31,6 +31,12 @@ cant = 10000
 2 =
     izquierda = cant /2 ^2 = 2500
     derecha = cant /2 ^2 + cant /2 ^2-1 = 7500
+3 =
+    izquierda = el anterior - cant / 2^3 = 1250
+    derecha = el anterior + cant / 2^3 =  3750
+
+    izquierda = el anterior - cant / 2^3 = 6250
+    derecha = el anterior + cant / 2^3 =  8750
 
 1elem/21, 5000
 2 raiz/2 , raiz/2 + raiz
