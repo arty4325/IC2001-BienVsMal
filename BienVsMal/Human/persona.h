@@ -13,6 +13,7 @@ struct Persona{
     QString profesion;
     QString timestampNacimiento;
     int pecados[7]; //Lujuria, Gula, Avaricia, Pereza, Ira, Envidia, Soberbia.
+    int pecadosTotales;
     ListaOrdenada<Persona*>* amigos;
     bool vivo;
 
@@ -26,6 +27,7 @@ struct Persona{
         for(int i=0;i<7;i++){
             this->pecados[i] = 0;
         }
+        pecadosTotales = 0;
         this->amigos = new ListaOrdenada<Persona*>;
     }
 };
