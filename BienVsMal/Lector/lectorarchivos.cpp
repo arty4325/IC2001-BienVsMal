@@ -16,19 +16,19 @@ QString lectorArchivos::read(int option, int cant) {
     // Seleccionar archivo basado en el número de opción
     switch (option) {
     case 1:
-        filePath = baseDir + "/Archivostxt/apellidos.txt";
+        filePath = baseDir + "/Archivostxt/nombres.txt";
         break;
     case 2:
-        filePath = baseDir + "/Archivostxt/nombres.txt";
+        filePath = baseDir + "/Archivostxt/apellidos.txt";
         break;
     case 3:
         filePath = baseDir + "/Archivostxt/paises.txt";
         break;
     case 4:
-        filePath = baseDir + "/Archivostxt/profesiones.txt";
+        filePath = baseDir + "/Archivostxt/religiones.txt";
         break;
     case 5:
-        filePath = baseDir + "/Archivostxt/religiones.txt";
+        filePath = baseDir + "/Archivostxt/profesiones.txt";
         break;
     default:
         return "";

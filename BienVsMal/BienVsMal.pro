@@ -16,9 +16,12 @@ SOURCES += \
 HEADERS += \
     Estructuras/arbolBinario.h \
     Estructuras/cubetas.h \
+    Estructuras/hashmap.h \
     Estructuras/listaOrdenada.h \
     Estructuras/nodoAB.h \
+    Estructuras/nodoHash.h \
     Estructuras/nodoOrdenado.h \
+    Human/algoritmoAmigos.h \
     Human/persona.h \
     Human/personaCreator.h \
     Lector/lectorarchivos.h \
