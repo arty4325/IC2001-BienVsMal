@@ -21,6 +21,7 @@ struct Persona{
         this->ID = ID;
         this->nombre = nombre;
         this->apellido = apellido;
+        this->pais = pais;
         this->creencia = creencia;
         this->profesion = profesion;
         this->timestampNacimiento = timestampNacimiento;

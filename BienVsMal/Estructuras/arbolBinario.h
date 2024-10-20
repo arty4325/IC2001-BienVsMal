@@ -5,21 +5,22 @@
 #include "nodoOrdenado.h"
 #include "Human/persona.h"
 #include <cmath>
+#include <QTextBrowser>
 
 struct ArbolBinario{
     NodoAB* raiz;
     int niveles;
     ListaOrdenada<Persona*>* listaHumanos;
     int humanos;
+    QTextBrowser* txbInfoHumanidad;
 
-    ArbolBinario(ListaOrdenada<Persona*>* _listaHumanos){
+    ArbolBinario(ListaOrdenada<Persona*>* _listaHumanos, QTextBrowser* _txbInfoHumanidad){
         listaHumanos = _listaHumanos;
-
+        txbInfoHumanidad = _txbInfoHumanidad;
         humanos = listaHumanos->size();
         niveles = ceil(log2(humanos/100)); //8 si hay 10000 personas
         raiz = new NodoAB(listaHumanos->verNodo(humanos/2)); //Le pone a la raíz el puntero y el ID de ese nodo en la lista.
         inicializarArbol(raiz, humanos/2, 2);
-        inorden(raiz);
     }
 
     NodoOrdenado<Persona*>* buscarNodoEnListaConID(int ID){ //función solo para la llamada
@@ -32,14 +33,20 @@ struct ArbolBinario{
             qDebug() << "Persona Buscada no existe";
             return nullptr;
         }
-        qDebug() << vaARetornar->data->ID;
         return vaARetornar;
     }
 
 
     private:
     void inicializarArbol(NodoAB* nodo, int cant, int nivel){
-        if(nivel>niveles){ //Si ya construyó la cantidad necesaria de niveles
+        if(nivel>niveles){ //Si ya construyó la cantidad necesaria de niveles //los nodos de aquí, son hojas
+            txbInfoHumanidad->append(
+                "ID: " + QString::number(nodo->nodoPuntero->data->ID) +
+                "  Nombre: " + nodo->nodoPuntero->data->nombre +
+                "  Apellido: " + nodo->nodoPuntero->data->apellido +
+                "  Pais: " + nodo->nodoPuntero->data->pais +
+                "  Creencia: " + nodo->nodoPuntero->data->creencia + "\n"
+            ); //Por orden mejor ponerlo como en lineas.
             return;
         }
         int indexIzquierda = cant - humanos/(int)(pow(2,nivel));
