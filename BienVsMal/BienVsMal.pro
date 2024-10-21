@@ -17,11 +17,15 @@ HEADERS += \
     Estructuras/arbolBinario.h \
     Estructuras/cubetas.h \
     Estructuras/hashmap.h \
+    Estructuras/heapMuerte.h \
     Estructuras/listaOrdenada.h \
     Estructuras/nodoAB.h \
     Estructuras/nodoHash.h \
     Estructuras/nodoOrdenado.h \
     Human/algoritmoAmigos.h \
+    Human/eliminarId.h \
+    Human/generarPandemia.h \
+    Human/hacerPecados.h \
     Human/persona.h \
     Human/personaCreator.h \
     Lector/lectorarchivos.h \

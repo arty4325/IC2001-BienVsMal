@@ -6,6 +6,10 @@
 #include "Estructuras/arbolBinario.h"
 #include <QSpinBox>
 #include "Human/algoritmoAmigos.h"
+#include "Human/hacerPecados.h"
+#include "Estructuras/heapMuerte.h"
+#include "Human/generarPandemia.h"
+#include "Human/eliminarId.h"
 ListaOrdenada<Persona*>* _listaHumanos = new ListaOrdenada<Persona*>();
 ArbolBinario* arbolBinario;
 
@@ -70,5 +74,56 @@ void MainWindow::on_pushButton_3_clicked()
 
 
 
+}
+
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    HacerPecados(_listaHumanos);
+    for(int i = 0; i < _listaHumanos->size(); i++){
+        qDebug() << _listaHumanos->ver(i)->pecados[0];
+        qDebug() << _listaHumanos->ver(i)->pecados[1];
+        qDebug() << _listaHumanos->ver(i)->pecados[2];
+        qDebug() << _listaHumanos->ver(i)->pecados[3];
+        qDebug() << _listaHumanos->ver(i)->pecados[4];
+        qDebug() << _listaHumanos->ver(i)->pecados[5];
+        qDebug() << _listaHumanos->ver(i)->pecados[6];
+        qDebug() << "--------------------------------";
+    }
+}
+
+
+void MainWindow::on_pushButton_5_clicked()
+{
+    HeapMuerte<Persona*> heap(-1);
+
+    for(int i = 0; i < _listaHumanos->size(); i++){
+        heap.agregarElemento(_listaHumanos->ver(i));
+    }
+
+    heap.construirHeap();
+    ListaOrdenada<Persona*> personasRecorridas = heap.recorrerNiveles(4);
+
+    // Mostrar las personas recorridas
+    std::cout << "Personas en los niveles recorridos:" << std::endl;
+    for (int i = 0; i < personasRecorridas.size(); i++) {
+        Persona* persona = personasRecorridas.ver(i);
+        std::cout << "ID: " << persona->ID << ", Nombre: " << persona->nombre.toStdString()
+                  << ", Pecados Totales: " << persona->pecadosTotales << std::endl;
+    }
+}
+
+
+void MainWindow::on_pushButton_6_clicked()
+{
+    double prob = (ui->spinBox_2->value())/100.0;
+    qDebug() << prob;
+    GenerarPandemia(_listaHumanos, prob);
+}
+
+
+void MainWindow::on_pushButton_7_clicked()
+{
+    EliminarId(arbolBinario, ui->spinBox_3->value());
 }
 

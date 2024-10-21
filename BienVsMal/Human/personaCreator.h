@@ -62,6 +62,7 @@ public:
 
                 // Crear la nueva persona con los atributos generados
                 Persona* nuevaPersona = new Persona(ranID, nombre, apellido, pais, creencia, profesion, fechaActual);
+                nuevaPersona->vivo = true;
                 listaHumanos->insertOrdenado(nuevaPersona);
 
                 // Insertar en la cubeta
