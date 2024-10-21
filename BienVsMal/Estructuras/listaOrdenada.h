@@ -170,6 +170,17 @@ public:
     int size() const {
         return cantItems;
     }
+
+    void set(int indice, T nuevoData) {
+        if (indice < 0 || indice >= cantItems) {
+            return;
+        }
+        NodoOrdenado<T>* nodoActual = primerNodo;
+        for(int i = 0; i < indice; i++){
+            nodoActual = nodoActual -> next;
+        }
+        nodoActual -> data = nuevoData;
+    }
 };
 
 #endif // LISTAORDENADA_H
