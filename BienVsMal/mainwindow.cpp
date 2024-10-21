@@ -8,7 +8,7 @@
 #include "Human/algoritmoAmigos.h"
 #include "Human/hacerPecados.h"
 #include "Estructuras/heapMuerte.h"
-
+#include "Human/generarPandemia.h"
 ListaOrdenada<Persona*>* _listaHumanos = new ListaOrdenada<Persona*>();
 ArbolBinario* arbolBinario;
 
@@ -110,5 +110,13 @@ void MainWindow::on_pushButton_5_clicked()
         std::cout << "ID: " << persona->ID << ", Nombre: " << persona->nombre.toStdString()
                   << ", Pecados Totales: " << persona->pecadosTotales << std::endl;
     }
+}
+
+
+void MainWindow::on_pushButton_6_clicked()
+{
+    double prob = (ui->spinBox_2->value())/100.0;
+    qDebug() << prob;
+    GenerarPandemia(_listaHumanos, prob);
 }
 

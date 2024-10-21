@@ -23,6 +23,7 @@ HEADERS += \
     Estructuras/nodoHash.h \
     Estructuras/nodoOrdenado.h \
     Human/algoritmoAmigos.h \
+    Human/generarPandemia.h \
     Human/hacerPecados.h \
     Human/persona.h \
     Human/personaCreator.h \
