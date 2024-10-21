@@ -9,6 +9,7 @@
 #include "Human/hacerPecados.h"
 #include "Estructuras/heapMuerte.h"
 #include "Human/generarPandemia.h"
+#include "Human/eliminarId.h"
 ListaOrdenada<Persona*>* _listaHumanos = new ListaOrdenada<Persona*>();
 ArbolBinario* arbolBinario;
 
@@ -118,5 +119,11 @@ void MainWindow::on_pushButton_6_clicked()
     double prob = (ui->spinBox_2->value())/100.0;
     qDebug() << prob;
     GenerarPandemia(_listaHumanos, prob);
+}
+
+
+void MainWindow::on_pushButton_7_clicked()
+{
+    EliminarId(arbolBinario, ui->spinBox_3->value());
 }
 
