@@ -3,7 +3,6 @@
 #include "Human/persona.h"
 #include "Estructuras/listaOrdenada.h"
 #include "Estructuras/hashmap.h"
-#include "../Estructuras/Amigo.h"
 
 void algoritmoAmigos(ListaOrdenada<Persona*>* listaHumanos){
     Hashmap* hashmap = new Hashmap();
@@ -21,7 +20,7 @@ void algoritmoAmigos(ListaOrdenada<Persona*>* listaHumanos){
                     tmp = tmp ->next;
                     continue; // si es la misma persona, entonces no la agrega a amigos.
                 }
-                persona->amigos->insert(new Amigo(tmp->data->ID,tmp->data->nombre, tmp->data->apellido, tmp->data->pais, tmp->data->creencia, tmp->data->profesion));
+                persona->amigos->insert(tmp->data);
             }
             tmp = tmp ->next;
         }

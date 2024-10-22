@@ -14,7 +14,6 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
-    Estructuras/Amigo.h \
     Estructuras/arbolBinario.h \
     Estructuras/cubetas.h \
     Estructuras/hashmap.h \

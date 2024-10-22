@@ -3,7 +3,6 @@
 
 #include <QString>
 #include "../Estructuras/listaOrdenada.h"
-#include "../Estructuras/Amigo.h"
 
 struct Persona{
     int ID;
@@ -15,7 +14,7 @@ struct Persona{
     QString timestampNacimiento;
     int pecados[7]; //Lujuria, Gula, Avaricia, Pereza, Ira, Envidia, Soberbia.
     int pecadosTotales;
-    ListaOrdenada<Amigo*>* amigos;
+    ListaOrdenada<Persona*>* amigos;
     bool vivo;
 
     Persona(int ID, QString nombre, QString apellido, QString pais, QString creencia, QString profesion, QString timestampNacimiento){
@@ -30,7 +29,7 @@ struct Persona{
             this->pecados[i] = 0;
         }
         pecadosTotales = 0;
-        this->amigos = new ListaOrdenada<Amigo*>;
+        this->amigos = new ListaOrdenada<Persona*>;
     }
 };
 
