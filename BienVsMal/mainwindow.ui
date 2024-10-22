@@ -43,8 +43,8 @@
    <widget class="QSpinBox" name="spinBox">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>70</y>
+      <x>420</x>
+      <y>50</y>
       <width>42</width>
       <height>25</height>
      </rect>
@@ -56,14 +56,14 @@
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>379</x>
       <y>20</y>
-      <width>80</width>
+      <width>131</width>
       <height>24</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Buscar persona con ID</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="txbInfoArbolHumanos">
@@ -177,7 +177,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

@@ -64,15 +64,16 @@ void MainWindow::on_pushButton_3_clicked()
     Persona* persona = personaNodo->data;
     qDebug() << persona->nombre << " " << persona->apellido << " " << persona->pais << " " << persona->creencia;
 
-    qDebug() << "Amigos:" << persona->amigos->size();
+    qDebug() << "Tiene de amigos a " << persona->amigos->size() << " personas:";
     for(int i = 0; i<persona->amigos->size();i++){
-        Persona* amigo = persona->amigos->ver(i);
-        qDebug() << amigo->nombre << " " << amigo->apellido << " " << amigo->pais << " " << amigo->creencia;
+        Amigo* amigo = persona->amigos->ver(i);
+        qDebug() << amigo->ID << " | " <<amigo->nombre << " " << amigo->apellido << " | " << amigo->pais << " | " << amigo->creencia << " | " << amigo->profesion;
         qDebug() << "__________";
     }
     qDebug() << "_________________________________________________";
 
-
+    qDebug() << "Es amigo de:";
+    //TODO
 
 }
 
