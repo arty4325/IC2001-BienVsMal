@@ -10,6 +10,9 @@
 #include "Estructuras/heapMuerte.h"
 #include "Human/generarPandemia.h"
 #include "Human/eliminarId.h"
+#include "Estructuras/Reencarnacion.h"
+
+
 ListaOrdenada<Persona*>* _listaHumanos = new ListaOrdenada<Persona*>();
 ArbolBinario* arbolBinario;
 
@@ -62,7 +65,17 @@ void MainWindow::on_pushButton_3_clicked()
         return;
     }
     Persona* persona = personaNodo->data;
-    qDebug() << persona->nombre << " " << persona->apellido << " " << persona->pais << " " << persona->creencia;
+    qDebug() << "\n\n\n\n";
+    qDebug() << persona ->ID << " | " << persona->nombre << " " << persona->apellido << " | " << persona->pais << " | " << persona->creencia << " | " << persona->profesion;
+    qDebug() << "Nació: " << persona->timestampNacimiento;
+    qDebug() << "Tiene " << persona->pecadosTotales << " pecados en total";
+    if(!persona->vivo){
+        qDebug() << "Está muerto en este momento";
+    }
+    qDebug() << "Ha reencarnado " << persona->reencarnaciones->size() << " veces";
+    for(int i=0;i<persona->reencarnaciones->size();i++){
+        persona->reencarnaciones->ver(i)->imprimirReencarnacion();
+    }
 
     qDebug() << "Tiene de amigos a " << persona->amigos->size() << " personas:";
     for(int i = 0; i<persona->amigos->size();i++){
