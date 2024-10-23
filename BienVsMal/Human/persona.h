@@ -2,8 +2,9 @@
 #define PERSONA_H
 
 #include <QString>
-#include "../Estructuras/listaOrdenada.h"
-#include "../Estructuras/Amigo.h"
+#include "Estructuras/listaOrdenada.h"
+#include "Estructuras/Amigo.h"
+#include "Estructuras/Reencarnacion.h"
 
 struct Persona{
     int ID;
@@ -16,6 +17,7 @@ struct Persona{
     int pecados[7]; //Lujuria, Gula, Avaricia, Pereza, Ira, Envidia, Soberbia.
     int pecadosTotales;
     ListaOrdenada<Amigo*>* amigos;
+    ListaOrdenada<Reencarnacion*>* reencarnaciones;
     bool vivo;
 
     Persona(int ID, QString nombre, QString apellido, QString pais, QString creencia, QString profesion, QString timestampNacimiento){
@@ -31,6 +33,8 @@ struct Persona{
         }
         pecadosTotales = 0;
         this->amigos = new ListaOrdenada<Amigo*>;
+        this->reencarnaciones = new ListaOrdenada<Reencarnacion*>;
+        this->vivo = true;
     }
 };
 

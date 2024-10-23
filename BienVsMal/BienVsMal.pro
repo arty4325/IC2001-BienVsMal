@@ -15,6 +15,9 @@ SOURCES += \
 
 HEADERS += \
     Estructuras/Amigo.h \
+    Estructuras/Angel.h \
+    Estructuras/ArbolAngeles.h \
+    Estructuras/Reencarnacion.h \
     Estructuras/arbolBinario.h \
     Estructuras/cubetas.h \
     Estructuras/hashmap.h \
@@ -30,8 +33,7 @@ HEADERS += \
     Human/persona.h \
     Human/personaCreator.h \
     Lector/lectorarchivos.h \
-    mainwindow.h \
-    reencarnacion.h
+    mainwindow.h
 
 FORMS += \
     mainwindow.ui
