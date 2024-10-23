@@ -1,6 +1,6 @@
 #ifndef HASHMAP_H
 #define HASHMAP_H
-#include "Estructuras/nodoHash.h"
+#include "nodoHash.h"
 
 struct Hashmap{
     static const int SIZE = 250;
