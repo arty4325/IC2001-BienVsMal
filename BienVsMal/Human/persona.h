@@ -4,7 +4,8 @@
 #include <QString>
 #include "Estructuras/listaOrdenada.h"
 #include "Estructuras/Amigo.h"
-#include "Estructuras/Reencarnacion.h"
+
+struct Reencarnacion;
 
 struct Persona{
     int ID;
@@ -35,6 +36,10 @@ struct Persona{
         this->amigos = new ListaOrdenada<Amigo*>;
         this->reencarnaciones = new ListaOrdenada<Reencarnacion*>;
         this->vivo = true;
+    }
+
+    Persona(){
+
     }
 };
 

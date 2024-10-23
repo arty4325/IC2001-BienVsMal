@@ -2,6 +2,9 @@
 #define ANGEL_H
 #include <QString>
 #include "../Human/persona.h"
+#include "Estructuras/Reencarnacion.h"
+
+
 
 struct Angel{
     QString nombre;
@@ -31,7 +34,16 @@ struct Angel{
 
 private:
     Persona* buscarHumanoASalvar(){
-        //TODO
+        Persona* persona = new Persona();//Para simular todo el proceso de conseguir el humano desde bitacora de muerte TODO:
+        Reencarnacion* reencarnacion = new Reencarnacion(persona,this);
+        persona->reencarnaciones->insert(reencarnacion);
+        //Ponerle nombre random y todo eso para la reencarnación. TODO:
+        persona->pecadosTotales = 0;
+        for (int i=0;i<7;i++){
+            persona->pecados[i]/=2;
+            persona->pecadosTotales += persona->pecados[i];
+        }
+        //TODO: preguntarle a arturo si hace falta rehacer el heap cuando se salva a alguien o como sirve el heap y eso?
         return nullptr;
     }
 };
