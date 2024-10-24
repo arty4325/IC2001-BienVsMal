@@ -1,0 +1,100 @@
+Médico
+Ingeniero
+Abogado
+Profesor
+Arquitecto
+Enfermero
+Dentista
+Programador
+Electricista
+Contador
+Mecánico
+Plomero
+Carpintero
+Chef
+Piloto
+Psicólogo
+Veterinario
+Farmacéutico
+Fisioterapeuta
+Diseñador gráfico
+Actor
+Músico
+Científico
+Investigador
+Biólogo
+Químico
+Matemático
+Astrónomo
+Historiador
+Geógrafo
+Sociólogo
+Antropólogo
+Economista
+Administrador
+Gerente
+Recepcionista
+Secretario
+Operador de maquinaria
+Obrero
+Agricultor
+Ganadero
+Pescador
+Cocinero
+Panadero
+Barbero
+Estilista
+Tatuador
+Fotógrafo
+Camarógrafo
+Periodista
+Escritor
+Editor
+Traductor
+Intérprete
+Locutor
+Director de cine
+Guionista
+Coreógrafo
+Bailarín
+Artista plástico
+Pintor
+Escultor
+Ceramista
+Jardinero
+Florista
+Paisajista
+Decorador de interiores
+Agente inmobiliario
+Corredor de bolsa
+Asesor financiero
+Contador público
+Auditor
+Analista de datos
+Ingeniero de software
+Desarrollador web
+Especialista en ciberseguridad
+Ingeniero de redes
+Administrador de sistemas
+Técnico de soporte
+Ingeniero industrial
+Ingeniero civil
+Ingeniero químico
+Ingeniero eléctrico
+Ingeniero mecánico
+Ingeniero en telecomunicaciones
+Ingeniero ambiental
+Geólogo
+Minerólogo
+Metalurgista
+Petrolero
+Soldador
+Tornero
+Operador de grúa
+Conductor de camión
+Taxista
+Piloto de drones
+Piloto comercial
+Azafata
+Agente de viajes
+Guía turístico

@@ -6,13 +6,20 @@
 
 void GenerarPandemia(ListaOrdenada<Persona*>* listaHumanos, double porcentaje){
     // Quiero obtener la cantidad de humanos que quiero eliminar
-    int cantidadEliminar = (listaHumanos->size())*porcentaje;
+    ListaOrdenada<Persona*>* listaHumanosVivos = new ListaOrdenada<Persona*>();
+    for(int i = 0; i < listaHumanos->size(); i++){
+        if(listaHumanos->ver(i)->vivo){
+            listaHumanosVivos->insert(listaHumanos->ver(i));
+        }
+    }
+
+    int cantidadEliminar = (listaHumanosVivos->size())*porcentaje;
     int cantidadEliminados = 0;
     qDebug() << cantidadEliminar << " estoy ejecutando pandemia";
     while(cantidadEliminados <= cantidadEliminar){
-        int idRand = QRandomGenerator::global()->bounded(0, listaHumanos->size());
+        int idRand = QRandomGenerator::global()->bounded(0, listaHumanosVivos->size());
         Persona* personaCandidata;
-        personaCandidata = listaHumanos->ver(idRand);
+        personaCandidata = listaHumanosVivos->ver(idRand);
         if(personaCandidata->vivo == true){
             qDebug() << cantidadEliminados;
             cantidadEliminados += 1;
