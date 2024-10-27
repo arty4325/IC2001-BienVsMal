@@ -2,11 +2,29 @@
 #define ARBOLANGELES_H
 #include "Angel.h"
 #include <QString>
+#include "Lector/lectorarchivos.h"
 
 struct ArbolAngeles{
     Angel* raiz;
     QString nombres[10] = {"Miguel", "Nuriel", "Aniel", "Rafael", "Gabriel","Shamsiel", "Raguel", "Uriel", "Azrael", "Sariel"};
     int versionesNombres[10];
+
+
+    lectorArchivos* lector = new lectorArchivos();
+
+    QString nombresString = lector->read(1, 10000);
+    QString apellidosString = lector->read(2, 10000);
+    QString paisString = lector->read(3, 100);
+    QString creenciaString = lector->read(4, 20);
+    QString profesionString = lector->read(5, 100);
+
+    // Convertir las cadenas a listas de palabras separadas por salto de línea
+    QStringList listaNombres = nombresString.split('\n');
+    QStringList listaApellidos = apellidosString.split('\n');
+    QStringList listaPaises = paisString.split('\n');
+    QStringList listaCreencias = creenciaString.split('\n');
+    QStringList listaProfesiones = profesionString.split('\n');
+
 
     ArbolAngeles(){
         raiz = new Angel("Dios",1, 1,nullptr);
@@ -20,6 +38,8 @@ struct ArbolAngeles{
             versionesNombres[i] = 0;
         }
         salvacion(raiz,2);
+        //Mandarlo al correo TODO:
+        //ponerlo vacio
     }
 
 private:
@@ -30,26 +50,19 @@ private:
 
         if(nodo->hijoIzquierdo == nullptr && nodo->hijoCentro == nullptr && nodo->hijoDerecho == nullptr){ // Si ya llega a hoja / el último nivel
             int nombreIzquierdo = QRandomGenerator::global()->bounded(0, 10); //genera numero entre 0 y 9
-            nodo->hijoIzquierdo = new Angel(nombres[nombreIzquierdo],versionesNombres[nombreIzquierdo]++,generacion);
+            nodo->hijoIzquierdo = new Angel(nombres[nombreIzquierdo],versionesNombres[nombreIzquierdo]++,generacion, listaNombres, listaApellidos, listaPaises, listaCreencias, listaProfesiones);
 
             int nombreCentro = QRandomGenerator::global()->bounded(0, 10);
-            nodo->hijoCentro = new Angel(nombres[nombreCentro], versionesNombres[nombreCentro]++, generacion);
+            nodo->hijoCentro = new Angel(nombres[nombreCentro], versionesNombres[nombreCentro]++, generacion, listaNombres, listaApellidos, listaPaises, listaCreencias, listaProfesiones);
 
             int nombreDerecho = QRandomGenerator::global()->bounded(0, 10);
-            nodo->hijoDerecho = new Angel(nombres[nombreDerecho], versionesNombres[nombreDerecho]++, generacion);
+            nodo->hijoDerecho = new Angel(nombres[nombreDerecho], versionesNombres[nombreDerecho]++, generacion, listaNombres, listaApellidos, listaPaises, listaCreencias, listaProfesiones);
         }
 
         salvacion(nodo->hijoIzquierdo,generacion+1);
         salvacion(nodo->hijoCentro,generacion+1);
         salvacion(nodo->hijoDerecho,generacion+1);
     }
-
-
-
-
-
-
-
 };
 
 #endif // ARBOLANGELES_H

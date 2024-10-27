@@ -13,6 +13,7 @@ QString lectorArchivos::read(int option, int cant) {
     // Obtener el directorio de la aplicación
     QString baseDir = QCoreApplication::applicationDirPath();
 
+
     // Seleccionar archivo basado en el número de opción
     qDebug() << baseDir;
     switch (option) {

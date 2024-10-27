@@ -20,6 +20,8 @@
 
 ListaOrdenada<Persona*>* _listaHumanos = new ListaOrdenada<Persona*>();
 ArbolBinario* arbolBinario;
+ListaOrdenada<Persona*>* humanosCadaPais[100];
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -35,7 +37,10 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    PersonaCreator* personaCreator = new PersonaCreator(10000, _listaHumanos);
+    for(int i=0;i<100;i++){
+        humanosCadaPais[i] = new ListaOrdenada<Persona*>;
+    }
+    PersonaCreator* personaCreator = new PersonaCreator(10000, _listaHumanos, humanosCadaPais);
     personaCreator->generarPersonas(100, 10, 10, 10, 10);
     qDebug() << _listaHumanos->size();
     algoritmoAmigos(_listaHumanos);

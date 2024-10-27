@@ -3,6 +3,7 @@
 
 #include <QString>
 #include "Human/persona.h"
+#include <QDateTime>
 struct Angel; //Está incluido el archivo de Angel en el main, entonces solo con avisar que hay un struct ángel quita el error que habia. Sino habia como recursividad circular y no se que.
 struct Persona;
 
@@ -15,6 +16,7 @@ struct Reencarnacion{
     QString profesion;
     Angel* angelSalvador;
     int numeroDeReencarnacion;
+    QString timestampNacimiento;
 
     Reencarnacion(Persona* persona, Angel* angel){
         ID = persona->ID;
@@ -25,6 +27,7 @@ struct Reencarnacion{
         profesion = persona->profesion;
         angelSalvador = angel;
         numeroDeReencarnacion = persona->reencarnaciones->size() + 1;
+        timestampNacimiento = QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss");
     }
 
     void imprimirReencarnacion(){

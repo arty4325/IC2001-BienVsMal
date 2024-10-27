@@ -55,7 +55,7 @@ public class JavaServer {
 
 
                 EnvioCorreos envioCorreos = new EnvioCorreos();
-                envioCorreos.createEmail(inputLine, "Bitacora de Muerte", message, "C:/Users/artur/Desktop/ITCR/ED/Proyectos/IC2001-BienVsMal/BienVsMal/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Archivostxt/bitacoraMuerte.txt");
+                envioCorreos.createEmail(inputLine, "Bitacora de Muerte", message, "C:/Users/Proyecto Diseño/Documents/GitHub/IC2001-BienVsMal/BienVsMal/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/Archivostxt/bitacoraMuerte.txt");
                 envioCorreos.sendEmail();
                 out.println("Eco: " + inputLine); // Enviar respuesta al cliente
             }
