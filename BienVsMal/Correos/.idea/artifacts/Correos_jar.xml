@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Correos:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Correos_jar</output-path>
+    <root id="archive" name="Correos.jar">
+      <element id="module-output" name="Correos" />
+    </root>
+  </artifact>
+</component>

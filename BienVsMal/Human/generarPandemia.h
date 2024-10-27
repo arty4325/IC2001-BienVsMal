@@ -3,25 +3,58 @@
 #include "persona.h"
 #include "Estructuras/arbolBinario.h"
 #include "Estructuras/listaOrdenada.h"
+#include "Lector/lectorarchivos.h"
+#include <QCoreApplication>
+#include <QSpinBox>
+#include <QDateTime>
+
 
 void GenerarPandemia(ListaOrdenada<Persona*>* listaHumanos, double porcentaje){
     // Quiero obtener la cantidad de humanos que quiero eliminar
-    int cantidadEliminar = (listaHumanos->size())*porcentaje;
+    ListaOrdenada<Persona*>* listaHumanosVivos = new ListaOrdenada<Persona*>();
+    for(int i = 0; i < listaHumanos->size(); i++){
+        if(listaHumanos->ver(i)->vivo){
+            listaHumanosVivos->insert(listaHumanos->ver(i));
+        }
+    }
+
+    int cantidadEliminar = (listaHumanosVivos->size())*porcentaje;
     int cantidadEliminados = 0;
     qDebug() << cantidadEliminar << " estoy ejecutando pandemia";
     while(cantidadEliminados <= cantidadEliminar){
-        int idRand = QRandomGenerator::global()->bounded(0, listaHumanos->size());
+        int idRand = QRandomGenerator::global()->bounded(0, listaHumanosVivos->size());
         Persona* personaCandidata;
-        personaCandidata = listaHumanos->ver(idRand);
+        personaCandidata = listaHumanosVivos->ver(idRand);
         if(personaCandidata->vivo == true){
             qDebug() << cantidadEliminados;
             cantidadEliminados += 1;
             personaCandidata -> vivo = false;
-        }
+            QString textoBitacora = "";
+            QDateTime fechaHoraActual = QDateTime::currentDateTime();
+            QString fechaHoraTexto = fechaHoraActual.toString("yyyy-MM-dd HH:mm:ss");
+            QString personaIdString = QString::number(personaCandidata->ID);
+            QString personaPecadosTotales = QString::number(personaCandidata ->pecadosTotales);
+            QString amigos = "";
+            for(int i = 0; i < personaCandidata->amigos->size(); i++){
+                QString idAmigo = QString::number(personaCandidata->amigos->ver(i)->ID);
+                amigos += idAmigo + " " + personaCandidata->amigos->ver(i)->nombre ;
+            }
+            QString cantReencarnaciones = QString::number(personaCandidata->reencarnaciones->cantItems);
+            textoBitacora += fechaHoraTexto + " Heap Muerte " + " " + personaIdString + " "
+                             + personaCandidata->nombre + " " + personaCandidata->apellido + " " + personaCandidata->pais + " "
+                             + personaCandidata->creencia + " " + personaCandidata->profesion + " " + personaCandidata->timestampNacimiento
+                             + " Pecados Totales " + personaPecadosTotales
+                             + " Amigos " + amigos
+                             + " Reencarnaciones " + cantReencarnaciones;
+
+            QString baseDir = QCoreApplication::applicationDirPath();
+            QString filePath = baseDir + "/Archivostxt/bitacoraMuerte.txt";
+            lectorArchivos* lector = new lectorArchivos();
+            lector->appendTextToFile(filePath, textoBitacora);
 
 
     }
-}
+    }}
 
 
 #endif // GENERARPANDEMIA_H
