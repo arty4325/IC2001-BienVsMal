@@ -15,11 +15,13 @@ public:
     int cantHumanos = 0;
     ListaOrdenada<Persona*>* listaHumanos = nullptr;
     Cubetas<Persona*>* cubetas;
+    ListaOrdenada<Persona*>* humanosCadaPais[100];
 
-    PersonaCreator(int _cantHumanos, ListaOrdenada<Persona*>* _listaHumanos) {
+    PersonaCreator(int _cantHumanos, ListaOrdenada<Persona*>* _listaHumanos, ListaOrdenada<Persona*>* _humanosCadaPais[100]) {
         listaHumanos = _listaHumanos;
         cantHumanos = _cantHumanos;
         cubetas = new Cubetas<Persona*>(listaHumanos->cantItems + cantHumanos);
+        //humanosCadaPais = _humanosCadaPais TODO:
     }
 
 
@@ -68,6 +70,9 @@ public:
                 // Insertar en la cubeta
                 int cubetaIndex = ranID % cubetas->getCantCubetas();
                 cubetas->insertarEnCubeta(cubetaIndex, nuevaPersona);
+
+                // Insertar en array de paises
+                humanosCadaPais[ranPais]->insert(nuevaPersona);
 
                 humanosGenerados++;
             }

@@ -11,10 +11,17 @@
 #include "Human/generarPandemia.h"
 #include "Human/eliminarId.h"
 #include "Estructuras/Reencarnacion.h"
-
+#include "Lector/lectorarchivos.h"
+#include <QProcess>
+#include <QString>
+#include <QTcpSocket>
+#include <QCoreApplication>
+#include <QTextStream>
 
 ListaOrdenada<Persona*>* _listaHumanos = new ListaOrdenada<Persona*>();
 ArbolBinario* arbolBinario;
+ListaOrdenada<Persona*>* humanosCadaPais[100];
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -30,7 +37,10 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    PersonaCreator* personaCreator = new PersonaCreator(10000, _listaHumanos);
+    for(int i=0;i<100;i++){
+        humanosCadaPais[i] = new ListaOrdenada<Persona*>;
+    }
+    PersonaCreator* personaCreator = new PersonaCreator(10000, _listaHumanos, humanosCadaPais);
     personaCreator->generarPersonas(100, 10, 10, 10, 10);
     qDebug() << _listaHumanos->size();
     algoritmoAmigos(_listaHumanos);
@@ -124,6 +134,29 @@ void MainWindow::on_pushButton_5_clicked()
         Persona* persona = personasRecorridas.ver(i);
         std::cout << "ID: " << persona->ID << ", Nombre: " << persona->nombre.toStdString()
                   << ", Pecados Totales: " << persona->pecadosTotales << std::endl;
+        // Aqui es donde tengo que guardar la informacion en el archivo
+        QString textoBitacora = "";
+        QDateTime fechaHoraActual = QDateTime::currentDateTime();
+        QString fechaHoraTexto = fechaHoraActual.toString("yyyy-MM-dd HH:mm:ss");
+        QString personaIdString = QString::number(persona->ID);
+        QString personaPecadosTotales = QString::number(persona ->pecadosTotales);
+        QString amigos = "";
+        for(int i = 0; i < persona->amigos->size(); i++){
+            QString idAmigo = QString::number(persona->amigos->ver(i)->ID);
+            amigos += idAmigo + " " + persona->amigos->ver(i)->nombre ;
+        };
+        QString cantReencarnaciones = QString::number(persona->reencarnaciones->cantItems);
+        textoBitacora += fechaHoraTexto + " Heap Muerte " + " " + personaIdString + " "
+            + persona->nombre + " " + persona->apellido + " " + persona->pais + " "
+            + persona->creencia + " " + persona->profesion + " " + persona->timestampNacimiento
+            + " Pecados Totales " + personaPecadosTotales
+            + " Amigos " + amigos
+            + " Reencarnaciones " + cantReencarnaciones;
+
+        QString baseDir = QCoreApplication::applicationDirPath();
+        QString filePath = baseDir + "/Archivostxt/bitacoraMuerte.txt";
+        lectorArchivos* lector = new lectorArchivos();
+        lector->appendTextToFile(filePath, textoBitacora);
     }
 }
 
@@ -139,5 +172,28 @@ void MainWindow::on_pushButton_6_clicked()
 void MainWindow::on_pushButton_7_clicked()
 {
     EliminarId(arbolBinario, ui->spinBox_3->value());
+}
+
+
+void MainWindow::on_pushButton_8_clicked()
+{
+    QTcpSocket socket;
+    socket.connectToHost("127.0.0.1", 12345); // Conectar al servidor
+
+    if (socket.waitForConnected()) {
+        qDebug() << "Conectado al servidor!";
+
+        // Enviar un mensaje al servidor
+        QString correo;
+        correo = ui->correoElectronico->toPlainText();
+        socket.write(correo.toUtf8());
+        socket.flush();
+
+        // No esperamos respuesta, así que simplemente cerramos la conexión
+        socket.disconnectFromHost();
+        qDebug() << "Mensaje enviado y conexión cerrada.";
+    } else {
+        qDebug() << "Error al conectar al servidor!";
+    }
 }
 
