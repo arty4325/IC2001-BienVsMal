@@ -125,6 +125,10 @@ void MainWindow::on_pushButton_5_clicked()
 
     // Mostrar las personas recorridas
     std::cout << "Personas en los niveles recorridos:" << std::endl;
+    QString baseDir = QCoreApplication::applicationDirPath();
+    QString filePath = baseDir + "/Archivostxt/muerteActual.txt";
+    lectorArchivos* lector = new lectorArchivos();
+    lector->clearFile(baseDir + "/Archivostxt/muerteActual.txt");
     for (int i = 0; i < personasRecorridas.size(); i++) {
         Persona* persona = personasRecorridas.ver(i);
         persona->vivo = false;
@@ -142,17 +146,36 @@ void MainWindow::on_pushButton_5_clicked()
             amigos += idAmigo + " " + persona->amigos->ver(i)->nombre ;
         };
         QString cantReencarnaciones = QString::number(persona->reencarnaciones->cantItems);
-        textoBitacora += fechaHoraTexto + " Heap Muerte " + " " + personaIdString + " "
-            + persona->nombre + " " + persona->apellido + " " + persona->pais + " "
-            + persona->creencia + " " + persona->profesion + " " + persona->timestampNacimiento
-            + " Pecados Totales " + personaPecadosTotales
-            + " Amigos " + amigos
-            + " Reencarnaciones " + cantReencarnaciones;
-
-        QString baseDir = QCoreApplication::applicationDirPath();
-        QString filePath = baseDir + "/Archivostxt/bitacoraMuerte.txt";
-        lectorArchivos* lector = new lectorArchivos();
+        textoBitacora += personaIdString + "    "
+                         + persona -> nombre + "    " +
+                         persona -> apellido + "    " +
+                         persona -> pais + "    " +
+                         persona -> creencia + "    " +
+                         persona -> profesion + "    " +
+                         persona -> timestampNacimiento + "    " +
+                         personaPecadosTotales;
         lector->appendTextToFile(filePath, textoBitacora);
+    }
+    QTcpSocket socket;
+    socket.connectToHost("127.0.0.1", 12345); // Conectar al servidor
+
+    if (socket.waitForConnected()) {
+        qDebug() << "Conectado al servidor!";
+
+        // Enviar un mensaje al servidor
+        QString correo;
+        QString filePath;
+        correo = ui->correoElectronico->toPlainText();
+        QString baseDir = QCoreApplication::applicationDirPath();
+        filePath = baseDir + "/Archivostxt/muerteActual.txt";
+        socket.write((correo + " " + filePath).toUtf8());
+        socket.flush();
+
+        // No esperamos respuesta, así que simplemente cerramos la conexión
+        socket.disconnectFromHost();
+        qDebug() << "Mensaje enviado y conexión cerrada.";
+    } else {
+        qDebug() << "Error al conectar al servidor!";
     }
 }
 
@@ -162,12 +185,34 @@ void MainWindow::on_pushButton_6_clicked()
     double prob = (ui->spinBox_2->value())/100.0;
     qDebug() << prob;
     GenerarPandemia(_listaHumanos, prob);
+    QString baseDir = QCoreApplication::applicationDirPath();
+    QTcpSocket socket;
+    socket.connectToHost("127.0.0.1", 12345); // Conectar al servidor
+
+    if (socket.waitForConnected()) {
+        qDebug() << "Conectado al servidor!";
+
+        // Enviar un mensaje al servidor
+        QString correo;
+        QString filePath;
+        correo = ui->correoElectronico->toPlainText();
+        QString baseDir = QCoreApplication::applicationDirPath();
+        filePath = baseDir + "/Archivostxt/muerteActual.txt";
+        socket.write((correo + " " + filePath).toUtf8());
+        socket.flush();
+
+        // No esperamos respuesta, así que simplemente cerramos la conexión
+        socket.disconnectFromHost();
+        qDebug() << "Mensaje enviado y conexión cerrada.";
+    } else {
+        qDebug() << "Error al conectar al servidor!";
+    }
 }
 
 
 void MainWindow::on_pushButton_7_clicked()
 {
-    EliminarId(arbolBinario, ui->spinBox_3->value());
+    EliminarId(arbolBinario, ui->spinBox_3->value(), ui->correoElectronico->toPlainText());
 }
 
 
@@ -184,7 +229,7 @@ void MainWindow::on_pushButton_8_clicked()
         QString filePath;
         correo = ui->correoElectronico->toPlainText();
         QString baseDir = QCoreApplication::applicationDirPath();
-        filePath = baseDir + "/Archivostxt/bitacoraMuerte.txt";
+        filePath = baseDir + "/Archivostxt/muerteActual.txt";
         socket.write((correo + " " + filePath).toUtf8());
         socket.flush();
 

@@ -7,7 +7,7 @@
 #include <QCoreApplication>
 #include <QSpinBox>
 #include <QDateTime>
-
+#include <QTcpSocket>
 
 void GenerarPandemia(ListaOrdenada<Persona*>* listaHumanos, double porcentaje){
     // Quiero obtener la cantidad de humanos que quiero eliminar
@@ -21,6 +21,9 @@ void GenerarPandemia(ListaOrdenada<Persona*>* listaHumanos, double porcentaje){
     int cantidadEliminar = (listaHumanosVivos->size())*porcentaje;
     int cantidadEliminados = 0;
     qDebug() << cantidadEliminar << " estoy ejecutando pandemia";
+    lectorArchivos* lector = new lectorArchivos();
+    QString baseDir = QCoreApplication::applicationDirPath();
+    lector->clearFile(baseDir + "/Archivostxt/muerteActual.txt");
     while(cantidadEliminados <= cantidadEliminar){
         int idRand = QRandomGenerator::global()->bounded(0, listaHumanosVivos->size());
         Persona* personaCandidata;
@@ -40,18 +43,16 @@ void GenerarPandemia(ListaOrdenada<Persona*>* listaHumanos, double porcentaje){
                 amigos += idAmigo + " " + personaCandidata->amigos->ver(i)->nombre ;
             }
             QString cantReencarnaciones = QString::number(personaCandidata->reencarnaciones->cantItems);
-            textoBitacora += fechaHoraTexto + " Heap Muerte " + " " + personaIdString + " "
-                             + personaCandidata->nombre + " " + personaCandidata->apellido + " " + personaCandidata->pais + " "
-                             + personaCandidata->creencia + " " + personaCandidata->profesion + " " + personaCandidata->timestampNacimiento
-                             + " Pecados Totales " + personaPecadosTotales
-                             + " Amigos " + amigos
-                             + " Reencarnaciones " + cantReencarnaciones;
-
-            QString baseDir = QCoreApplication::applicationDirPath();
-            QString filePath = baseDir + "/Archivostxt/bitacoraMuerte.txt";
-            lectorArchivos* lector = new lectorArchivos();
+            textoBitacora += personaIdString + "    "
+                             + personaCandidata -> nombre + "    " +
+                             personaCandidata -> apellido + "    " +
+                             personaCandidata -> pais + "    " +
+                             personaCandidata -> creencia + "    " +
+                             personaCandidata -> profesion + "    " +
+                             personaCandidata -> timestampNacimiento + "    " +
+                             personaPecadosTotales;
+            QString filePath = baseDir + "/Archivostxt/muerteActual.txt";
             lector->appendTextToFile(filePath, textoBitacora);
-
 
     }
     }}

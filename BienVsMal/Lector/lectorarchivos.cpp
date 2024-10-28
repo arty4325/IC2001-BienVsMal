@@ -82,3 +82,16 @@ void lectorArchivos::appendTextToFile(const QString& filePath, const QString& te
         // Esto se ejecuta si no se pudo completar la accion
     }
 }
+
+void lectorArchivos::clearFile(const QString& filePath) {
+    QFile file(filePath);
+
+    // Intentar abrir el archivo en modo de solo escritura (WriteOnly) sin Append para que se limpie
+    if (file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+        // Archivo abierto y vaciado correctamente, no es necesario escribir nada
+        file.close();  // Cerrar el archivo
+    } else {
+        qDebug() << "No se pudo abrir el archivo para vaciarlo: " << filePath;
+    }
+}
+

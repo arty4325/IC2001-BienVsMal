@@ -9,6 +9,7 @@ public:
     lectorArchivos();
     QString read(int option, int cant);
     void appendTextToFile(const QString& filePath, const QString& textToAdd);
+    void clearFile(const QString& filePath);
 };
 
 #endif // LECTORARCHIVOS_H
