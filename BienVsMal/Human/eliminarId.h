@@ -35,9 +35,11 @@ void EliminarId(ArbolBinario* arbolBinario, int persona, QString _correo){
                          personaPecadosTotales;
         lectorArchivos* lector = new lectorArchivos();
         QString baseDir = QCoreApplication::applicationDirPath();
+        QString fileBitacora = baseDir + "/Archivostxt/bitacoraMuerte.txt";
         lector->clearFile(baseDir + "/Archivostxt/muerteActual.txt");
         QString filePath = baseDir + "/Archivostxt/muerteActual.txt";
         lector->appendTextToFile(filePath, textoBitacora);
+        lector->appendTextToFile(fileBitacora, textoBitacora);
 
         QTcpSocket socket;
         socket.connectToHost("127.0.0.1", 12345); // Conectar al servidor

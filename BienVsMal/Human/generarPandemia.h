@@ -52,7 +52,9 @@ void GenerarPandemia(ListaOrdenada<Persona*>* listaHumanos, double porcentaje){
                              personaCandidata -> timestampNacimiento + "    " +
                              personaPecadosTotales;
             QString filePath = baseDir + "/Archivostxt/muerteActual.txt";
+            QString fileBitacora = baseDir + "/Archivostxt/bitacoraMuerte.txt";
             lector->appendTextToFile(filePath, textoBitacora);
+            lector->appendTextToFile(fileBitacora, textoBitacora);
 
     }
     }}

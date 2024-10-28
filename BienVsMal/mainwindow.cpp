@@ -30,6 +30,10 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    lectorArchivos* lector = new lectorArchivos();
+    QString baseDir = QCoreApplication::applicationDirPath();
+    QString fileBitacora = baseDir + "/Archivostxt/bitacoraMuerte.txt";
+    lector->clearFile(fileBitacora);
 }
 
 MainWindow::~MainWindow()
@@ -127,6 +131,7 @@ void MainWindow::on_pushButton_5_clicked()
     std::cout << "Personas en los niveles recorridos:" << std::endl;
     QString baseDir = QCoreApplication::applicationDirPath();
     QString filePath = baseDir + "/Archivostxt/muerteActual.txt";
+    QString fileBitacora = baseDir + "/Archivostxt/bitacoraMuerte.txt";
     lectorArchivos* lector = new lectorArchivos();
     lector->clearFile(baseDir + "/Archivostxt/muerteActual.txt");
     for (int i = 0; i < personasRecorridas.size(); i++) {
@@ -155,6 +160,7 @@ void MainWindow::on_pushButton_5_clicked()
                          persona -> timestampNacimiento + "    " +
                          personaPecadosTotales;
         lector->appendTextToFile(filePath, textoBitacora);
+        lector->appendTextToFile(fileBitacora, textoBitacora);
     }
     QTcpSocket socket;
     socket.connectToHost("127.0.0.1", 12345); // Conectar al servidor
@@ -229,7 +235,7 @@ void MainWindow::on_pushButton_8_clicked()
         QString filePath;
         correo = ui->correoElectronico->toPlainText();
         QString baseDir = QCoreApplication::applicationDirPath();
-        filePath = baseDir + "/Archivostxt/muerteActual.txt";
+        filePath = baseDir + "/Archivostxt/bitacoraMuerte.txt";
         socket.write((correo + " " + filePath).toUtf8());
         socket.flush();
 
