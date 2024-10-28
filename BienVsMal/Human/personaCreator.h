@@ -74,7 +74,7 @@ public:
                 cubetas->insertarEnCubeta(cubetaIndex, nuevaPersona);
 
                 // Insertar en array de paises
-                humanosCadaPais[ranPais]->insert(nuevaPersona);
+                //humanosCadaPais[ranPais]->insert(nuevaPersona);
 
                 humanosGenerados++;
             }

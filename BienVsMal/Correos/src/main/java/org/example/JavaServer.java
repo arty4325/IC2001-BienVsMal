@@ -35,7 +35,18 @@ public class JavaServer {
 
             String inputLine;
             while ((inputLine = in.readLine()) != null) {
-                System.out.println("Recibido del cliente: " + inputLine);
+                String[] parts = inputLine.split(" ", 2); // Dividir en dos partes máximo
+                String firstPart = "";
+                String secondPart = "";
+                if (parts.length >= 2) {
+                    firstPart = parts[0];
+                    secondPart = parts[1];
+                    System.out.println("Primer string: " + firstPart);
+                    System.out.println("Segundo string: " + secondPart);
+                } else {
+                    System.out.println("La entrada no contiene dos partes.");
+                }
+                System.out.println("Recibido del cliente: " + firstPart);
                 String message = "<html>"
                         + "<head>"
                         + "<style>"
@@ -55,9 +66,9 @@ public class JavaServer {
 
 
                 EnvioCorreos envioCorreos = new EnvioCorreos();
-                envioCorreos.createEmail(inputLine, "Bitacora de Muerte", message, "C:/Users/Proyecto Diseño/Documents/GitHub/IC2001-BienVsMal/BienVsMal/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/Archivostxt/bitacoraMuerte.txt");
+                envioCorreos.createEmail(firstPart, "Bitacora de Muerte", message, secondPart);
                 envioCorreos.sendEmail();
-                out.println("Eco: " + inputLine); // Enviar respuesta al cliente
+                out.println("Eco: " + firstPart); // Enviar respuesta al cliente
             }
         } catch (IOException e) {
             System.out.println("Error en la conexión con el cliente: " + e.getMessage());

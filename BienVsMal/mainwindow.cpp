@@ -115,7 +115,9 @@ void MainWindow::on_pushButton_5_clicked()
     HeapMuerte<Persona*> heap(-1);
 
     for(int i = 0; i < _listaHumanos->size(); i++){
-        heap.agregarElemento(_listaHumanos->ver(i));
+        if(_listaHumanos-> ver(i)->vivo){
+            heap.agregarElemento(_listaHumanos->ver(i));
+        }
     }
 
     heap.construirHeap();
@@ -125,6 +127,7 @@ void MainWindow::on_pushButton_5_clicked()
     std::cout << "Personas en los niveles recorridos:" << std::endl;
     for (int i = 0; i < personasRecorridas.size(); i++) {
         Persona* persona = personasRecorridas.ver(i);
+        persona->vivo = false;
         std::cout << "ID: " << persona->ID << ", Nombre: " << persona->nombre.toStdString()
                   << ", Pecados Totales: " << persona->pecadosTotales << std::endl;
         // Aqui es donde tengo que guardar la informacion en el archivo
@@ -178,8 +181,11 @@ void MainWindow::on_pushButton_8_clicked()
 
         // Enviar un mensaje al servidor
         QString correo;
+        QString filePath;
         correo = ui->correoElectronico->toPlainText();
-        socket.write(correo.toUtf8());
+        QString baseDir = QCoreApplication::applicationDirPath();
+        filePath = baseDir + "/Archivostxt/bitacoraMuerte.txt";
+        socket.write((correo + " " + filePath).toUtf8());
         socket.flush();
 
         // No esperamos respuesta, así que simplemente cerramos la conexión
