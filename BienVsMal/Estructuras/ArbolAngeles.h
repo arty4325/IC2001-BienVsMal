@@ -8,7 +8,9 @@ struct ArbolAngeles{
     Angel* raiz;
     QString nombres[10] = {"Miguel", "Nuriel", "Aniel", "Rafael", "Gabriel","Shamsiel", "Raguel", "Uriel", "Azrael", "Sariel"};
     int versionesNombres[10];
-
+    int altura;
+    QString baseDir = QCoreApplication::applicationDirPath();
+    QString path = baseDir + "/Archivostxt/arbolAngeles.txt";
 
     lectorArchivos* lector = new lectorArchivos();
 
@@ -31,6 +33,7 @@ struct ArbolAngeles{
         raiz->hijoIzquierdo = new Angel("Serafines",1, 2,nullptr);
         raiz->hijoCentro = new Angel("Querubines",1, 2,nullptr);
         raiz->hijoDerecho = new Angel("Tronos",1, 2,nullptr);
+        altura = 2;
     }
 
     void salvacion(){ //crea un nuevo árbol de ángeles salvadores
@@ -40,7 +43,16 @@ struct ArbolAngeles{
         salvacion(raiz,2);
         //Mandarlo al correo TODO:
         //ponerlo vacio
+        altura++;
     }
+
+    void ponerEnBitacora(){
+        //TODO: poner en blanco
+        for(int nivel = 1; nivel <= altura ; nivel++){
+            lector->appendTextToFile(path,stringNivel(raiz,nivel));
+        }
+    }
+
 
 private:
     void salvacion(Angel* nodo, int generacion){
@@ -62,6 +74,18 @@ private:
         salvacion(nodo->hijoIzquierdo,generacion+1);
         salvacion(nodo->hijoCentro,generacion+1);
         salvacion(nodo->hijoDerecho,generacion+1);
+    }
+
+    QString stringNivel(Angel* nodo, int nivel){
+        if (nodo == nullptr){
+            return "";
+        }
+        if(nivel == 1){
+            return nodo->infoAngel() + "\t\t";
+        }else if (nivel > 1){
+            return stringNivel(nodo->hijoIzquierdo,nivel-1) + stringNivel(nodo->hijoCentro,nivel-1) + stringNivel(nodo->hijoDerecho,nivel-1);
+        }
+        return "";
     }
 };
 

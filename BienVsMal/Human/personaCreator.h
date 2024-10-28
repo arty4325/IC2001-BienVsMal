@@ -21,7 +21,9 @@ public:
         listaHumanos = _listaHumanos;
         cantHumanos = _cantHumanos;
         cubetas = new Cubetas<Persona*>(listaHumanos->cantItems + cantHumanos);
-        //humanosCadaPais = _humanosCadaPais TODO:
+        for (int i=0;i<100;i++){
+            humanosCadaPais[i] = _humanosCadaPais[i]; //Al ser un array de punteros no importa si se saca una copia, se refiere a los mismos elementos.
+        }
     }
 
 
