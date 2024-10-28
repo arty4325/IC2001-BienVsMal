@@ -41,6 +41,16 @@ struct Persona{
     Persona(){
 
     }
+
+    QString getInfo(){
+        QString retornar = "";
+        retornar += QString::number(ID) + "\t" + nombre + "\t" + apellido + "\t" + pais + "\t" + creencia + "\t" + profesion;
+        retornar += "\tNació: " + timestampNacimiento;
+        retornar += "\tPecados: " + QString::number(pecadosTotales);
+        vivo ? retornar += "\tVivo" : retornar += "\tMuerto";
+        retornar += "\tReencarnaciones: " + QString::number(reencarnaciones->size());
+        return retornar;
+    }
 };
 
 

@@ -12,6 +12,8 @@
 #include "Human/eliminarId.h"
 #include "Estructuras/Reencarnacion.h"
 #include "Lector/lectorarchivos.h"
+#include "Estructuras/ArbolAngeles.h"
+#include "Human/algoritmoPaisesPecadores.h"
 #include <QProcess>
 #include <QString>
 #include <QTcpSocket>
@@ -41,7 +43,7 @@ void MainWindow::on_pushButton_clicked()
         humanosCadaPais[i] = new ListaOrdenada<Persona*>;
     }
     PersonaCreator* personaCreator = new PersonaCreator(10000, _listaHumanos, humanosCadaPais);
-    personaCreator->generarPersonas(100, 10, 10, 10, 10);
+    personaCreator->generarPersonas(100, 10, 100, 10, 10);
     qDebug() << _listaHumanos->size();
     algoritmoAmigos(_listaHumanos);
     /**
@@ -104,16 +106,7 @@ void MainWindow::on_pushButton_3_clicked()
 void MainWindow::on_pushButton_4_clicked()
 {
     HacerPecados(_listaHumanos);
-    for(int i = 0; i < _listaHumanos->size(); i++){
-        qDebug() << _listaHumanos->ver(i)->pecados[0];
-        qDebug() << _listaHumanos->ver(i)->pecados[1];
-        qDebug() << _listaHumanos->ver(i)->pecados[2];
-        qDebug() << _listaHumanos->ver(i)->pecados[3];
-        qDebug() << _listaHumanos->ver(i)->pecados[4];
-        qDebug() << _listaHumanos->ver(i)->pecados[5];
-        qDebug() << _listaHumanos->ver(i)->pecados[6];
-        qDebug() << "--------------------------------";
-    }
+    //quite lo que habia dicho de imprimir que podria ser lo que lo hace lento
 }
 
 
@@ -201,5 +194,46 @@ void MainWindow::on_pushButton_8_clicked()
     } else {
         qDebug() << "Error al conectar al servidor!";
     }
+}
+
+
+void MainWindow::on_btnConsultarHumanidad_clicked()
+{
+
+    //TODO vaciar la consulta humanidad
+    NodoOrdenado<Persona*>* personaNodo = _listaHumanos->primerNodo;
+    QString baseDir = QCoreApplication::applicationDirPath();
+    QString path = baseDir + "/Archivostxt/humanidad.txt";
+    lectorArchivos* lector = new lectorArchivos();
+    qDebug() << path;
+    while(personaNodo != nullptr){
+        lector->appendTextToFile(path, personaNodo->data->getInfo());
+        personaNodo = personaNodo->next;
+    }
+}
+
+
+void MainWindow::on_pushButton_9_clicked()
+{
+    // arbolAngeles->ponerEnBitacora();
+}
+
+
+void MainWindow::on_pushButton_10_clicked()
+{
+    NodoOrdenado<Persona*>* personaNodo = _listaHumanos->primerNodo;
+    int reencBuscadas = ui->spinBox_4->value();
+    while(personaNodo != nullptr){
+        if(personaNodo->data->reencarnaciones->size() == reencBuscadas){
+            qDebug() << personaNodo->data->getInfo();
+        }
+        personaNodo = personaNodo->next;
+    }
+}
+
+
+void MainWindow::on_pushButton_11_clicked()
+{
+    algoritmoPaisesPecadores(humanosCadaPais);
 }
 
