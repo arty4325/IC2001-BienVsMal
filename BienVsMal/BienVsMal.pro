@@ -19,6 +19,7 @@ HEADERS += \
     Estructuras/Amigo.h \
     Estructuras/Angel.h \
     Estructuras/ArbolAngeles.h \
+    Estructuras/PaisPecados.h \
     Estructuras/Reencarnacion.h \
     Estructuras/arbolBinario.h \
     Estructuras/cubetas.h \
@@ -29,6 +30,7 @@ HEADERS += \
     Estructuras/nodoHash.h \
     Estructuras/nodoOrdenado.h \
     Human/algoritmoAmigos.h \
+    Human/algoritmoPaisesPecadores.h \
     Human/eliminarId.h \
     Human/generarPandemia.h \
     Human/hacerPecados.h \
