@@ -26,7 +26,6 @@ public:
         }
     }
 
-
     void generarPersonas(int cantNombres, int cantApellidos, int cantPais, int cantCreencia, int cantProfesion) {
         int humanosGenerados = 0;
         lectorArchivos* lector = new lectorArchivos();
@@ -74,7 +73,7 @@ public:
                 cubetas->insertarEnCubeta(cubetaIndex, nuevaPersona);
 
                 // Insertar en array de paises
-                humanosCadaPais[ranPais]->insert(nuevaPersona);
+                //humanosCadaPais[ranPais]->insert(nuevaPersona);
 
                 humanosGenerados++;
             }
