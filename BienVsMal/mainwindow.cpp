@@ -23,7 +23,7 @@
 ListaOrdenada<Persona*>* _listaHumanos = new ListaOrdenada<Persona*>();
 ArbolBinario* arbolBinario;
 ListaOrdenada<Persona*>* humanosCadaPais[100];
-ArbolAngeles* arbolAngeles = new ArbolAngeles(arbolBinario);
+ArbolAngeles* arbolAngeles;
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -35,8 +35,11 @@ MainWindow::MainWindow(QWidget *parent)
     QString baseDir = QCoreApplication::applicationDirPath();
     QString fileBitacora = baseDir + "/Archivostxt/bitacoraMuerte.txt";
     QString fileHumanidad = baseDir + "/Archivostxt/humanidad.txt";
+    QString fileSalvacion = baseDir + "/Archivostxt/salvacion.txt";
     lector->clearFile(fileBitacora);
     lector->clearFile(fileHumanidad);
+    lector->clearFile(fileSalvacion);
+    arbolAngeles = new ArbolAngeles(arbolBinario);
 }
 
 MainWindow::~MainWindow()
@@ -49,16 +52,24 @@ void MainWindow::on_pushButton_clicked()
     for(int i=0;i<100;i++){
         humanosCadaPais[i] = new ListaOrdenada<Persona*>;
     }
-    PersonaCreator* personaCreator = new PersonaCreator(10000, _listaHumanos, humanosCadaPais);
-    personaCreator->generarPersonas(100, 10, 100, 10, 10);
+    // Aqui tengo que pasar cuantos humanos voy a crear
+
+    PersonaCreator* personaCreator = new PersonaCreator(ui->cantHumanos->value(), _listaHumanos, humanosCadaPais);
+    // Los boundaries son
+    // 1000, 1000, 100, 20, 100
+    // int cantNombres, int cantApellidos, int cantPais, int cantCreencia, int cantProfesion
+    personaCreator->generarPersonas(ui->cantNombres->value(), ui->cantApellidos->value(), ui->cantPaises->value(), ui->cantReligiones->value(), ui->cantProfesiones->value());
     qDebug() << _listaHumanos->size();
     algoritmoAmigos(_listaHumanos);
-    /**
-    for(int i = 0; i < 10000; i++){
-        qDebug() << _listaHumanos->ver(i)->ID << " " << _listaHumanos->ver(i)->nombre << " " << _listaHumanos->ver(i)->apellido << " " << _listaHumanos->ver(i)->pais << " " <<
-            _listaHumanos->ver(i)->creencia << " " << _listaHumanos->ver(i)->profesion << " " << _listaHumanos ->ver(i) ->timestampNacimiento;
-    }
-    **/
+
+    QTextBrowser* txbInfoHumanidad = ui->txbInfoArbolHumanos;
+    txbInfoHumanidad->clear();
+    txbInfoHumanidad->append("Información de los humanos en el último nivel: ");
+    arbolBinario = new ArbolBinario(_listaHumanos, txbInfoHumanidad);
+    txbInfoHumanidad->append("Cantidad de niveles en árbol: " + QString::number(arbolBinario->niveles));
+    txbInfoHumanidad->append("Cantidad de nodos en árbol: " + QString::number(pow(2,arbolBinario->niveles)-1));
+    txbInfoHumanidad->append("Cantidad de humanos: " + QString::number(_listaHumanos->size()));
+
 
 }
 
@@ -270,7 +281,13 @@ void MainWindow::on_btnConsultarHumanidad_clicked()
 
 void MainWindow::on_pushButton_9_clicked()
 {
-    // arbolAngeles->ponerEnBitacora();
+
+    lectorArchivos* lector = new lectorArchivos();
+    QString baseDir = QCoreApplication::applicationDirPath();
+    QString fileArbolAngeles = baseDir + "/Archivostxt/arbolAngeles.txt";
+    lector->clearFile(fileArbolAngeles);
+    arbolAngeles->ponerEnBitacora();
+    //
 }
 
 
@@ -296,6 +313,33 @@ void MainWindow::on_pushButton_11_clicked()
 void MainWindow::on_pushButton_12_clicked()
 {
     //arbolAngeles->getArbol(arbolBinario);
+    lectorArchivos* lector = new lectorArchivos();
+    QString baseDir = QCoreApplication::applicationDirPath();
+    QString fileSalvacion = baseDir + "/Archivostxt/salvacion.txt";
+    lector->clearFile(fileSalvacion);
     arbolAngeles->salvacion(arbolBinario);
+    // Ahora quiero mandar esto al correo :)
+    QTcpSocket socket;
+    socket.connectToHost("127.0.0.1", 12345); // Conectar al servidor
+
+    if (socket.waitForConnected()) {
+        qDebug() << "Conectado al servidor!";
+
+        // Enviar un mensaje al servidor
+        QString correo;
+        QString filePath;
+        correo = ui->correoElectronico->toPlainText();
+        QString baseDir = QCoreApplication::applicationDirPath();
+        filePath = baseDir + "/Archivostxt/salvacion.txt";
+        socket.write((correo + " " + filePath).toUtf8());
+        socket.flush();
+
+        // No esperamos respuesta, así que simplemente cerramos la conexión
+        socket.disconnectFromHost();
+        qDebug() << "Mensaje enviado y conexión cerrada.";
+    } else {
+        qDebug() << "Error al conectar al servidor!";
+    }
+
 }
 
