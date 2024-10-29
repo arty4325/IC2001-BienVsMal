@@ -23,6 +23,7 @@
 ListaOrdenada<Persona*>* _listaHumanos = new ListaOrdenada<Persona*>();
 ArbolBinario* arbolBinario;
 ListaOrdenada<Persona*>* humanosCadaPais[100];
+ArbolAngeles* arbolAngeles = new ArbolAngeles(arbolBinario);
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -33,7 +34,9 @@ MainWindow::MainWindow(QWidget *parent)
     lectorArchivos* lector = new lectorArchivos();
     QString baseDir = QCoreApplication::applicationDirPath();
     QString fileBitacora = baseDir + "/Archivostxt/bitacoraMuerte.txt";
+    QString fileHumanidad = baseDir + "/Archivostxt/humanidad.txt";
     lector->clearFile(fileBitacora);
+    lector->clearFile(fileHumanidad);
 }
 
 MainWindow::~MainWindow()
@@ -88,6 +91,7 @@ void MainWindow::on_pushButton_3_clicked()
     if(!persona->vivo){
         qDebug() << "Está muerto en este momento";
     }
+    // Aqui es donde tengo que hacer el toque de la persona en la bitacora
     qDebug() << "Ha reencarnado " << persona->reencarnaciones->size() << " veces";
     for(int i=0;i<persona->reencarnaciones->size();i++){
         persona->reencarnaciones->ver(i)->imprimirReencarnacion();
@@ -286,5 +290,12 @@ void MainWindow::on_pushButton_10_clicked()
 void MainWindow::on_pushButton_11_clicked()
 {
     algoritmoPaisesPecadores(humanosCadaPais);
+}
+
+
+void MainWindow::on_pushButton_12_clicked()
+{
+    //arbolAngeles->getArbol(arbolBinario);
+    arbolAngeles->salvacion(arbolBinario);
 }
 
