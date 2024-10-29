@@ -23,6 +23,7 @@
 ListaOrdenada<Persona*>* _listaHumanos = new ListaOrdenada<Persona*>();
 ArbolBinario* arbolBinario;
 ListaOrdenada<Persona*>* humanosCadaPais[100];
+ArbolAngeles* arbolAngeles = new ArbolAngeles(arbolBinario);
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -30,6 +31,12 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    lectorArchivos* lector = new lectorArchivos();
+    QString baseDir = QCoreApplication::applicationDirPath();
+    QString fileBitacora = baseDir + "/Archivostxt/bitacoraMuerte.txt";
+    QString fileHumanidad = baseDir + "/Archivostxt/humanidad.txt";
+    lector->clearFile(fileBitacora);
+    lector->clearFile(fileHumanidad);
 }
 
 MainWindow::~MainWindow()
@@ -84,6 +91,7 @@ void MainWindow::on_pushButton_3_clicked()
     if(!persona->vivo){
         qDebug() << "Está muerto en este momento";
     }
+    // Aqui es donde tengo que hacer el toque de la persona en la bitacora
     qDebug() << "Ha reencarnado " << persona->reencarnaciones->size() << " veces";
     for(int i=0;i<persona->reencarnaciones->size();i++){
         persona->reencarnaciones->ver(i)->imprimirReencarnacion();
@@ -125,6 +133,11 @@ void MainWindow::on_pushButton_5_clicked()
 
     // Mostrar las personas recorridas
     std::cout << "Personas en los niveles recorridos:" << std::endl;
+    QString baseDir = QCoreApplication::applicationDirPath();
+    QString filePath = baseDir + "/Archivostxt/muerteActual.txt";
+    QString fileBitacora = baseDir + "/Archivostxt/bitacoraMuerte.txt";
+    lectorArchivos* lector = new lectorArchivos();
+    lector->clearFile(baseDir + "/Archivostxt/muerteActual.txt");
     for (int i = 0; i < personasRecorridas.size(); i++) {
         Persona* persona = personasRecorridas.ver(i);
         persona->vivo = false;
@@ -142,17 +155,37 @@ void MainWindow::on_pushButton_5_clicked()
             amigos += idAmigo + " " + persona->amigos->ver(i)->nombre ;
         };
         QString cantReencarnaciones = QString::number(persona->reencarnaciones->cantItems);
-        textoBitacora += fechaHoraTexto + " Heap Muerte " + " " + personaIdString + " "
-            + persona->nombre + " " + persona->apellido + " " + persona->pais + " "
-            + persona->creencia + " " + persona->profesion + " " + persona->timestampNacimiento
-            + " Pecados Totales " + personaPecadosTotales
-            + " Amigos " + amigos
-            + " Reencarnaciones " + cantReencarnaciones;
-
-        QString baseDir = QCoreApplication::applicationDirPath();
-        QString filePath = baseDir + "/Archivostxt/bitacoraMuerte.txt";
-        lectorArchivos* lector = new lectorArchivos();
+        textoBitacora += personaIdString + "    "
+                         + persona -> nombre + "    " +
+                         persona -> apellido + "    " +
+                         persona -> pais + "    " +
+                         persona -> creencia + "    " +
+                         persona -> profesion + "    " +
+                         persona -> timestampNacimiento + "    " +
+                         personaPecadosTotales;
         lector->appendTextToFile(filePath, textoBitacora);
+        lector->appendTextToFile(fileBitacora, textoBitacora);
+    }
+    QTcpSocket socket;
+    socket.connectToHost("127.0.0.1", 12345); // Conectar al servidor
+
+    if (socket.waitForConnected()) {
+        qDebug() << "Conectado al servidor!";
+
+        // Enviar un mensaje al servidor
+        QString correo;
+        QString filePath;
+        correo = ui->correoElectronico->toPlainText();
+        QString baseDir = QCoreApplication::applicationDirPath();
+        filePath = baseDir + "/Archivostxt/muerteActual.txt";
+        socket.write((correo + " " + filePath).toUtf8());
+        socket.flush();
+
+        // No esperamos respuesta, así que simplemente cerramos la conexión
+        socket.disconnectFromHost();
+        qDebug() << "Mensaje enviado y conexión cerrada.";
+    } else {
+        qDebug() << "Error al conectar al servidor!";
     }
 }
 
@@ -162,12 +195,34 @@ void MainWindow::on_pushButton_6_clicked()
     double prob = (ui->spinBox_2->value())/100.0;
     qDebug() << prob;
     GenerarPandemia(_listaHumanos, prob);
+    QString baseDir = QCoreApplication::applicationDirPath();
+    QTcpSocket socket;
+    socket.connectToHost("127.0.0.1", 12345); // Conectar al servidor
+
+    if (socket.waitForConnected()) {
+        qDebug() << "Conectado al servidor!";
+
+        // Enviar un mensaje al servidor
+        QString correo;
+        QString filePath;
+        correo = ui->correoElectronico->toPlainText();
+        QString baseDir = QCoreApplication::applicationDirPath();
+        filePath = baseDir + "/Archivostxt/muerteActual.txt";
+        socket.write((correo + " " + filePath).toUtf8());
+        socket.flush();
+
+        // No esperamos respuesta, así que simplemente cerramos la conexión
+        socket.disconnectFromHost();
+        qDebug() << "Mensaje enviado y conexión cerrada.";
+    } else {
+        qDebug() << "Error al conectar al servidor!";
+    }
 }
 
 
 void MainWindow::on_pushButton_7_clicked()
 {
-    EliminarId(arbolBinario, ui->spinBox_3->value());
+    EliminarId(arbolBinario, ui->spinBox_3->value(), ui->correoElectronico->toPlainText());
 }
 
 
@@ -235,5 +290,12 @@ void MainWindow::on_pushButton_10_clicked()
 void MainWindow::on_pushButton_11_clicked()
 {
     algoritmoPaisesPecadores(humanosCadaPais);
+}
+
+
+void MainWindow::on_pushButton_12_clicked()
+{
+    //arbolAngeles->getArbol(arbolBinario);
+    arbolAngeles->salvacion(arbolBinario);
 }
 

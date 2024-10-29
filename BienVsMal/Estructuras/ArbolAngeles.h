@@ -5,6 +5,7 @@
 #include "Lector/lectorarchivos.h"
 
 struct ArbolAngeles{
+    ArbolBinario* arbolBinario;
     Angel* raiz;
     QString nombres[10] = {"Miguel", "Nuriel", "Aniel", "Rafael", "Gabriel","Shamsiel", "Raguel", "Uriel", "Azrael", "Sariel"};
     int versionesNombres[10];
@@ -28,19 +29,23 @@ struct ArbolAngeles{
     QStringList listaProfesiones = profesionString.split('\n');
 
 
-    ArbolAngeles(){
-        raiz = new Angel("Dios",1, 1,nullptr);
-        raiz->hijoIzquierdo = new Angel("Serafines",1, 2,nullptr);
-        raiz->hijoCentro = new Angel("Querubines",1, 2,nullptr);
-        raiz->hijoDerecho = new Angel("Tronos",1, 2,nullptr);
-        altura = 2;
+    ArbolAngeles(ArbolBinario* _arbolBinario){
+        arbolBinario = _arbolBinario;
+        raiz = new Angel("Dios",1, 1,nullptr, _arbolBinario);
+        raiz->hijoIzquierdo = new Angel("Serafines",1, 2,nullptr, _arbolBinario);
+        raiz->hijoCentro = new Angel("Querubines",1, 2,nullptr, _arbolBinario);
+        raiz->hijoDerecho = new Angel("Tronos",1, 2,nullptr, _arbolBinario);
+        altura = 1;
     }
 
-    void salvacion(){ //crea un nuevo árbol de ángeles salvadores
+
+
+    void salvacion(ArbolBinario* _arbolBinario){ //crea un nuevo árbol de ángeles salvadores
+        arbolBinario = _arbolBinario;
         for(int i=0;i<10;i++){
             versionesNombres[i] = 0;
         }
-        salvacion(raiz,2);
+        salvacion(raiz,0, _arbolBinario);
         //Mandarlo al correo TODO:
         //ponerlo vacio
         altura++;
@@ -55,25 +60,27 @@ struct ArbolAngeles{
 
 
 private:
-    void salvacion(Angel* nodo, int generacion){
+    void salvacion(Angel* nodo, int generacion, ArbolBinario* _arbolBinario){
         if(nodo == nullptr){ //Condicion de parada
             return;
         }
 
-        if(nodo->hijoIzquierdo == nullptr && nodo->hijoCentro == nullptr && nodo->hijoDerecho == nullptr){ // Si ya llega a hoja / el último nivel
-            int nombreIzquierdo = QRandomGenerator::global()->bounded(0, 10); //genera numero entre 0 y 9
-            nodo->hijoIzquierdo = new Angel(nombres[nombreIzquierdo],versionesNombres[nombreIzquierdo]++,generacion, listaNombres, listaApellidos, listaPaises, listaCreencias, listaProfesiones);
+        if(generacion <= altura){
+            if(nodo->hijoIzquierdo == nullptr && nodo->hijoCentro == nullptr && nodo->hijoDerecho == nullptr){ // Si ya llega a hoja / el último nivel
+                int nombreIzquierdo = QRandomGenerator::global()->bounded(0, 10); //genera numero entre 0 y 9
+                nodo->hijoIzquierdo = new Angel(nombres[nombreIzquierdo],versionesNombres[nombreIzquierdo]++,generacion, listaNombres, listaApellidos, listaPaises, listaCreencias, listaProfesiones, _arbolBinario);
 
-            int nombreCentro = QRandomGenerator::global()->bounded(0, 10);
-            nodo->hijoCentro = new Angel(nombres[nombreCentro], versionesNombres[nombreCentro]++, generacion, listaNombres, listaApellidos, listaPaises, listaCreencias, listaProfesiones);
+                int nombreCentro = QRandomGenerator::global()->bounded(0, 10);
+                nodo->hijoCentro = new Angel(nombres[nombreCentro], versionesNombres[nombreCentro]++, generacion, listaNombres, listaApellidos, listaPaises, listaCreencias, listaProfesiones, _arbolBinario);
 
-            int nombreDerecho = QRandomGenerator::global()->bounded(0, 10);
-            nodo->hijoDerecho = new Angel(nombres[nombreDerecho], versionesNombres[nombreDerecho]++, generacion, listaNombres, listaApellidos, listaPaises, listaCreencias, listaProfesiones);
+                int nombreDerecho = QRandomGenerator::global()->bounded(0, 10);
+                nodo->hijoDerecho = new Angel(nombres[nombreDerecho], versionesNombres[nombreDerecho]++, generacion, listaNombres, listaApellidos, listaPaises, listaCreencias, listaProfesiones, _arbolBinario);
+            }
+
+            salvacion(nodo->hijoIzquierdo,generacion+1, _arbolBinario);
+            salvacion(nodo->hijoCentro,generacion+1, _arbolBinario);
+            salvacion(nodo->hijoDerecho,generacion+1, _arbolBinario);
         }
-
-        salvacion(nodo->hijoIzquierdo,generacion+1);
-        salvacion(nodo->hijoCentro,generacion+1);
-        salvacion(nodo->hijoDerecho,generacion+1);
     }
 
     QString stringNivel(Angel* nodo, int nivel){

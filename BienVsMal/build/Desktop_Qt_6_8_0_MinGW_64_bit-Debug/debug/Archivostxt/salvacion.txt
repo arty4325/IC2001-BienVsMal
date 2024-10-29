@@ -1,0 +1,358 @@
+2024-10-28 19:37:45	Humano 945978	Aleck	Jones	Chipre	Electricista	Jainismo	Salvado por Aniel (0)	G3	Reencarnado como Arnoldo	Fields	Bosnia y Herzegovina	Ingeniero industrial	Espiritismo
+2024-10-28 19:37:45	Humano 41090	Adam	Williams	Estados Unidos	Contador	Islam	Salvado por Rafael (0)	G3	Reencarnado como Barthel	Bonilla	Honduras	Desarrollador web	Zoroastrismo
+2024-10-28 19:37:45	Humano 510552	Abbie	Williams	Austria	Ingeniero	Cristianismo	Salvado por Nuriel (0)	G3	Reencarnado como Antoni	Person	Estonia	Conductor de camión	Hinduismo
+2024-10-28 19:37:45	Humano 368043	Ace	Rodriguez	Jordania	Arquitecto	Shintoísmo	Salvado por Miguel (0)	G4	Reencarnado como Avrom	Harrell	Fiyi	Panadero	Confucianismo
+2024-10-28 19:37:45	Humano 807739	Alphonso	Johnson	Italia	Profesor	Jainismo	Salvado por Rafael (1)	G4	Reencarnado como Barney	Newton	Azerbaiyan	Ingeniero mecánico	Zoroastrismo
+2024-10-28 19:37:45	Humano 595719	Alphonso	Smith	Eslovenia	Contador	Sijismo	Salvado por Shamsiel (0)	G4	Reencarnado como Fitz	Bass	Canada	Guionista	Zoroastrismo
+2024-10-28 19:37:45	Humano 322035	Abby	Smith	Gambia	Programador	Confucianismo	Salvado por Uriel (0)	G5	Reencarnado como Avram	Neal	Eritrea	Agente de viajes	Iglesia Ortodoxa
+2024-10-28 19:37:45	Humano 132773	Adger	Smith	Benin	Electricista	Confucianismo	Salvado por Nuriel (1)	G5	Reencarnado como Frank	Rubio	Estados Unidos	Intérprete	Budismo
+2024-10-28 19:37:45	Humano 473870	Alain	Miller	Guinea Ecuatorial	Programador	Cristianismo	Salvado por Azrael (0)	G5	Reencarnado como Chane	Price	Iran	Ingeniero en telecomunicaciones	Ateísmo
+2024-10-28 19:37:45	Humano 877856	Alex	Davis	Barbados	Programador	Sijismo	Salvado por Sariel (0)	G6	Reencarnado como Arvin	Lee	Filipinas	Músico	Cristianismo
+2024-10-28 19:37:45	Humano 725440	Alberto	Miller	Kazajistan	Médico	Taoísmo	Salvado por Miguel (1)	G6	Reencarnado como Barnard	Fry	Angola	Piloto de drones	Neopaganismo
+2024-10-28 19:37:45	Humano 532143	Alphonso	Johnson	Brunei	Abogado	Hinduismo	Salvado por Sariel (1)	G6	Reencarnado como Alain	Reyna	Letonia	Biólogo	Neopaganismo
+2024-10-28 19:37:46	Humano 269797	Alister	Davis	Islas Salomon	Médico	Taoísmo	Salvado por Uriel (1)	G7	Reencarnado como Emmery	Mcintyre	Argentina	Administrador de sistemas	Protestantismo
+2024-10-28 19:37:46	Humano 713739	Alvin	Jones	Colombia	Ingeniero	Confucianismo	Salvado por Sariel (2)	G7	Reencarnado como Dorian	Stevenson	Banglades	Soldador	Espiritismo
+2024-10-28 19:37:46	Humano 320065	Abe	Brown	Chile	Arquitecto	Budismo	Salvado por Rafael (2)	G7	Reencarnado como Gasper	Allison	Gambia	Contador	Hinduismo
+2024-10-28 19:46:31	Humano 591888	Agamemnon	Smith	Eslovenia	Abogado	Hinduismo	Salvado por Shamsiel (0)	G3	Reencarnado como Adolf	Horn	Canada	Técnico de soporte	Rastafarianismo
+2024-10-28 19:46:31	Humano 708187	Alford	Garcia	Guinea Ecuatorial	Dentista	Shintoísmo	Salvado por Aniel (0)	G3	Reencarnado como Flinn	Sawyer	Honduras	Plomero	Shintoísmo
+2024-10-28 19:46:31	Humano 434779	Alic	Rodriguez	Congo	Ingeniero	Judaísmo	Salvado por Shamsiel (1)	G3	Reencarnado como Floyd	S	Costa de Marfil	Pintor	Wicca
+2024-10-28 19:46:31	Humano 678896	Adger	Brown	Burundi	Arquitecto	Jainismo	Salvado por Uriel (0)	G4	Reencarnado como Edward	Barr	Belice	Ingeniero	Islam
+2024-10-28 19:46:31	Humano 749041	Alessandro	Smith	Israel	Abogado	Hinduismo	Salvado por Raguel (0)	G4	Reencarnado como Bryce	Donovan	Gabon	Ingeniero químico	Protestantismo
+2024-10-28 19:46:31	Humano 205906	Alston	Martinez	Alemania	Electricista	Taoísmo	Salvado por Uriel (1)	G4	Reencarnado como Allah	Bradford	Butan	Editor	Taoísmo
+2024-10-28 19:46:31	Humano 675525	Ahmad	Davis	Jamaica	Enfermero	Taoísmo	Salvado por Uriel (2)	G5	Reencarnado como Dominick	Lane	Chile	Ingeniero civil	Confucianismo
+2024-10-28 19:46:31	Humano 281823	Adnan	Davis	Congo	Dentista	Sijismo	Salvado por Shamsiel (2)	G5	Reencarnado como Cyrillus	Giles	Canada	Ingeniero mecánico	Taoísmo
+2024-10-28 19:46:31	Humano 662066	Adolphus	Garcia	Banglades	Contador	Confucianismo	Salvado por Raguel (1)	G5	Reencarnado como Christ	Tanner	Arabia Saudita	Médico	Judaísmo
+2024-10-28 19:46:31	Humano 435287	Adger	Smith	Jordania	Electricista	Islam	Salvado por Rafael (0)	G6	Reencarnado como Alfonso	Singleton	Estados Unidos	Artista plástico	Neopaganismo
+2024-10-28 19:46:31	Humano 358793	Abbey	Davis	Arabia Saudita	Ingeniero	Cristianismo	Salvado por Uriel (3)	G6	Reencarnado como Alessandro	Robinson	Australia	Electricista	Taoísmo
+2024-10-28 19:46:31	Humano 238114	Abdullah	Jones	Etiopia	Contador	Taoísmo	Salvado por Rafael (1)	G6	Reencarnado como Frank	Wade	Chad	Historiador	Protestantismo
+2024-10-28 19:46:31	Humano 557306	Abbie	Williams	Belgica	Médico	Cristianismo	Salvado por Gabriel (0)	G7	Reencarnado como Eddie	Gregory	Butan	Intérprete	Rastafarianismo
+2024-10-28 19:46:31	Humano 299502	Aguinaldo	Rodriguez	Croacia	Profesor	Cristianismo	Salvado por Uriel (4)	G7	Reencarnado como Andrus	Mcgee	Italia	Panadero	Shintoísmo
+2024-10-28 19:46:31	Humano 767588	Allen	Brown	Iran	Médico	Confucianismo	Salvado por Uriel (5)	G7	Reencarnado como Emile	Roy	Burundi	Ingeniero de redes	Ateísmo
+2024-10-28 19:47:27	Humano 91333	Adolph	Johnson	Eslovaquia	Médico	Cristianismo	Salvado por Miguel (0)	G3	Reencarnado como Arvind	Burton	Ghana	Programador	Taoísmo
+2024-10-28 19:47:27	Humano 393896	Ali	Jones	Eslovaquia	Abogado	Budismo	Salvado por Gabriel (0)	G3	Reencarnado como Corbin	Nava	Islas Salomon	Ingeniero de redes	Protestantismo
+2024-10-28 19:47:27	Humano 799463	Abbie	Garcia	Kirguistan	Médico	Jainismo	Salvado por Sariel (0)	G3	Reencarnado como Flinn	Wagner	Letonia	Bailarín	Cristianismo
+2024-10-28 19:47:27	Humano 846344	Alfredo	Rodriguez	Kirguistan	Dentista	Taoísmo	Salvado por Rafael (0)	G4	Reencarnado como Barnett	Wall	Cabo Verde	Piloto de drones	Rastafarianismo
+2024-10-28 19:47:27	Humano 34818	Alfredo	Miller	Guatemala	Profesor	Hinduismo	Salvado por Uriel (0)	G4	Reencarnado como Emmy	Jennings	Bosnia y Herzegovina	Director de cine	Iglesia Ortodoxa
+2024-10-28 19:47:27	Humano 234306	Alston	Miller	Cabo Verde	Arquitecto	Taoísmo	Salvado por Nuriel (0)	G4	Reencarnado como Cleland	Palacios	Kiribati	Carpintero	Bahaísmo
+2024-10-28 19:47:27	Humano 487726	Albrecht	Garcia	Guinea	Abogado	Hinduismo	Salvado por Sariel (1)	G5	Reencarnado como Bucky	Dillon	Dominica	Arquitecto	Iglesia Ortodoxa
+2024-10-28 19:47:27	Humano 403124	Albert	Smith	Estados Unidos	Ingeniero	Shintoísmo	Salvado por Aniel (0)	G5	Reencarnado como Ephrayim	Humphrey	Croacia	Asesor financiero	Ateísmo
+2024-10-28 19:47:27	Humano 910222	Alastair	Rodriguez	Filipinas	Ingeniero	Shintoísmo	Salvado por Miguel (1)	G5	Reencarnado como Boris	Ortiz	Kiribati	Ingeniero	Judaísmo
+2024-10-28 19:47:27	Humano 300303	Adrick	Jones	Australia	Médico	Judaísmo	Salvado por Uriel (1)	G6	Reencarnado como Amadeus	Jimenez	Guatemala	Investigador	Ateísmo
+2024-10-28 19:47:27	Humano 599135	Abdullah	Williams	Colombia	Contador	Budismo	Salvado por Miguel (2)	G6	Reencarnado como Fernando	Serrano	Belice	Programador	Ateísmo
+2024-10-28 19:47:27	Humano 769058	Alejandro	Rodriguez	Armenia	Enfermero	Hinduismo	Salvado por Raguel (0)	G6	Reencarnado como Giordano	Hawkins	Indonesia	Psicólogo	Jainismo
+2024-10-28 19:47:27	Humano 493599	Abdullah	Jones	Japon	Programador	Confucianismo	Salvado por Miguel (3)	G7	Reencarnado como Artie	Grimes	Chile	Diseñador gráfico	Judaísmo
+2024-10-28 19:47:27	Humano 785806	Alix	Smith	Georgia	Enfermero	Judaísmo	Salvado por Uriel (2)	G7	Reencarnado como Englebart	Moore	Belice	Ingeniero ambiental	Cristianismo
+2024-10-28 19:47:27	Humano 338088	Allan	Johnson	Islas Marshall	Dentista	Shintoísmo	Salvado por Miguel (4)	G7	Reencarnado como Clinten	Patel	Ghana	Geógrafo	Islam
+2024-10-28 19:47:27	Humano 996086	Alf	Johnson	Ghana	Arquitecto	Judaísmo	Salvado por Gabriel (1)	G8	Reencarnado como Chancey	Nixon	Estonia	Director de cine	Ateísmo
+2024-10-28 19:47:27	Humano 666050	Alfonse	Jones	Cabo Verde	Electricista	Islam	Salvado por Raguel (1)	G8	Reencarnado como Fraser	Mora	Antigua y Barbuda	Obrero	Rastafarianismo
+2024-10-28 19:47:27	Humano 99129	Abram	Jones	Armenia	Profesor	Judaísmo	Salvado por Uriel (3)	G8	Reencarnado como Brewster	Gonzalez	Dinamarca	Traductor	Confucianismo
+2024-10-28 19:47:27	Humano 333804	Alessandro	Smith	Costa de Marfil	Enfermero	Cristianismo	Salvado por Aniel (1)	G9	Reencarnado como Geri	Mcguire	Hungria	Azafata	Neopaganismo
+2024-10-28 19:47:27	Humano 649915	Adolphe	Miller	Catar	Electricista	Confucianismo	Salvado por Nuriel (1)	G9	Reencarnado como Courtney	Moreno	Austria	Fotógrafo	Rastafarianismo
+2024-10-28 19:47:27	Humano 512129	Alley	Martinez	Catar	Contador	Shintoísmo	Salvado por Gabriel (2)	G9	Reencarnado como Alonso	Berry	Kirguistan	Ingeniero eléctrico	Ateísmo
+2024-10-28 19:47:27	Humano 335894	Aamir	Johnson	Banglades	Abogado	Sijismo	Salvado por Aniel (2)	G10	Reencarnado como Freddy	Shaw	Afganistan	Programador	Zoroastrismo
+2024-10-28 19:47:27	Humano 434093	Alexei	Williams	Burundi	Programador	Hinduismo	Salvado por Uriel (4)	G10	Reencarnado como Giffer	Cortez	Alemania	Mecánico	Judaísmo
+2024-10-28 19:47:27	Humano 257331	Allen	Martinez	Camboya	Médico	Taoísmo	Salvado por Rafael (1)	G10	Reencarnado como Dexter	Haynes	Iran	Carpintero	Rastafarianismo
+2024-10-28 19:47:27	Humano 806266	Alfonso	Smith	Burundi	Electricista	Islam	Salvado por Nuriel (2)	G11	Reencarnado como Chip	Parks	Islandia	Electricista	Hinduismo
+2024-10-28 19:47:27	Humano 67858	Adlai	Jones	Arabia Saudita	Dentista	Taoísmo	Salvado por Uriel (5)	G11	Reencarnado como Alford	Mccarty	Islandia	Fotógrafo	Jainismo
+2024-10-28 19:47:27	Humano 570322	Allen	Garcia	Croacia	Dentista	Budismo	Salvado por Rafael (2)	G11	Reencarnado como Dimitry	Phillips	Austria	Escritor	Rastafarianismo
+2024-10-28 19:47:27	Humano 182770	Alexander	Brown	Haiti	Ingeniero	Jainismo	Salvado por Nuriel (3)	G12	Reencarnado como Blaine	Nicholson	El Salvador	Taxista	Espiritismo
+2024-10-28 19:47:27	Humano 553918	Ali	Rodriguez	Laos	Enfermero	Shintoísmo	Salvado por Aniel (3)	G12	Reencarnado como Chen	Escobar	Islandia	Carpintero	Protestantismo
+2024-10-28 19:47:27	Humano 967653	Adam	Davis	Hungria	Programador	Islam	Salvado por Gabriel (3)	G12	Reencarnado como Dave	Wu	Kiribati	Ingeniero civil	Ateísmo
+2024-10-28 19:47:27	Humano 333366	Adair	Johnson	Burundi	Enfermero	Islam	Salvado por Sariel (2)	G13	Reencarnado como Daffy	Ventura	Kuwait	Conductor de camión	Neopaganismo
+2024-10-28 19:47:27	Humano 255066	Alley	Brown	Cabo Verde	Arquitecto	Hinduismo	Salvado por Nuriel (4)	G13	Reencarnado como Erasmus	Beasley	Kenia	Panadero	Espiritismo
+2024-10-28 19:47:27	Humano 126069	Aloysius	Garcia	Jordania	Electricista	Islam	Salvado por Rafael (3)	G13	Reencarnado como Delbert	Duffy	Italia	Conductor de camión	Taoísmo
+2024-10-28 19:47:27	Humano 437175	Alec	Davis	Japon	Programador	Judaísmo	Salvado por Nuriel (5)	G14	Reencarnado como Donal	Garrett	Benin	Arquitecto	Islam
+2024-10-28 19:47:27	Humano 722318	Aleksandrs	Williams	Irak	Arquitecto	Sijismo	Salvado por Rafael (4)	G14	Reencarnado como Dan	Gray	Andorra	Ingeniero de redes	Wicca
+2024-10-28 19:47:27	Humano 163266	Alonso	Martinez	Butan	Arquitecto	Shintoísmo	Salvado por Miguel (5)	G14	Reencarnado como Edward	Farmer	Japon	Estilista	Agnosticismo
+2024-10-28 19:47:27	Humano 889004	Alfredo	Smith	Kazajistan	Dentista	Taoísmo	Salvado por Rafael (5)	G15	Reencarnado como Albrecht	Mays	Gambia	Historiador	Cristianismo
+2024-10-28 19:47:27	Humano 269532	Ahmad	Davis	Bosnia y Herzegovina	Programador	Hinduismo	Salvado por Nuriel (6)	G15	Reencarnado como Agamemnon	Garner	Banglades	Recepcionista	Shintoísmo
+2024-10-28 19:47:27	Humano 886275	Adolpho	Garcia	Chipre	Electricista	Judaísmo	Salvado por Raguel (2)	G15	Reencarnado como Clancy	Mullen	Austria	Veterinario	Espiritismo
+2024-10-28 19:47:27	Humano 859540	Aldo	Rodriguez	Costa de Marfil	Profesor	Confucianismo	Salvado por Raguel (3)	G16	Reencarnado como Angus	Friedman	Costa Rica	Barbero	Bahaísmo
+2024-10-28 19:47:27	Humano 639847	Aldwin	Williams	Afganistan	Profesor	Taoísmo	Salvado por Azrael (0)	G16	Reencarnado como Ferdinand	Hail	Banglades	Ingeniero ambiental	Taoísmo
+2024-10-28 19:47:27	Humano 695598	Alec	Brown	Eritrea	Programador	Sijismo	Salvado por Sariel (3)	G16	Reencarnado como Ginger	Rodgers	Islandia	Agente inmobiliario	Shintoísmo
+2024-10-28 19:47:27	Humano 416236	Aamir	Rodriguez	Lesoto	Contador	Budismo	Salvado por Raguel (4)	G17	Reencarnado como Barn	Everett	Burkina Faso	Agente inmobiliario	Iglesia Ortodoxa
+2024-10-28 19:47:27	Humano 126899	Alan	Garcia	Estonia	Electricista	Sijismo	Salvado por Rafael (6)	G17	Reencarnado como Gerold	Delgado	Indonesia	Administrador	Bahaísmo
+2024-10-28 19:47:27	Humano 658111	Abbie	Rodriguez	Belice	Contador	Islam	Salvado por Gabriel (4)	G17	Reencarnado como Flynn	Marks	Georgia	Psicólogo	Ateísmo
+2024-10-28 19:47:27	Humano 488773	Adrian	Rodriguez	Kuwait	Médico	Budismo	Salvado por Rafael (7)	G18	Reencarnado como Gian	Drake	Hungria	Minerólogo	Rastafarianismo
+2024-10-28 19:47:27	Humano 434730	Alley	Garcia	Gambia	Dentista	Confucianismo	Salvado por Azrael (1)	G18	Reencarnado como Francis	Ellis	Argentina	Bailarín	Judaísmo
+2024-10-28 19:47:27	Humano 700521	Abe	Rodriguez	Albania	Abogado	Islam	Salvado por Miguel (6)	G18	Reencarnado como Algernon	Maxwell	Islandia	Escultor	Ateísmo
+2024-10-28 19:47:27	Humano 799253	Alexis	Jones	Australia	Profesor	Hinduismo	Salvado por Aniel (4)	G19	Reencarnado como Garret	Joseph	Bielorrusia	Administrador de sistemas	Protestantismo
+2024-10-28 19:47:27	Humano 770676	Aldo	Williams	Israel	Arquitecto	Sijismo	Salvado por Sariel (4)	G19	Reencarnado como Bartholomeus	Mccarty	Chipre	Ganadero	Bahaísmo
+2024-10-28 19:47:27	Humano 25226	Alix	Williams	Canada	Médico	Judaísmo	Salvado por Shamsiel (0)	G19	Reencarnado como Erek	Clements	Banglades	Contador público	Protestantismo
+2024-10-28 19:47:27	Humano 630651	Alex	Davis	Bosnia y Herzegovina	Ingeniero	Confucianismo	Salvado por Gabriel (5)	G20	Reencarnado como Dimitrios	Logan	Hungria	Escultor	Iglesia Ortodoxa
+2024-10-28 19:47:27	Humano 978052	Adolfo	Martinez	Japon	Contador	Jainismo	Salvado por Sariel (5)	G20	Reencarnado como Clifford	Santana	Cabo Verde	Farmacéutico	Shintoísmo
+2024-10-28 19:47:27	Humano 287414	Albert	Brown	Islas Salomon	Programador	Judaísmo	Salvado por Gabriel (6)	G20	Reencarnado como Anders	Evans	Kenia	Mecánico	Sijismo
+2024-10-28 19:47:27	Humano 252818	Alonzo	Williams	Bosnia y Herzegovina	Médico	Cristianismo	Salvado por Rafael (8)	G21	Reencarnado como Adolfo	Bernard	Jordania	Pintor	Taoísmo
+2024-10-28 19:47:27	Humano 817413	Agamemnon	Rodriguez	Benin	Electricista	Confucianismo	Salvado por Raguel (5)	G21	Reencarnado como Friedrick	Fernandez	Barbados	Escultor	Protestantismo
+2024-10-28 19:47:27	Humano 562380	Alexei	Brown	El Salvador	Contador	Islam	Salvado por Raguel (6)	G21	Reencarnado como Averell	Watts	Egipto	Soldador	Espiritismo
+2024-10-28 19:47:27	Humano 93362	Agustin	Miller	Italia	Enfermero	Taoísmo	Salvado por Sariel (6)	G22	Reencarnado como Ed	Brown	Burkina Faso	Barbero	Rastafarianismo
+2024-10-28 19:47:27	Humano 468567	Adolphus	Smith	Laos	Abogado	Budismo	Salvado por Miguel (7)	G22	Reencarnado como Beaufort	S	Butan	Agente de viajes	Zoroastrismo
+2024-10-28 19:47:27	Humano 247541	Algernon	Smith	Kenia	Abogado	Judaísmo	Salvado por Uriel (6)	G22	Reencarnado como Billie	Barnes	Kirguistan	Fisioterapeuta	Zoroastrismo
+2024-10-28 19:47:27	Humano 318647	Alfredo	Davis	Kenia	Abogado	Taoísmo	Salvado por Uriel (7)	G23	Reencarnado como Bo	Francis	Afganistan	Asesor financiero	Bahaísmo
+2024-10-28 19:47:27	Humano 389642	Ahmad	Davis	Canada	Profesor	Confucianismo	Salvado por Sariel (7)	G23	Reencarnado como Christie	Randolph	Filipinas	Recepcionista	Agnosticismo
+2024-10-28 19:47:27	Humano 31523	Agustin	Smith	Banglades	Programador	Islam	Salvado por Uriel (8)	G23	Reencarnado como Barry	House	Egipto	Intérprete	Taoísmo
+2024-10-28 19:47:27	Humano 564918	Adnan	Garcia	Barbados	Electricista	Judaísmo	Salvado por Shamsiel (1)	G24	Reencarnado como Davey	Vasquez	Corea del Norte	Gerente	Judaísmo
+2024-10-28 19:47:27	Humano 963006	Adrian	Martinez	Barbados	Profesor	Cristianismo	Salvado por Raguel (7)	G24	Reencarnado como Bryan	Nielsen	Congo	Obrero	Wicca
+2024-10-28 19:47:27	Humano 181278	Alonzo	Davis	El Salvador	Ingeniero	Cristianismo	Salvado por Rafael (9)	G24	Reencarnado como Davie	Strickland	Estonia	Periodista	Iglesia Ortodoxa
+2024-10-28 19:47:27	Humano 207121	Adrien	Johnson	Belice	Programador	Confucianismo	Salvado por Miguel (8)	G25	Reencarnado como Chrissy	Dejesus	Guinea Ecuatorial	Analista de datos	Hinduismo
+2024-10-28 19:47:27	Humano 693080	Alan	Miller	Ghana	Médico	Jainismo	Salvado por Aniel (5)	G25	Reencarnado como Beau	Mckinney	Barbados	Desarrollador web	Jainismo
+2024-10-28 19:47:27	Humano 612086	Aldo	Rodriguez	Dominica	Abogado	Hinduismo	Salvado por Shamsiel (2)	G25	Reencarnado como Barron	Andrade	Finlandia	Químico	Protestantismo
+2024-10-28 19:47:27	Humano 181025	Adam	Rodriguez	Comoras	Contador	Sijismo	Salvado por Nuriel (7)	G26	Reencarnado como Bret	Lynch	Eslovenia	Químico	Confucianismo
+2024-10-28 19:47:27	Humano 811215	Alister	Jones	Burundi	Arquitecto	Taoísmo	Salvado por Aniel (6)	G26	Reencarnado como Fitz	Torres	Finlandia	Gerente	Zoroastrismo
+2024-10-28 19:47:27	Humano 85600	Alonso	Williams	Antigua y Barbuda	Médico	Judaísmo	Salvado por Shamsiel (3)	G26	Reencarnado como Duffie	Brennan	Islandia	Piloto de drones	Shintoísmo
+2024-10-28 19:47:27	Humano 859778	Adolf	Smith	Irak	Profesor	Jainismo	Salvado por Gabriel (7)	G27	Reencarnado como Giordano	Morgan	Bulgaria	Administrador de sistemas	Espiritismo
+2024-10-28 19:47:27	Humano 180976	Ajay	Miller	Chad	Electricista	Jainismo	Salvado por Rafael (10)	G27	Reencarnado como Dyson	Lloyd	Butan	Ceramista	Hinduismo
+2024-10-28 19:47:27	Humano 890598	Abdul	Brown	Belice	Médico	Budismo	Salvado por Uriel (9)	G27	Reencarnado como Byron	Cochran	Iran	Veterinario	Islam
+2024-10-28 19:47:27	Humano 898177	Abelard	Jones	Afganistan	Enfermero	Hinduismo	Salvado por Aniel (7)	G28	Reencarnado como Beauregard	Wyatt	Fiyi	Psicólogo	Confucianismo
+2024-10-28 19:47:27	Humano 157233	Aamir	Miller	El Salvador	Electricista	Confucianismo	Salvado por Uriel (10)	G28	Reencarnado como Erhart	George	Kuwait	Escultor	Wicca
+2024-10-28 19:47:27	Humano 623548	Agamemnon	Jones	Chipre	Enfermero	Taoísmo	Salvado por Shamsiel (4)	G28	Reencarnado como Arvin	Bennett	Chad	Camarógrafo	Islam
+2024-10-28 19:47:27	Humano 996648	Adrick	Brown	Georgia	Dentista	Islam	Salvado por Nuriel (8)	G29	Reencarnado como Demetris	Perkins	Eslovaquia	Chef	Judaísmo
+2024-10-28 19:47:27	Humano 679921	Alfie	Garcia	Corea del Sur	Abogado	Cristianismo	Salvado por Gabriel (8)	G29	Reencarnado como Filmore	Rodriguez	Belgica	Asesor financiero	Judaísmo
+2024-10-28 19:47:27	Humano 724972	Alic	Smith	Jamaica	Contador	Taoísmo	Salvado por Gabriel (9)	G29	Reencarnado como Aguste	Franklin	Estados Unidos	Conductor de camión	Sijismo
+2024-10-28 19:47:27	Humano 359927	Ajai	Brown	Kenia	Programador	Islam	Salvado por Sariel (8)	G30	Reencarnado como Al	Finley	Costa Rica	Petrolero	Agnosticismo
+2024-10-28 19:47:27	Humano 938783	Alexander	Miller	Israel	Programador	Confucianismo	Salvado por Raguel (8)	G30	Reencarnado como Frederico	Cunningham	Dinamarca	Veterinario	Cristianismo
+2024-10-28 19:47:27	Humano 496647	Abdullah	Williams	Lesoto	Enfermero	Budismo	Salvado por Gabriel (10)	G30	Reencarnado como Elvin	Huffman	Eslovenia	Soldador	Ateísmo
+2024-10-28 19:47:27	Humano 278338	Alvin	Davis	Kenia	Médico	Budismo	Salvado por Shamsiel (5)	G31	Reencarnado como Ashton	Sandoval	Israel	Mecánico	Iglesia Ortodoxa
+2024-10-28 19:47:27	Humano 621491	Agustin	Smith	Birmania	Contador	Islam	Salvado por Miguel (9)	G31	Reencarnado como Demetrius	Perkins	Laos	Desarrollador web	Jainismo
+2024-10-28 19:47:27	Humano 417973	Agamemnon	Martinez	Georgia	Profesor	Cristianismo	Salvado por Sariel (9)	G31	Reencarnado como Engelbert	Parks	Haiti	Ceramista	Sijismo
+2024-10-28 19:47:27	Humano 290102	Al	Davis	Comoras	Contador	Hinduismo	Salvado por Uriel (11)	G32	Reencarnado como Corky	Olsen	Banglades	Asesor financiero	Ateísmo
+2024-10-28 19:47:27	Humano 359272	Agustin	Smith	Eslovenia	Abogado	Sijismo	Salvado por Gabriel (11)	G32	Reencarnado como Gino	Miranda	Austria	Obrero	Iglesia Ortodoxa
+2024-10-28 19:47:27	Humano 335803	Abbey	Garcia	Jamaica	Electricista	Budismo	Salvado por Gabriel (12)	G32	Reencarnado como Dwight	Yang	Fiyi	Contador	Jainismo
+2024-10-28 19:47:27	Humano 745915	Alan	Rodriguez	Kazajistan	Programador	Cristianismo	Salvado por Rafael (11)	G33	Reencarnado como Emanuel	Guzman	Costa Rica	Agente de viajes	Hinduismo
+2024-10-28 19:47:27	Humano 160997	Aldrich	Miller	Costa de Marfil	Enfermero	Jainismo	Salvado por Sariel (10)	G33	Reencarnado como Easton	Ford	Estonia	Ingeniero	Shintoísmo
+2024-10-28 19:47:27	Humano 2124	Alfonzo	Davis	Belice	Programador	Judaísmo	Salvado por Sariel (11)	G33	Reencarnado como Benjy	Collins	Georgia	Científico	Agnosticismo
+2024-10-28 19:47:27	Humano 617727	Abbott	Johnson	Eritrea	Electricista	Hinduismo	Salvado por Sariel (12)	G34	Reencarnado como Bert	Schwartz	Bulgaria	Ingeniero de software	Protestantismo
+2024-10-28 19:47:27	Humano 767051	Aldis	Davis	Ghana	Dentista	Islam	Salvado por Gabriel (13)	G34	Reencarnado como Barry	Rollins	Botsuana	Ganadero	Islam
+2024-10-28 19:47:27	Humano 856177	Aleck	Miller	El Salvador	Contador	Sijismo	Salvado por Nuriel (9)	G34	Reencarnado como Cleveland	Mata	Letonia	Agricultor	Shintoísmo
+2024-10-28 19:47:27	Humano 459453	Aditya	Miller	Haiti	Dentista	Shintoísmo	Salvado por Miguel (10)	G35	Reencarnado como Beaufort	Mclaughlin	Israel	Piloto comercial	Taoísmo
+2024-10-28 19:47:27	Humano 438503	Aldus	Brown	India	Programador	Judaísmo	Salvado por Rafael (12)	G35	Reencarnado como Berkeley	S	Honduras	Azafata	Neopaganismo
+2024-10-28 19:47:27	Humano 314318	Abdulkarim	Johnson	Jamaica	Enfermero	Judaísmo	Salvado por Aniel (8)	G35	Reencarnado como Ferdy	Douglas	Belgica	Intérprete	Protestantismo
+2024-10-28 19:47:27	Humano 163588	Algernon	Smith	Catar	Enfermero	Taoísmo	Salvado por Miguel (11)	G36	Reencarnado como Ezra	Shepherd	Corea del Sur	Intérprete	Judaísmo
+2024-10-28 19:47:27	Humano 432332	Aguste	Jones	Grecia	Contador	Confucianismo	Salvado por Rafael (13)	G36	Reencarnado como Brendan	Nelson	Bosnia y Herzegovina	Analista de datos	Hinduismo
+2024-10-28 19:47:27	Humano 768005	Adrien	Martinez	Guinea	Arquitecto	Islam	Salvado por Raguel (9)	G36	Reencarnado como Emmet	Bass	Islas Salomon	Coreógrafo	Ateísmo
+2024-10-28 19:47:27	Humano 328697	Adair	Martinez	Hungria	Médico	Judaísmo	Salvado por Nuriel (10)	G37	Reencarnado como Carmine	Barrett	Belgica	Actor	Agnosticismo
+2024-10-28 19:47:27	Humano 15747	Aditya	Brown	Brunei	Médico	Shintoísmo	Salvado por Sariel (13)	G37	Reencarnado como Cletus	Thompson	Antigua y Barbuda	Ingeniero de software	Neopaganismo
+2024-10-28 19:47:27	Humano 222330	Aaron	Davis	Gambia	Dentista	Confucianismo	Salvado por Sariel (14)	G37	Reencarnado como Bailie	Fry	Cuba	Director de cine	Judaísmo
+2024-10-28 19:47:27	Humano 900792	Adolphe	Smith	Jordania	Médico	Confucianismo	Salvado por Gabriel (14)	G38	Reencarnado como Andreas	Ballard	Guyana	Psicólogo	Sijismo
+2024-10-28 19:47:27	Humano 167983	Adams	Rodriguez	Islandia	Abogado	Islam	Salvado por Nuriel (11)	G38	Reencarnado como Dryke	Mcfarland	Fiyi	Barbero	Sijismo
+2024-10-28 19:47:27	Humano 655254	Adolf	Miller	India	Arquitecto	Jainismo	Salvado por Azrael (2)	G38	Reencarnado como Daryl	Ramos	Gabon	Secretario	Hinduismo
+2024-10-28 19:47:27	Humano 196680	Alfonse	Davis	Cuba	Contador	Shintoísmo	Salvado por Aniel (9)	G39	Reencarnado como Bill	Adams	Kenia	Músico	Cristianismo
+2024-10-28 19:47:27	Humano 200446	Alic	Williams	Gabon	Arquitecto	Budismo	Salvado por Shamsiel (6)	G39	Reencarnado como Alphonso	Norman	Argentina	Conductor de camión	Bahaísmo
+2024-10-28 19:47:27	Humano 840920	Allah	Miller	Armenia	Ingeniero	Taoísmo	Salvado por Uriel (12)	G39	Reencarnado como Brooks	Parrish	Burundi	Sociólogo	Cristianismo
+2024-10-28 19:47:27	Humano 47777	Aldus	Johnson	Guyana	Médico	Sijismo	Salvado por Nuriel (12)	G40	Reencarnado como Arther	Miranda	Eritrea	Veterinario	Jainismo
+2024-10-28 19:47:27	Humano 911196	Ajai	Miller	Grecia	Médico	Cristianismo	Salvado por Sariel (15)	G40	Reencarnado como Arnold	Chapman	Filipinas	Artista plástico	Espiritismo
+2024-10-28 19:47:27	Humano 993886	Alford	Davis	Austria	Abogado	Judaísmo	Salvado por Azrael (3)	G40	Reencarnado como Felicio	Fuller	Jamaica	Ingeniero industrial	Cristianismo
+2024-10-28 19:47:27	Humano 290504	Alexander	Brown	Iran	Médico	Islam	Salvado por Nuriel (13)	G41	Reencarnado como Eduardo	Coffey	Iran	Intérprete	Bahaísmo
+2024-10-28 19:47:27	Humano 121715	Adams	Martinez	Grecia	Médico	Confucianismo	Salvado por Shamsiel (7)	G41	Reencarnado como Britt	Richards	Benin	Guionista	Ateísmo
+2024-10-28 19:47:27	Humano 134123	Ace	Jones	Birmania	Arquitecto	Judaísmo	Salvado por Azrael (4)	G41	Reencarnado como Edwin	Wiley	Armenia	Geólogo	Jainismo
+2024-10-28 19:47:27	Humano 465899	Alfredo	Davis	Armenia	Profesor	Jainismo	Salvado por Raguel (10)	G42	Reencarnado como Garp	Stafford	Iran	Coreógrafo	Ateísmo
+2024-10-28 19:47:27	Humano 55475	Abbie	Miller	Kirguistan	Médico	Confucianismo	Salvado por Gabriel (15)	G42	Reencarnado como Forest	Skinner	Argentina	Gerente	Confucianismo
+2024-10-28 19:47:27	Humano 161968	Alan	Johnson	Banglades	Ingeniero	Cristianismo	Salvado por Nuriel (14)	G42	Reencarnado como Georgie	Erickson	Banglades	Obrero	Espiritismo
+2024-10-28 19:54:44	Humano 366180	Aloysius	Davis	Dominica	Programador	Sijismo	Salvado por Shamsiel (0)	G3	Reencarnado como Aguinaldo	Wilkinson	Catar	Chef	Protestantismo
+2024-10-28 19:54:44	Humano 627516	Adolph	Rodriguez	Alemania	Contador	Cristianismo	Salvado por Shamsiel (1)	G3	Reencarnado como Bearnard	Church	Bulgaria	Ingeniero de software	Iglesia Ortodoxa
+2024-10-28 19:54:44	Humano 240363	Alonso	Martinez	Laos	Programador	Cristianismo	Salvado por Raguel (0)	G3	Reencarnado como Garey	Francis	Costa de Marfil	Secretario	Sijismo
+2024-10-28 19:54:44	Humano 687534	Aldric	Miller	Bulgaria	Electricista	Shintoísmo	Salvado por Nuriel (0)	G4	Reencarnado como Carl	Valenzuela	Albania	Dentista	Wicca
+2024-10-28 19:54:44	Humano 565493	Alfonzo	Williams	Bolivia	Ingeniero	Taoísmo	Salvado por Rafael (0)	G4	Reencarnado como Durante	Parker	Islas Marshall	Farmacéutico	Rastafarianismo
+2024-10-28 19:54:44	Humano 596509	Adrian	Martinez	Islas Marshall	Dentista	Budismo	Salvado por Aniel (0)	G4	Reencarnado como Berchtold	Goodman	Congo	Matemático	Ateísmo
+2024-10-28 19:54:44	Humano 334660	Alford	Martinez	Israel	Abogado	Confucianismo	Salvado por Sariel (0)	G5	Reencarnado como Franz	Gonzales	Argelia	Corredor de bolsa	Zoroastrismo
+2024-10-28 19:54:44	Humano 806546	Alic	Brown	Butan	Ingeniero	Confucianismo	Salvado por Raguel (1)	G5	Reencarnado como Andy	Ray	Canada	Operador de grúa	Zoroastrismo
+2024-10-28 19:54:44	Humano 435160	Ali	Garcia	Banglades	Dentista	Cristianismo	Salvado por Sariel (1)	G5	Reencarnado como Adrick	Floyd	Ghana	Traductor	Neopaganismo
+2024-10-28 19:54:44	Humano 515700	Aleck	Garcia	Bosnia y Herzegovina	Profesor	Shintoísmo	Salvado por Shamsiel (2)	G6	Reencarnado como Gavin	Powers	Angola	Ganadero	Cristianismo
+2024-10-28 19:54:44	Humano 50215	Ajay	Garcia	Honduras	Ingeniero	Confucianismo	Salvado por Miguel (0)	G6	Reencarnado como Garvin	Webster	Camboya	Tatuador	Iglesia Ortodoxa
+2024-10-28 19:54:44	Humano 1259	Adolf	Brown	Dominica	Electricista	Budismo	Salvado por Rafael (1)	G6	Reencarnado como Benjamen	Reese	Ecuador	Tornero	Espiritismo
+2024-10-28 19:54:44	Humano 537264	Adolpho	Rodriguez	Botsuana	Contador	Confucianismo	Salvado por Rafael (2)	G7	Reencarnado como Damon	Gonzales	Congo	Piloto	Hinduismo
+2024-10-28 19:54:44	Humano 53850	Alfonzo	Jones	Belgica	Enfermero	Islam	Salvado por Miguel (1)	G7	Reencarnado como Basil	Moses	Camboya	Ingeniero de redes	Shintoísmo
+2024-10-28 19:54:44	Humano 760130	Allyn	Johnson	Cuba	Enfermero	Hinduismo	Salvado por Miguel (2)	G7	Reencarnado como Forest	Macias	Filipinas	Programador	Shintoísmo
+2024-10-28 19:58:16	Humano 7609	Alley	Garcia	Lesoto	Electricista	Budismo	Salvado por Shamsiel (0)	G1	Reencarnado como Benny	Reese	Angola	Jardinero	Rastafarianismo
+2024-10-28 19:58:16	Humano 93650	Al	Johnson	Argentina	Dentista	Taoísmo	Salvado por Gabriel (0)	G1	Reencarnado como Abdulkarim	Friedman	Benin	Tatuador	Hinduismo
+2024-10-28 19:58:16	Humano 496571	Alexander	Rodriguez	Belgica	Médico	Islam	Salvado por Uriel (0)	G1	Reencarnado como Georg	Herman	Bolivia	Soldador	Espiritismo
+2024-10-28 19:58:16	Humano 329318	Adams	Brown	Cuba	Abogado	Hinduismo	Salvado por Aniel (0)	G2	Reencarnado como Gardiner	Li	Congo	Administrador	Confucianismo
+2024-10-28 19:58:16	Humano 79497	Al	Rodriguez	Bielorrusia	Dentista	Sijismo	Salvado por Sariel (0)	G2	Reencarnado como Benjy	Gillespie	Gambia	Periodista	Neopaganismo
+2024-10-28 19:58:15	Humano 4341	Alton	Garcia	Fiyi	Dentista	Judaísmo	Salvado por Azrael (0)	G2	Reencarnado como Engelbert	Choi	Lesoto	Asesor financiero	Sijismo
+2024-10-28 19:58:15	Humano 96659	Abbott	Martinez	China	Arquitecto	Islam	Salvado por Rafael (0)	G2	Reencarnado como Dmitri	French	Chipre	Paisajista	Agnosticismo
+2024-10-28 19:58:15	Humano 330300	Abby	Miller	Burundi	Médico	Sijismo	Salvado por Rafael (1)	G2	Reencarnado como Gershom	Mayo	China	Ganadero	Shintoísmo
+2024-10-28 19:58:15	Humano 126560	Alastair	Martinez	Barbados	Programador	Sijismo	Salvado por Shamsiel (1)	G2	Reencarnado como Forester	Mccarthy	Eslovenia	Geólogo	Islam
+2024-10-28 19:58:16	Humano 665291	Alain	Davis	Bolivia	Dentista	Shintoísmo	Salvado por Shamsiel (2)	G2	Reencarnado como Edwin	Ponce	Eslovaquia	Estilista	Rastafarianismo
+2024-10-28 19:58:16	Humano 426330	Alec	Garcia	Etiopia	Médico	Jainismo	Salvado por Sariel (1)	G2	Reencarnado como Bart	Moran	Chipre	Director de cine	Zoroastrismo
+2024-10-28 19:58:15	Humano 227259	Ahmad	Jones	Cuba	Enfermero	Sijismo	Salvado por Sariel (2)	G2	Reencarnado como Angelo	Miranda	Laos	Contador público	Taoísmo
+2024-10-28 19:58:15	Humano 775574	Ahmed	Smith	Jordania	Enfermero	Budismo	Salvado por Sariel (3)	G1	Reencarnado como Bryan	Osborne	Honduras	Tornero	Agnosticismo
+2024-10-28 19:58:16	Humano 405244	Abe	Johnson	Letonia	Dentista	Islam	Salvado por Raguel (0)	G1	Reencarnado como Donal	Sloan	Iran	Actor	Jainismo
+2024-10-28 19:58:15	Humano 874312	Abdel	Johnson	Belice	Profesor	Budismo	Salvado por Sariel (4)	G1	Reencarnado como Fredric	Patrick	Angola	Ingeniero industrial	Zoroastrismo
+2024-10-28 19:58:15	Humano 488997	Alfonso	Davis	Guinea	Ingeniero	Judaísmo	Salvado por Rafael (2)	G2	Reencarnado como Cobb	Dawson	España	Economista	Jainismo
+2024-10-28 19:58:15	Humano 66982	Alix	Garcia	Corea del Sur	Electricista	Taoísmo	Salvado por Aniel (1)	G2	Reencarnado como Christophe	Bailey	Banglades	Panadero	Cristianismo
+2024-10-28 19:58:15	Humano 35265	Aamir	Jones	Bolivia	Abogado	Judaísmo	Salvado por Sariel (5)	G2	Reencarnado como Dewitt	Kane	Alemania	Agricultor	Hinduismo
+2024-10-28 19:58:15	Humano 805416	Alastair	Rodriguez	Australia	Médico	Judaísmo	Salvado por Aniel (2)	G2	Reencarnado como Austin	Shaw	Alemania	Piloto de drones	Ateísmo
+2024-10-28 19:58:15	Humano 925405	Abner	Martinez	Kuwait	Abogado	Hinduismo	Salvado por Aniel (3)	G2	Reencarnado como Duffy	Mcintyre	El Salvador	Administrador de sistemas	Iglesia Ortodoxa
+2024-10-28 19:58:16	Humano 350459	Abbott	Williams	China	Enfermero	Judaísmo	Salvado por Shamsiel (3)	G2	Reencarnado como Emmery	Fitzpatrick	Haiti	Escritor	Zoroastrismo
+2024-10-28 19:58:15	Humano 599245	Adrien	Johnson	Eritrea	Arquitecto	Jainismo	Salvado por Rafael (3)	G2	Reencarnado como Augustine	Huerta	Filipinas	Tatuador	Jainismo
+2024-10-28 19:58:15	Humano 409339	Abbie	Jones	Costa de Marfil	Enfermero	Shintoísmo	Salvado por Shamsiel (4)	G2	Reencarnado como Easton	Middleton	Italia	Ingeniero de software	Wicca
+2024-10-28 19:58:15	Humano 468011	Ali	Davis	Grecia	Enfermero	Islam	Salvado por Azrael (1)	G2	Reencarnado como Adlai	Perez	Honduras	Guía turístico	Iglesia Ortodoxa
+2024-10-28 19:58:15	Humano 334064	Alston	Jones	Eslovenia	Contador	Hinduismo	Salvado por Nuriel (0)	G1	Reencarnado como Anatol	Zimmerman	Filipinas	Panadero	Rastafarianismo
+2024-10-28 19:58:16	Humano 476086	Adrien	Johnson	Chipre	Electricista	Budismo	Salvado por Nuriel (1)	G1	Reencarnado como Bogart	Dominguez	Gambia	Pescador	Taoísmo
+2024-10-28 19:58:16	Humano 752167	Ali	Jones	Guinea-Bisau	Abogado	Jainismo	Salvado por Miguel (0)	G1	Reencarnado como Ferdinand	Macdonald	Ecuador	Conductor de camión	Bahaísmo
+2024-10-28 19:58:16	Humano 807897	Alan	Brown	Jamaica	Contador	Cristianismo	Salvado por Miguel (1)	G2	Reencarnado como Barbabas	Callahan	Camerun	Astrónomo	Iglesia Ortodoxa
+2024-10-28 19:58:16	Humano 437481	Aguste	Johnson	Azerbaiyan	Médico	Sijismo	Salvado por Aniel (4)	G2	Reencarnado como Dewitt	Bennett	Guatemala	Ceramista	Zoroastrismo
+2024-10-28 19:58:15	Humano 422051	Allah	Brown	Lesoto	Ingeniero	Shintoísmo	Salvado por Azrael (2)	G2	Reencarnado como Bentley	Lara	Laos	Ceramista	Neopaganismo
+2024-10-28 19:58:16	Humano 752792	Adrian	Martinez	Islas Salomon	Ingeniero	Confucianismo	Salvado por Aniel (5)	G2	Reencarnado como Cobby	House	Camerun	Cocinero	Shintoísmo
+2024-10-28 19:58:16	Humano 151335	Addie	Johnson	Kenia	Dentista	Budismo	Salvado por Nuriel (2)	G2	Reencarnado como Adair	Vang	Ecuador	Corredor de bolsa	Espiritismo
+2024-10-28 19:58:16	Humano 368408	Alton	Brown	Italia	Programador	Hinduismo	Salvado por Nuriel (3)	G2	Reencarnado como Damian	Graves	Japon	Taxista	Zoroastrismo
+2024-10-28 19:58:15	Humano 74226	Alec	Garcia	Islas Marshall	Arquitecto	Judaísmo	Salvado por Miguel (2)	G2	Reencarnado como Gabriele	Roman	Kazajistan	Fisioterapeuta	Rastafarianismo
+2024-10-28 20:12:55	Humano 47867	Adolpho	Miller	Haiti	Electricista	Sijismo	Salvado por Azrael (0)	G3	Reencarnado como 				
+2024-10-28 20:12:56	Humano 157701	Alasdair	Williams	Emiratos Arabes Unidos	Enfermero	Confucianismo	Salvado por Gabriel (0)	G3	Reencarnado como 				
+2024-10-28 20:12:56	Humano 258447	Alden	Jones	Filipinas	Dentista	Islam	Salvado por Uriel (0)	G3	Reencarnado como 				
+2024-10-28 20:12:55	Humano 173679	Addie	Garcia	Armenia	Profesor	Cristianismo	Salvado por Uriel (1)	G3	Reencarnado como 				
+2024-10-28 20:12:55	Humano 256181	Adolf	Smith	Ghana	Médico	Jainismo	Salvado por Sariel (0)	G3	Reencarnado como 				
+2024-10-28 20:12:55	Humano 799297	Albrecht	Davis	Filipinas	Contador	Sijismo	Salvado por Aniel (0)	G3	Reencarnado como 				
+2024-10-28 20:12:55	Humano 543812	Adlai	Davis	Ecuador	Enfermero	Sijismo	Salvado por Aniel (1)	G3	Reencarnado como 				
+2024-10-28 20:12:56	Humano 884272	Ajai	Brown	Irak	Profesor	Shintoísmo	Salvado por Nuriel (0)	G3	Reencarnado como 				
+2024-10-28 20:12:55	Humano 362418	Alvin	Jones	Estados Unidos	Enfermero	Taoísmo	Salvado por Sariel (1)	G3	Reencarnado como 				
+2024-10-28 20:12:55	Humano 213111	Alf	Miller	Italia	Profesor	Shintoísmo	Salvado por Azrael (0)	G4	Reencarnado como 				
+2024-10-28 20:12:56	Humano 2374	Aditya	Smith	Iran	Arquitecto	Sijismo	Salvado por Rafael (0)	G4	Reencarnado como 				
+2024-10-28 20:12:55	Humano 534971	Aamir	Williams	Kenia	Electricista	Taoísmo	Salvado por Azrael (1)	G4	Reencarnado como 				
+2024-10-28 20:12:56	Humano 971192	Algernon	Rodriguez	Angola	Profesor	Confucianismo	Salvado por Gabriel (0)	G4	Reencarnado como 				
+2024-10-28 20:12:55	Humano 593989	Alvin	Miller	Kuwait	Ingeniero	Cristianismo	Salvado por Azrael (2)	G4	Reencarnado como 				
+2024-10-28 20:12:55	Humano 362267	Agustin	Johnson	Chile	Profesor	Cristianismo	Salvado por Rafael (1)	G4	Reencarnado como 				
+2024-10-28 21:21:15	Humano 308575	Alfredo	Brown	India	Ingeniero	Islam	Salvado por Uriel (0)	G1	Reencarnado como 				
+2024-10-28 21:21:15	Humano 294689	Abby	Garcia	Canada	Contador	Jainismo	Salvado por Sariel (0)	G1	Reencarnado como 				
+2024-10-28 21:21:15	Humano 99379	Adlai	Garcia	Japon	Ingeniero	Islam	Salvado por Uriel (1)	G1	Reencarnado como 				
+2024-10-28 21:21:15	Humano 567566	Aditya	Garcia	Burundi	Arquitecto	Judaísmo	Salvado por Azrael (0)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 666987	Al	Williams	Alemania	Abogado	Sijismo	Salvado por Gabriel (0)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 738449	Aamir	Davis	Andorra	Arquitecto	Budismo	Salvado por Nuriel (0)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 367964	Abraham	Garcia	Guatemala	Abogado	Jainismo	Salvado por Aniel (0)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 801470	Allie	Rodriguez	Gambia	Dentista	Jainismo	Salvado por Uriel (2)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 719331	Abbey	Smith	Birmania	Abogado	Confucianismo	Salvado por Aniel (1)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 306201	Alford	Smith	Estados Unidos	Programador	Taoísmo	Salvado por Sariel (1)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 973912	Abdel	Rodriguez	Kirguistan	Contador	Islam	Salvado por Sariel (2)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 575170	Alonso	Rodriguez	Estados Unidos	Médico	Islam	Salvado por Miguel (0)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 816345	Ali	Garcia	Hungria	Contador	Shintoísmo	Salvado por Azrael (1)	G1	Reencarnado como 				
+2024-10-28 21:21:15	Humano 751891	Alain	Miller	Afganistan	Profesor	Confucianismo	Salvado por Gabriel (1)	G1	Reencarnado como 				
+2024-10-28 21:21:15	Humano 217358	Allan	Williams	Kirguistan	Abogado	Shintoísmo	Salvado por Gabriel (2)	G1	Reencarnado como 				
+2024-10-28 21:21:15	Humano 648626	Adolpho	Brown	Belice	Electricista	Judaísmo	Salvado por Raguel (0)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 990371	Adrick	Johnson	Costa de Marfil	Enfermero	Cristianismo	Salvado por Shamsiel (0)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 918463	Alford	Johnson	Argentina	Dentista	Budismo	Salvado por Nuriel (1)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 689742	Aguinaldo	Johnson	Gabon	Programador	Budismo	Salvado por Shamsiel (1)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 672938	Alphonso	Johnson	Laos	Dentista	Cristianismo	Salvado por Azrael (2)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 384214	Alfred	Smith	Corea del Norte	Médico	Confucianismo	Salvado por Aniel (2)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 639688	Adlai	Brown	Eritrea	Profesor	Islam	Salvado por Rafael (0)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 792376	Adams	Brown	Eritrea	Enfermero	Taoísmo	Salvado por Uriel (3)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 959009	Ahmed	Davis	China	Arquitecto	Budismo	Salvado por Miguel (1)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 156511	Ace	Brown	Filipinas	Profesor	Hinduismo	Salvado por Uriel (4)	G1	Reencarnado como 				
+2024-10-28 21:21:15	Humano 783757	Allen	Brown	Belice	Arquitecto	Shintoísmo	Salvado por Sariel (3)	G1	Reencarnado como 				
+2024-10-28 21:21:15	Humano 467651	Aleck	Rodriguez	Argentina	Abogado	Shintoísmo	Salvado por Shamsiel (2)	G1	Reencarnado como 				
+2024-10-28 21:21:15	Humano 487332	Agustin	Miller	Irlanda	Abogado	Confucianismo	Salvado por Uriel (5)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 367226	Alessandro	Davis	Butan	Contador	Budismo	Salvado por Azrael (3)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 512761	Alan	Brown	Barein	Programador	Jainismo	Salvado por Uriel (6)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 167244	Alexander	Garcia	Kirguistan	Médico	Taoísmo	Salvado por Uriel (7)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 100181	Abdel	Jones	El Salvador	Ingeniero	Taoísmo	Salvado por Nuriel (2)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 413580	Alessandro	Martinez	Burundi	Profesor	Islam	Salvado por Nuriel (3)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 572208	Aldo	Smith	Guyana	Enfermero	Sijismo	Salvado por Gabriel (3)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 245484	Allan	Miller	Bahamas	Profesor	Cristianismo	Salvado por Nuriel (4)	G2	Reencarnado como 				
+2024-10-28 21:21:15	Humano 1296	Abe	Martinez	Butan	Ingeniero	Budismo	Salvado por Nuriel (5)	G2	Reencarnado como 				
+2024-10-28 21:22:37	Humano 632044	Abe	Martinez	Austria	Programador	Jainismo	Salvado por Shamsiel (0)	G2	Reencarnado como 				
+2024-10-28 21:22:37	Humano 698696	Alley	Miller	India	Programador	Cristianismo	Salvado por Miguel (0)	G2	Reencarnado como 				
+2024-10-28 21:22:37	Humano 193505	Alan	Jones	Burkina Faso	Contador	Islam	Salvado por Azrael (0)	G2	Reencarnado como 				
+2024-10-28 21:22:37	Humano 640665	Alec	Miller	Egipto	Contador	Cristianismo	Salvado por Raguel (0)	G2	Reencarnado como 				
+2024-10-28 21:22:37	Humano 820360	Alasdair	Garcia	España	Enfermero	Islam	Salvado por Rafael (0)	G2	Reencarnado como 				
+2024-10-28 21:22:37	Humano 561292	Aleksandrs	Martinez	Fiyi	Contador	Sijismo	Salvado por Miguel (1)	G2	Reencarnado como 				
+2024-10-28 21:22:37	Humano 696812	Albatros	Garcia	India	Abogado	Cristianismo	Salvado por Sariel (0)	G2	Reencarnado como 				
+2024-10-28 21:22:37	Humano 828962	Alan	Jones	Laos	Electricista	Shintoísmo	Salvado por Shamsiel (1)	G2	Reencarnado como 				
+2024-10-28 21:22:37	Humano 440081	Alfredo	Jones	Birmania	Abogado	Cristianismo	Salvado por Miguel (2)	G2	Reencarnado como 				
+2024-10-28 21:22:37	Humano 319156	Abner	Davis	Bulgaria	Programador	Confucianismo	Salvado por Raguel (0)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 176747	Adolfo	Brown	Andorra	Arquitecto	Budismo	Salvado por Gabriel (0)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 934561	Adrien	Garcia	Finlandia	Enfermero	Islam	Salvado por Rafael (0)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 702436	Aldrich	Smith	Croacia	Dentista	Islam	Salvado por Shamsiel (0)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 378968	Alton	Smith	Kirguistan	Dentista	Islam	Salvado por Sariel (0)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 876156	Allah	Jones	Angola	Abogado	Taoísmo	Salvado por Aniel (0)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 511148	Alasdair	Williams	Irak	Enfermero	Judaísmo	Salvado por Azrael (0)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 152534	Alejandro	Martinez	Islandia	Ingeniero	Shintoísmo	Salvado por Nuriel (0)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 235406	Abbie	Davis	Gambia	Abogado	Jainismo	Salvado por Rafael (1)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 38333	Allie	Davis	Gabon	Ingeniero	Taoísmo	Salvado por Raguel (1)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 693178	Adams	Rodriguez	Catar	Enfermero	Hinduismo	Salvado por Uriel (0)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 85546	Aleksandrs	Smith	Costa de Marfil	Médico	Cristianismo	Salvado por Azrael (1)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 876628	Alister	Williams	Japon	Ingeniero	Cristianismo	Salvado por Rafael (2)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 778802	Ahmed	Davis	Congo	Abogado	Taoísmo	Salvado por Nuriel (1)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 412899	Allah	Garcia	Eslovenia	Abogado	Judaísmo	Salvado por Rafael (3)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 89731	Ahmet	Davis	Irlanda	Médico	Taoísmo	Salvado por Sariel (1)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 602593	Aldis	Rodriguez	Armenia	Médico	Shintoísmo	Salvado por Azrael (2)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 410396	Abbey	Jones	Grecia	Médico	Islam	Salvado por Raguel (2)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 860967	Abram	Brown	Letonia	Arquitecto	Budismo	Salvado por Azrael (3)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 130846	Abdullah	Brown	Catar	Dentista	Shintoísmo	Salvado por Gabriel (1)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 922048	Alexei	Davis	Cuba	Profesor	Shintoísmo	Salvado por Rafael (4)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 811241	Alfonse	Rodriguez	Arabia Saudita	Ingeniero	Confucianismo	Salvado por Nuriel (2)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 378147	Abbott	Garcia	Kenia	Electricista	Sijismo	Salvado por Rafael (5)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 722238	Aldo	Johnson	Filipinas	Abogado	Jainismo	Salvado por Gabriel (2)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 931774	Agustin	Smith	Bolivia	Abogado	Confucianismo	Salvado por Gabriel (3)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 288897	Abbot	Miller	Andorra	Abogado	Shintoísmo	Salvado por Gabriel (4)	G3	Reencarnado como 				
+2024-10-28 21:22:37	Humano 914850	Aldo	Williams	Burundi	Arquitecto	Confucianismo	Salvado por Shamsiel (1)	G3	Reencarnado como 				
+2024-10-28 21:25:38	Humano 69929	Adlai	Johnson	Austria	Electricista	Sijismo	Salvado por Rafael (0)	G1	Reencarnado como 				
+2024-10-28 21:25:38	Humano 696054	Alasdair	Davis	Croacia	Programador	Budismo	Salvado por Azrael (0)	G1	Reencarnado como 				
+2024-10-28 21:25:38	Humano 325276	Alonso	Rodriguez	Islandia	Abogado	Budismo	Salvado por Uriel (0)	G1	Reencarnado como 				
+2024-10-28 21:25:38	Humano 395448	Adams	Garcia	Butan	Contador	Islam	Salvado por Uriel (1)	G1	Reencarnado como 				
+2024-10-28 21:25:38	Humano 778187	Allah	Jones	Chipre	Enfermero	Hinduismo	Salvado por Rafael (1)	G1	Reencarnado como 				
+2024-10-28 21:25:38	Humano 230142	Aditya	Jones	Guinea Ecuatorial	Dentista	Sijismo	Salvado por Uriel (2)	G1	Reencarnado como 				
+2024-10-28 21:25:38	Humano 579131	Aldus	Miller	Honduras	Contador	Confucianismo	Salvado por Gabriel (0)	G1	Reencarnado como 				
+2024-10-28 21:25:38	Humano 266360	Adair	Johnson	Jordania	Ingeniero	Sijismo	Salvado por Gabriel (1)	G1	Reencarnado como 				
+2024-10-28 21:25:38	Humano 888114	Ahmed	Miller	Finlandia	Médico	Confucianismo	Salvado por Aniel (0)	G1	Reencarnado como 				
+2024-10-28 21:26:49	Humano 285024	Abdullah	Garcia	Australia	Electricista	Cristianismo	Salvado por Nuriel (0)	G1	Reencarnado como 				
+2024-10-28 21:26:49	Humano 170050	Alphonse	Jones	Bolivia	Contador	Confucianismo	Salvado por Gabriel (0)	G1	Reencarnado como 				
+2024-10-28 21:26:49	Humano 997542	Albrecht	Jones	Ghana	Arquitecto	Budismo	Salvado por Gabriel (1)	G1	Reencarnado como 				
+2024-10-28 21:26:49	Humano 207608	Alfredo	Brown	Bahamas	Ingeniero	Shintoísmo	Salvado por Nuriel (1)	G1	Reencarnado como 				
+2024-10-28 21:26:49	Humano 813856	Adolph	Rodriguez	Birmania	Abogado	Cristianismo	Salvado por Shamsiel (0)	G1	Reencarnado como 				
+2024-10-28 21:26:49	Humano 533091	Alain	Davis	Chile	Electricista	Judaísmo	Salvado por Raguel (0)	G1	Reencarnado como 				
+2024-10-28 21:26:49	Humano 871189	Aldo	Smith	Eslovenia	Ingeniero	Confucianismo	Salvado por Raguel (1)	G1	Reencarnado como 				
+2024-10-28 21:26:49	Humano 836574	Alexei	Brown	Brunei	Arquitecto	Islam	Salvado por Nuriel (2)	G1	Reencarnado como 				
+2024-10-28 21:26:49	Humano 747107	Ahmed	Miller	Azerbaiyan	Médico	Hinduismo	Salvado por Rafael (0)	G1	Reencarnado como 				
+2024-10-28 22:05:31	Humano 42037	Alfonse	Johnson	Laos	Abogado	Cristianismo	Salvado por Gabriel (0)	G1	Reencarnado como 				
+2024-10-28 22:05:31	Humano 216830	Abbie	Rodriguez	Kiribati	Dentista	Judaísmo	Salvado por Miguel (0)	G1	Reencarnado como 				
+2024-10-28 22:05:31	Humano 415767	Ajai	Miller	Eslovenia	Ingeniero	Confucianismo	Salvado por Aniel (0)	G1	Reencarnado como 				
+2024-10-28 22:05:31	Humano 801019	Alan	Brown	Antigua y Barbuda	Ingeniero	Jainismo	Salvado por Sariel (0)	G1	Reencarnado como 				
+2024-10-28 22:05:31	Humano 918545	Abraham	Martinez	Etiopia	Arquitecto	Jainismo	Salvado por Uriel (0)	G1	Reencarnado como 				
+2024-10-28 22:05:31	Humano 459468	Aldwin	Smith	Belice	Médico	Judaísmo	Salvado por Shamsiel (0)	G1	Reencarnado como 				
+2024-10-28 22:05:31	Humano 135719	Addie	Davis	Chile	Enfermero	Shintoísmo	Salvado por Aniel (1)	G1	Reencarnado como 				
+2024-10-28 22:05:31	Humano 328984	Alexander	Williams	Comoras	Enfermero	Budismo	Salvado por Raguel (0)	G1	Reencarnado como 				
+2024-10-28 22:05:31	Humano 85169	Aleksandrs	Rodriguez	Camboya	Contador	Budismo	Salvado por Sariel (1)	G1	Reencarnado como 				
+2024-10-28 22:05:49	Humano 365178	Aldus	Williams	Antigua y Barbuda	Abogado	Hinduismo	Salvado por Azrael (0)	G1	Reencarnado como 				
+2024-10-28 22:05:49	Humano 305159	Allah	Rodriguez	Islandia	Médico	Confucianismo	Salvado por Azrael (1)	G1	Reencarnado como 				
+2024-10-28 22:05:49	Humano 238560	Adolf	Jones	Angola	Electricista	Confucianismo	Salvado por Rafael (0)	G1	Reencarnado como 				
+2024-10-28 22:05:49	Humano 144127	Abelard	Garcia	Antigua y Barbuda	Arquitecto	Shintoísmo	Salvado por Nuriel (0)	G1	Reencarnado como 				
+2024-10-28 22:05:49	Humano 983592	Ali	Smith	Congo	Contador	Taoísmo	Salvado por Shamsiel (0)	G1	Reencarnado como 				
+2024-10-28 22:05:49	Humano 902092	Adrian	Rodriguez	Alemania	Ingeniero	Shintoísmo	Salvado por Nuriel (1)	G1	Reencarnado como 				
+2024-10-28 22:05:48	Humano 278042	Adrien	Brown	Bahamas	Abogado	Islam	Salvado por Shamsiel (1)	G1	Reencarnado como 				
+2024-10-28 22:05:49	Humano 642113	Alvin	Martinez	Costa Rica	Médico	Judaísmo	Salvado por Sariel (0)	G1	Reencarnado como 				
+2024-10-28 22:05:49	Humano 789767	Alfonzo	Jones	Irlanda	Contador	Jainismo	Salvado por Gabriel (0)	G1	Reencarnado como 				
+2024-10-28 22:05:49	Humano 560757	Alphonse	Garcia	Finlandia	Abogado	Shintoísmo	Salvado por Shamsiel (0)	G2	Reencarnado como 				
+2024-10-28 22:05:49	Humano 716197	Aaron	Williams	Kenia	Dentista	Shintoísmo	Salvado por Rafael (0)	G2	Reencarnado como 				
+2024-10-28 22:05:48	Humano 378909	Alexei	Jones	Chipre	Arquitecto	Sijismo	Salvado por Sariel (0)	G2	Reencarnado como 				
+2024-10-28 22:05:49	Humano 934675	Aleksandrs	Williams	Alemania	Ingeniero	Jainismo	Salvado por Miguel (0)	G2	Reencarnado como 				
+2024-10-28 22:05:49	Humano 311463	Aguste	Davis	Congo	Médico	Budismo	Salvado por Gabriel (0)	G2	Reencarnado como 				
+2024-10-28 22:05:49	Humano 587775	Alejandro	Williams	Eslovaquia	Abogado	Budismo	Salvado por Azrael (0)	G2	Reencarnado como 				
+2024-10-28 22:11:20	Humano 694992	Adolph	Smith	Grecia	Dentista	Shintoísmo	Salvado por Rafael (0)	G1	Reencarnado como 				
+2024-10-28 22:11:20	Humano 689216	Abdel	Jones	Islas Marshall	Ingeniero	Judaísmo	Salvado por Sariel (0)	G1	Reencarnado como 				
+2024-10-28 22:11:20	Humano 356477	Ahmet	Garcia	Bielorrusia	Ingeniero	Sijismo	Salvado por Shamsiel (0)	G1	Reencarnado como 				
+2024-10-28 22:11:20	Humano 299720	Abdulkarim	Davis	Japon	Electricista	Jainismo	Salvado por Raguel (0)	G1	Reencarnado como 				
+2024-10-28 22:11:20	Humano 141010	Adrian	Miller	Arabia Saudita	Abogado	Sijismo	Salvado por Uriel (0)	G1	Reencarnado como 				
+2024-10-28 22:11:20	Humano 542264	Abbey	Miller	Gabon	Enfermero	Jainismo	Salvado por Rafael (1)	G1	Reencarnado como 				
+2024-10-28 22:11:20	Humano 41075	Alexei	Jones	Georgia	Ingeniero	Jainismo	Salvado por Azrael (0)	G1	Reencarnado como 				
+2024-10-28 22:11:20	Humano 66912	Algernon	Rodriguez	Eslovenia	Arquitecto	Judaísmo	Salvado por Sariel (1)	G1	Reencarnado como 				
+2024-10-28 22:11:20	Humano 241267	Alton	Miller	Guinea Ecuatorial	Enfermero	Judaísmo	Salvado por Aniel (0)	G1	Reencarnado como 				
+2024-10-28 22:11:20	Humano 481939	Adolf	Garcia	Bahamas	Dentista	Taoísmo	Salvado por Miguel (0)	G2	Reencarnado como 				
+2024-10-28 22:11:20	Humano 370257	Abby	Williams	Dominica	Médico	Hinduismo	Salvado por Aniel (0)	G2	Reencarnado como 				
+2024-10-28 22:11:20	Humano 861974	Alastair	Williams	Cuba	Electricista	Confucianismo	Salvado por Uriel (0)	G2	Reencarnado como 				
+2024-10-28 22:11:20	Humano 97660	Alister	Jones	Costa Rica	Electricista	Sijismo	Salvado por Nuriel (0)	G2	Reencarnado como 				
+2024-10-28 22:11:20	Humano 833661	Adolpho	Smith	Botsuana	Dentista	Taoísmo	Salvado por Sariel (0)	G2	Reencarnado como 				
+2024-10-28 22:11:20	Humano 402319	Albert	Martinez	Islandia	Programador	Jainismo	Salvado por Miguel (1)	G2	Reencarnado como 				
+2024-10-28 22:14:27	Humano 548248	Alasdair	Martinez	Arabia Saudita	Abogado	Shintoísmo	Salvado por Azrael (0)	G1	Reencarnado como 				
+2024-10-28 22:14:27	Humano 736365	Alston	Jones	Camboya	Abogado	Judaísmo	Salvado por Miguel (0)	G1	Reencarnado como 				
+2024-10-28 22:14:27	Humano 683918	Alain	Smith	Camerun	Contador	Hinduismo	Salvado por Nuriel (0)	G1	Reencarnado como 				
+2024-10-28 22:14:27	Humano 801885	Aditya	Brown	China	Médico	Budismo	Salvado por Gabriel (0)	G1	Reencarnado como 				
+2024-10-28 22:14:27	Humano 338771	Alvin	Smith	Barbados	Electricista	Confucianismo	Salvado por Nuriel (1)	G1	Reencarnado como 				
+2024-10-28 22:14:27	Humano 125822	Adams	Martinez	Estonia	Enfermero	Islam	Salvado por Rafael (0)	G1	Reencarnado como 				
+2024-10-28 22:14:27	Humano 521415	Alfie	Brown	Kiribati	Contador	Cristianismo	Salvado por Nuriel (2)	G1	Reencarnado como 				
+2024-10-28 22:14:27	Humano 749753	Alfonse	Williams	Gambia	Programador	Shintoísmo	Salvado por Gabriel (1)	G1	Reencarnado como 				
+2024-10-28 22:14:27	Humano 348211	Adolph	Garcia	Letonia	Electricista	Judaísmo	Salvado por Gabriel (2)	G1	Reencarnado como 				
+2024-10-28 22:14:27	Humano 845948	Abby	Miller	Congo	Abogado	Jainismo	Salvado por Aniel (0)	G2	Reencarnado como 				
+2024-10-28 22:14:27	Humano 789120	Adolfo	Brown	Alemania	Abogado	Islam	Salvado por Sariel (0)	G2	Reencarnado como 				
+2024-10-28 22:14:27	Humano 850870	Alexei	Rodriguez	Estonia	Programador	Jainismo	Salvado por Rafael (0)	G2	Reencarnado como 				
+2024-10-28 22:14:27	Humano 79294	Alford	Williams	Andorra	Médico	Jainismo	Salvado por Nuriel (0)	G2	Reencarnado como 				
+2024-10-28 22:14:27	Humano 305029	Alton	Martinez	Egipto	Profesor	Taoísmo	Salvado por Gabriel (0)	G2	Reencarnado como 				
+2024-10-28 22:14:27	Humano 216644	Abbey	Miller	Eritrea	Abogado	Budismo	Salvado por Rafael (1)	G2	Reencarnado como 				

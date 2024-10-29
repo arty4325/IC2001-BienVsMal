@@ -5,9 +5,11 @@
 #include "Estructuras/Reencarnacion.h"
 #include <QCoreApplication>
 #include "Lector/lectorarchivos.h"
+#include <QString>
+#include "arbolBinario.h"
 
 struct Angel{
-
+    ArbolBinario* arbolBinario;
     QString nombre;
     int version;
     int generacion; //nivel del arbol
@@ -27,7 +29,7 @@ struct Angel{
     lectorArchivos* lector = new lectorArchivos();
 
     Angel(QString _nombre, int _version, int _generacion, QStringList _listaNombres,
-          QStringList _listaApellidos, QStringList _listaPais, QStringList _listaCreencia, QStringList _listaProfesion){
+          QStringList _listaApellidos, QStringList _listaPais, QStringList _listaCreencia, QStringList _listaProfesion, ArbolBinario* _arbolBinario){
         nombre = _nombre;
         version = _version;
         generacion = _generacion;
@@ -37,11 +39,13 @@ struct Angel{
         listaPais = _listaPais;
         listaCreencia = _listaCreencia;
         listaProfesion = _listaProfesion;
+        arbolBinario = _arbolBinario;
         humanoSalvado = buscarHumanoASalvar();
     }
 
-    Angel(QString _nombre, int _version, int _generacion, Persona* _humanoSalvado){ //para el caso de los primeros 2 niveles.
+    Angel(QString _nombre, int _version, int _generacion, Persona* _humanoSalvado, ArbolBinario* _arbolBinario){ //para el caso de los primeros 2 niveles.
         nombre = "San " + _nombre;
+        arbolBinario = _arbolBinario;
         version = _version;
         generacion = _generacion;
         humanoSalvado = _humanoSalvado;
@@ -54,25 +58,57 @@ struct Angel{
 private:
     Persona* buscarHumanoASalvar(){
         QString paraBitacora;
-        Persona* persona = new Persona();//TODO: buscar persona
-        Reencarnacion* reencarnacion = new Reencarnacion(persona,this);
-        paraBitacora = persona->timestampNacimiento + "\tHumano " + QString::number(persona->ID) + "\t" + persona->nombre + "\t" + persona->apellido + "\t" + persona->pais + "\t" + persona->profesion + "\t" + persona->creencia;
-        persona->reencarnaciones->insert(reencarnacion);
-        reencarnar(persona);
+        QString personaRandom = "";
+        QString personasMuertas = lector->read(6, -1);
+        QStringList listaPersonasMuertas = personasMuertas.split("\n", Qt::SkipEmptyParts);
+        QString filePath = "";
+        filePath = baseDir + "/Archivostxt/bitacoraMuerte.txt";
+        int idHumano = 0;
+        // Verificar que la lista no esté vacía
+        if (!listaPersonasMuertas.isEmpty()) {
+            int randomIndex = QRandomGenerator::global()->bounded(listaPersonasMuertas.size());  // Generar un índice aleatorio
+            QString personaRandom = listaPersonasMuertas.at(randomIndex);  // Seleccionar la persona al azar
+
+            // Separar el string por tabuladores y obtener el primer elemento
+            QStringList partes = personaRandom.split("    ");
+            QString primerElemento = partes.value(0);  // Obtener el primer elemento (o una cadena vacía si no hay elementos)
+
+            // Convertir el primer elemento a int y asignarlo a idHumano
+            idHumano = primerElemento.toInt();
+
+            qDebug() << "Persona seleccionada al azar:" << personaRandom;
+            lector->deleteLineFromFile(filePath, personaRandom);
+            qDebug() << "Primer elemento (ID):" << idHumano;
+        } else {
+            qDebug() << "La lista de personas está vacía.";
+        }
+
+        Persona* persona = new Persona();
+        // Ahora quiero borrar esa linea del txt
+        if(idHumano != 0){
+            persona = arbolBinario->buscarNodoEnListaConID(idHumano)->data;
+
+            Reencarnacion* reencarnacion = new Reencarnacion(persona,this);
+            paraBitacora = persona->timestampNacimiento + "\tHumano " + QString::number(persona->ID) + "\t" + persona->nombre + "\t" + persona->apellido + "\t" + persona->pais + "\t" + persona->profesion + "\t" + persona->creencia;
+            persona->reencarnaciones->insert(reencarnacion);
+            reencarnar(persona);
 
 
-        paraBitacora += "\tSalvado por " + nombre + " (" + QString::number(version) + ")\tG" + QString::number(generacion);
-        paraBitacora += "\tReencarnado como " + persona->nombre + "\t" + persona->apellido + "\t" + persona->pais + "\t" + persona->profesion + "\t" + persona->creencia;
-        lector->appendTextToFile(path,paraBitacora);
-        return persona;
+            paraBitacora += "\tSalvado por " + nombre + " (" + QString::number(version) + ")\tG" + QString::number(generacion);
+            paraBitacora += "\tReencarnado como " + persona->nombre + "\t" + persona->apellido + "\t" + persona->pais + "\t" + persona->profesion + "\t" + persona->creencia;
+            lector->appendTextToFile(path,paraBitacora);
+            return persona;
+        } else {
+            return nullptr;
+        }
     }
 
     void reencarnar(Persona* persona){
-        persona->nombre = listaNombres[QRandomGenerator::global()->bounded(0, 10000)];
-        persona->apellido = listaApellidos[QRandomGenerator::global()->bounded(0, 10000)];
-        persona->pais = listaPais[QRandomGenerator::global()->bounded(0, 100)];
-        persona->profesion = listaProfesion[QRandomGenerator::global()->bounded(0, 100)];
-        persona->creencia = listaCreencia[QRandomGenerator::global()->bounded(0, 20)];
+        persona->nombre = listaNombres[QRandomGenerator::global()->bounded(0, listaNombres.size())];
+        persona->apellido = listaApellidos[QRandomGenerator::global()->bounded(0, listaApellidos.size())];
+        persona->pais = listaPais[QRandomGenerator::global()->bounded(0, listaPais.size())];
+        persona->profesion = listaProfesion[QRandomGenerator::global()->bounded(0, listaProfesion.size())];
+        persona->creencia = listaCreencia[QRandomGenerator::global()->bounded(0, listaCreencia.size())];
 
         persona->pecadosTotales = 0;
         for (int i=0;i<7;i++){
