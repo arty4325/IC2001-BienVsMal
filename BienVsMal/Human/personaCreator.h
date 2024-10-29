@@ -26,7 +26,6 @@ public:
         }
     }
 
-
     void generarPersonas(int cantNombres, int cantApellidos, int cantPais, int cantCreencia, int cantProfesion) {
         int humanosGenerados = 0;
         lectorArchivos* lector = new lectorArchivos();

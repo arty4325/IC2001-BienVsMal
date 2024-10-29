@@ -53,6 +53,12 @@ struct Angel{
     }
 
     QString infoAngel(){
+        if(generacion < 3){
+            return nombre;
+        }
+        if (humanoSalvado == nullptr){
+            return (nombre + " (" + QString::number(version) + ")\tG" + QString::number(generacion) + "    " + "No salvo a nadie");
+        }
         return (nombre + " (" + QString::number(version) + ")\tG" + QString::number(generacion) + "\tID: " + QString::number(humanoSalvado->ID) + "\tR" + QString::number(humanoSalvado->reencarnaciones->size()));
     } //Para imrpimir el arbol
 private:
@@ -83,10 +89,9 @@ private:
             qDebug() << "La lista de personas está vacía.";
         }
 
-        Persona* persona = new Persona();
         // Ahora quiero borrar esa linea del txt
         if(idHumano != 0){
-            persona = arbolBinario->buscarNodoEnListaConID(idHumano)->data;
+            Persona* persona = arbolBinario->buscarNodoEnListaConID(idHumano)->data;
 
             Reencarnacion* reencarnacion = new Reencarnacion(persona,this);
             paraBitacora = persona->timestampNacimiento + "\tHumano " + QString::number(persona->ID) + "\t" + persona->nombre + "\t" + persona->apellido + "\t" + persona->pais + "\t" + persona->profesion + "\t" + persona->creencia;
