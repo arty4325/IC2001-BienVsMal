@@ -30,6 +30,11 @@ public:
         cantItems += 1;
     }
 
+    void vaciar(){
+        while(borrarAlInicio()){}
+        cantItems = 0;
+    }
+
     // Método para insertar un nuevo nodo en la lista de forma ordenada
     void insertOrdenado(T _data) {
         NodoOrdenado<T>* nuevoNodo = new NodoOrdenado<T>();
@@ -72,7 +77,6 @@ public:
 
         cantItems += 1; // Incrementar el contador de items
     }
-
 
     T borrar(int indice) {
         // Verificar si el índice está dentro del rango
@@ -180,6 +184,22 @@ public:
             nodoActual = nodoActual -> next;
         }
         nodoActual -> data = nuevoData;
+    }
+
+private:
+    bool borrarAlInicio() {
+        if (primerNodo != NULL) { // caso solo 1 nodo
+            if (primerNodo == ultimoNodo) {
+                primerNodo = ultimoNodo = NULL;
+            } else { // caso mas de un Nodo
+                NodoOrdenado<T>* borrado = primerNodo;
+                primerNodo = primerNodo->next;
+                borrado->next = NULL;
+                primerNodo->previous = NULL;
+            }
+            return true;
+        }
+        return false;
     }
 };
 

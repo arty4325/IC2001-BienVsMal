@@ -3,12 +3,13 @@
 #include "persona.h"
 #include "Estructuras/PaisPecados.h"
 #include "Lector/lectorarchivos.h"
+#include <QTextBrowser>
 
 bool compararPorPecados(PaisPecados* a, PaisPecados* b) {
     return a->pecados < b->pecados;
 }
 
-void algoritmoPaisesPecadores(ListaOrdenada<Persona*>* _humanosCadaPais[100]){
+void algoritmoPaisesPecadores(ListaOrdenada<Persona*>* _humanosCadaPais[100] , QTextBrowser* txbConsultas){
     PaisPecados* pecadosPorPais[100];
     lectorArchivos* lector = new lectorArchivos();
     QString paisString = lector->read(3, 100);
@@ -28,7 +29,7 @@ void algoritmoPaisesPecadores(ListaOrdenada<Persona*>* _humanosCadaPais[100]){
 
     std::sort(pecadosPorPais,pecadosPorPais + 100,compararPorPecados);
     for(int i=99;i>=0;i--){
-        qDebug() << pecadosPorPais[i]->pais << ": " << pecadosPorPais[i]->pecados;
+        txbConsultas->append(pecadosPorPais[i]->pais + ": " + QString::number(pecadosPorPais[i]->pecados));
     }
 }
 

@@ -20,7 +20,7 @@ void GenerarPandemia(ListaOrdenada<Persona*>* listaHumanos, double porcentaje){
 
     int cantidadEliminar = (listaHumanosVivos->size())*porcentaje;
     int cantidadEliminados = 0;
-    qDebug() << cantidadEliminar << " estoy ejecutando pandemia";
+    // qDebug() << cantidadEliminar << " estoy ejecutando pandemia";
     lectorArchivos* lector = new lectorArchivos();
     QString baseDir = QCoreApplication::applicationDirPath();
     lector->clearFile(baseDir + "/Archivostxt/muerteActual.txt");
@@ -29,7 +29,7 @@ void GenerarPandemia(ListaOrdenada<Persona*>* listaHumanos, double porcentaje){
         Persona* personaCandidata;
         personaCandidata = listaHumanosVivos->ver(idRand);
         if(personaCandidata->vivo == true){
-            qDebug() << cantidadEliminados;
+            // qDebug() << cantidadEliminados;
             cantidadEliminados += 1;
             personaCandidata -> vivo = false;
             QString textoBitacora = "";
@@ -43,13 +43,13 @@ void GenerarPandemia(ListaOrdenada<Persona*>* listaHumanos, double porcentaje){
                 amigos += idAmigo + " " + personaCandidata->amigos->ver(i)->nombre ;
             }
             QString cantReencarnaciones = QString::number(personaCandidata->reencarnaciones->cantItems);
-            textoBitacora += personaIdString + "    "
-                             + personaCandidata -> nombre + "    " +
-                             personaCandidata -> apellido + "    " +
-                             personaCandidata -> pais + "    " +
-                             personaCandidata -> creencia + "    " +
-                             personaCandidata -> profesion + "    " +
-                             personaCandidata -> timestampNacimiento + "    " +
+            textoBitacora += personaIdString + "\t"
+                             + personaCandidata -> nombre + "\t" +
+                             personaCandidata -> apellido + "\t" +
+                             personaCandidata -> pais + "\t" +
+                             personaCandidata -> creencia + "\t" +
+                             personaCandidata -> profesion + "\t" +
+                             personaCandidata -> timestampNacimiento + "\t" +
                              personaPecadosTotales;
             QString filePath = baseDir + "/Archivostxt/muerteActual.txt";
             QString fileBitacora = baseDir + "/Archivostxt/bitacoraMuerte.txt";

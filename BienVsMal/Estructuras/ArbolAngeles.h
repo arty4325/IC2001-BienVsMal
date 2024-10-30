@@ -46,16 +46,11 @@ struct ArbolAngeles{
             versionesNombres[i] = 0;
         }
         salvacion(raiz,2, _arbolBinario);
-        //Mandarlo al correo TODO:
-        //ponerlo vacio
         altura++;
     }
 
     void ponerEnBitacora(){
-        //TODO: poner en blanco
-        qDebug() << altura;
         for(int nivel = 1; nivel <= altura ; nivel++){
-            qDebug() << nivel << altura;
             lector->appendTextToFile(path,stringNivel(raiz,nivel));
         }
     }
@@ -90,7 +85,7 @@ private:
             return "";
         }
         if(nivel == 1){
-            return nodo->infoAngel() + "\t\t";
+            return nodo->infoAngel() + "\t";
         }else if (nivel > 1){
             return stringNivel(nodo->hijoIzquierdo,nivel-1) + stringNivel(nodo->hijoCentro,nivel-1) + stringNivel(nodo->hijoDerecho,nivel-1);
         }

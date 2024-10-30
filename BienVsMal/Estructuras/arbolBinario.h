@@ -100,21 +100,6 @@ struct ArbolBinario{
         }
         return nullptr; //Si no encuentra
     }
-
-    void inorden(NodoAB* nodo) {
-        if (nodo == nullptr) {
-            return;
-        }
-
-        // Primero recorremos el hijo izquierdo
-        inorden(nodo->hijoIzquierdo);
-
-        // Luego procesamos el nodo actual (imprimimos el valor del nodo)
-        qDebug() << nodo->ID;
-
-        // Finalmente recorremos el hijo derecho
-        inorden(nodo->hijoDerecho);
-    }
 };
 
 

@@ -51,6 +51,18 @@ struct Persona{
         retornar += "\tReencarnaciones: " + QString::number(reencarnaciones->size());
         return retornar;
     }
+
+    bool revisarAmigos(Persona* persona){
+        NodoOrdenado<Amigo*>* tmpAmigo = amigos->primerNodo;
+        while(tmpAmigo != nullptr){
+            if(tmpAmigo->data->apellido == persona->apellido && tmpAmigo->data->creencia == persona->creencia && tmpAmigo->data->pais == persona->pais){
+            //Si tienen mismo apellido, creencia y pais.
+                return true;
+            }
+            tmpAmigo = tmpAmigo->next;
+        }
+        return false;
+    }
 };
 
 
