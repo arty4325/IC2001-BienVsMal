@@ -30,7 +30,7 @@ struct Angel{
 
     Angel(QString _nombre, int _version, int _generacion, QStringList _listaNombres,
           QStringList _listaApellidos, QStringList _listaPais, QStringList _listaCreencia, QStringList _listaProfesion, ArbolBinario* _arbolBinario){
-        nombre = _nombre;
+        nombre = "San " + _nombre;
         version = _version;
         generacion = _generacion;
         hijoIzquierdo = hijoCentro = hijoDerecho = nullptr;
@@ -44,7 +44,7 @@ struct Angel{
     }
 
     Angel(QString _nombre, int _version, int _generacion, Persona* _humanoSalvado, ArbolBinario* _arbolBinario){ //para el caso de los primeros 2 niveles.
-        nombre = "San " + _nombre;
+        nombre = _nombre;
         arbolBinario = _arbolBinario;
         version = _version;
         generacion = _generacion;
@@ -57,9 +57,9 @@ struct Angel{
             return nombre;
         }
         if (humanoSalvado == nullptr){
-            return (nombre + " (" + QString::number(version) + ")\tG" + QString::number(generacion) + "    " + "No salvo a nadie");
+            return (nombre + " (" + QString::number(version) + ") G" + QString::number(generacion)  + " No salvo a nadie");
         }
-        return (nombre + " (" + QString::number(version) + ")\tG" + QString::number(generacion) + "\tID: " + QString::number(humanoSalvado->ID) + "\tR" + QString::number(humanoSalvado->reencarnaciones->size()));
+        return (nombre + " (" + QString::number(version) + ") G" + QString::number(generacion) + " ID: " + QString::number(humanoSalvado->ID) + " R" + QString::number(humanoSalvado->reencarnaciones->size()));
     } //Para imrpimir el arbol
 private:
     Persona* buscarHumanoASalvar(){
@@ -76,17 +76,17 @@ private:
             QString personaRandom = listaPersonasMuertas.at(randomIndex);  // Seleccionar la persona al azar
 
             // Separar el string por tabuladores y obtener el primer elemento
-            QStringList partes = personaRandom.split("    ");
+            QStringList partes = personaRandom.split("\t");
             QString primerElemento = partes.value(0);  // Obtener el primer elemento (o una cadena vacía si no hay elementos)
 
             // Convertir el primer elemento a int y asignarlo a idHumano
             idHumano = primerElemento.toInt();
 
-            qDebug() << "Persona seleccionada al azar:" << personaRandom;
+            // qDebug() << "Persona seleccionada al azar:" << personaRandom;
             lector->deleteLineFromFile(filePath, personaRandom);
-            qDebug() << "Primer elemento (ID):" << idHumano;
+            // qDebug() << "Primer elemento (ID):" << idHumano;
         } else {
-            qDebug() << "La lista de personas está vacía.";
+            // qDebug() << "La lista de personas está vacía.";
         }
 
         // Ahora quiero borrar esa linea del txt
@@ -104,6 +104,8 @@ private:
             lector->appendTextToFile(path,paraBitacora);
             return persona;
         } else {
+            paraBitacora += nombre + " (" + QString::number(version) + ")\tG" + QString::number(generacion) + "No salvó a nadie";
+            lector->appendTextToFile(path,paraBitacora);
             return nullptr;
         }
     }
@@ -120,6 +122,7 @@ private:
             persona->pecados[i]/=2;
             persona->pecadosTotales += persona->pecados[i];
         }
+        persona->amigos->vaciar();
         persona->timestampNacimiento = QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss");
         persona->vivo = true;
     }

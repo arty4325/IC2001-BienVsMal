@@ -45,7 +45,7 @@ public:
                 cubetaEspecifica->insert(item);
             }
         } else {
-            qDebug() << "Índice de cubeta fuera de rango.";
+            // qDebug() << "Índice de cubeta fuera de rango.";
         }
     }
 
@@ -62,7 +62,7 @@ public:
                 siguienteCubeta->insert(item);
             }
         } else {
-            qDebug() << "Todas las cubetas están llenas.";
+            // qDebug() << "Todas las cubetas están llenas.";
         }
     }
 
@@ -70,7 +70,7 @@ public:
         if (indiceCubeta >= 0 && indiceCubeta < cantCubetas) {
             return cubetas->ver(indiceCubeta); // Devuelve la cubeta específica
         } else {
-            qDebug() << "Índice de cubeta fuera de rango.";
+            // qDebug() << "Índice de cubeta fuera de rango.";
             return nullptr; // Devuelve nullptr si el índice está fuera de rango
         }
     }
@@ -91,11 +91,11 @@ public:
 
                 return minMaxLista;
             } else {
-                qDebug() << "Cubeta vacía.";
+                // qDebug() << "Cubeta vacía.";
                 return ListaOrdenada<T>();
             }
         } else {
-            qDebug() << "Índice de cubeta fuera de rango.";
+            // qDebug() << "Índice de cubeta fuera de rango.";
             return ListaOrdenada<T>();
         }
     }

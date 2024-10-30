@@ -10,9 +10,9 @@
 void EliminarId(ArbolBinario* arbolBinario, int persona, QString _correo){
     NodoOrdenado<Persona*>* candidato = arbolBinario->buscarNodoEnListaConID(persona);
     if(candidato == nullptr){
-        qDebug() << "El candidato no existe";
+        // qDebug() << "El candidato no existe";
     } else {
-        qDebug() << "El candidato existe";
+        // qDebug() << "El candidato existe";
         candidato->data->vivo = false;
         QString textoBitacora = "";
         QDateTime fechaHoraActual = QDateTime::currentDateTime();
@@ -25,13 +25,13 @@ void EliminarId(ArbolBinario* arbolBinario, int persona, QString _correo){
             amigos += idAmigo + " " + candidato->data->amigos->ver(i)->nombre;
         }
         QString cantReencarnaciones = QString::number(candidato->data->reencarnaciones->cantItems);
-        textoBitacora += personaIdString + "    "
-                         + candidato->data -> nombre + "    " +
-                         candidato->data -> apellido + "    " +
-                         candidato->data -> pais + "    " +
-                         candidato->data -> creencia + "    " +
-                         candidato->data -> profesion + "    " +
-                         candidato->data -> timestampNacimiento + "    " +
+        textoBitacora += personaIdString + "\t"
+                         + candidato->data -> nombre + "\t" +
+                         candidato->data -> apellido + "\t" +
+                         candidato->data -> pais + "\t" +
+                         candidato->data -> creencia + "\t" +
+                         candidato->data -> profesion + "\t" +
+                         candidato->data -> timestampNacimiento + "\t" +
                          personaPecadosTotales;
         lectorArchivos* lector = new lectorArchivos();
         QString baseDir = QCoreApplication::applicationDirPath();
@@ -45,7 +45,7 @@ void EliminarId(ArbolBinario* arbolBinario, int persona, QString _correo){
         socket.connectToHost("127.0.0.1", 12345); // Conectar al servidor
 
         if (socket.waitForConnected()) {
-            qDebug() << "Conectado al servidor!";
+            // qDebug() << "Conectado al servidor!";
 
             // Enviar un mensaje al servidor
             QString correo;
@@ -58,9 +58,9 @@ void EliminarId(ArbolBinario* arbolBinario, int persona, QString _correo){
 
             // No esperamos respuesta, así que simplemente cerramos la conexión
             socket.disconnectFromHost();
-            qDebug() << "Mensaje enviado y conexión cerrada.";
+            // qDebug() << "Mensaje enviado y conexión cerrada.";
         } else {
-            qDebug() << "Error al conectar al servidor!";
+            // qDebug() << "Error al conectar al servidor!";
         }
     }
 }

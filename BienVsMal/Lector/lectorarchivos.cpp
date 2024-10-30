@@ -14,7 +14,7 @@ QString lectorArchivos::read(int option, int cant) {
     QString baseDir = QCoreApplication::applicationDirPath();
 
     // Seleccionar archivo basado en el número de opción
-    qDebug() << baseDir;
+    // qDebug() << baseDir;
     switch (option) {
     case 1:
         filePath = baseDir + "/Archivostxt/nombres.txt";
@@ -123,7 +123,7 @@ void lectorArchivos::deleteLineFromFile(const QString& filePath, const QString& 
             out << line << "\n";
         }
         file.close();
-        qDebug() << "Línea eliminada del archivo:" << lineToDelete;
+        // qDebug() << "Línea eliminada del archivo:" << lineToDelete;
     } else {
         qDebug() << "No se pudo abrir el archivo para escribir: " << filePath;
     }

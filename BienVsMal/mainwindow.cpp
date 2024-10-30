@@ -59,7 +59,7 @@ void MainWindow::on_pushButton_clicked()
     // 1000, 1000, 100, 20, 100
     // int cantNombres, int cantApellidos, int cantPais, int cantCreencia, int cantProfesion
     personaCreator->generarPersonas(ui->cantNombres->value(), ui->cantApellidos->value(), ui->cantPaises->value(), ui->cantReligiones->value(), ui->cantProfesiones->value());
-    qDebug() << _listaHumanos->size();
+    // qDebug() << _listaHumanos->size();
     algoritmoAmigos(_listaHumanos);
 
     QTextBrowser* txbInfoHumanidad = ui->txbInfoArbolHumanos;
@@ -76,48 +76,53 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    //Todo lo de esta funcion hay que ponerlo donde sea que se ponga después, no solo el new arbol.
-    QTextBrowser* txbInfoHumanidad = ui->txbInfoArbolHumanos;
-    txbInfoHumanidad->clear();
-    txbInfoHumanidad->append("Información de los humanos en el último nivel: ");
-    arbolBinario = new ArbolBinario(_listaHumanos, txbInfoHumanidad);
-    txbInfoHumanidad->append("Cantidad de niveles en árbol: " + QString::number(arbolBinario->niveles));
-    txbInfoHumanidad->append("Cantidad de nodos en árbol: " + QString::number(pow(2,arbolBinario->niveles)-1));
-    txbInfoHumanidad->append("Cantidad de humanos: " + QString::number(_listaHumanos->size()));
-
+    algoritmoAmigos(_listaHumanos);
 }
 
 
 void MainWindow::on_pushButton_3_clicked()
 {
+    ui->txbConsultas->clear();
     NodoOrdenado<Persona*>* personaNodo = arbolBinario->buscarNodoEnListaConID(ui->spinBox->value());
     if(personaNodo  == nullptr){
+        ui->txbConsultas->append("No existe una persona con ese ID");
         return;
     }
     Persona* persona = personaNodo->data;
-    qDebug() << "\n\n\n\n";
-    qDebug() << persona ->ID << " | " << persona->nombre << " " << persona->apellido << " | " << persona->pais << " | " << persona->creencia << " | " << persona->profesion;
-    qDebug() << "Nació: " << persona->timestampNacimiento;
-    qDebug() << "Tiene " << persona->pecadosTotales << " pecados en total";
+    ui->txbConsultas->append(QString::number(persona ->ID) + " | " + persona->nombre + " " + persona->apellido + " | " + persona->pais + " | " + persona->creencia + " | " + persona->profesion);
+    ui->txbConsultas->append("Nació: " + persona->timestampNacimiento);
+    ui->txbConsultas->append("Tiene " + QString::number(persona->pecadosTotales) + " pecados en total");
     if(!persona->vivo){
-        qDebug() << "Está muerto en este momento";
+        ui->txbConsultas->append("Está muerto en este momento");
+    } else {
+        ui->txbConsultas->append("Está vivo en este momento");
     }
-    // Aqui es donde tengo que hacer el toque de la persona en la bitacora
-    qDebug() << "Ha reencarnado " << persona->reencarnaciones->size() << " veces";
+    ui->txbConsultas->append("Ha reencarnado " + QString::number(persona->reencarnaciones->size()) + " veces");
     for(int i=0;i<persona->reencarnaciones->size();i++){
-        persona->reencarnaciones->ver(i)->imprimirReencarnacion();
+        ui->txbConsultas->append(persona->reencarnaciones->ver(i)->infoReencarnacion());
     }
-
-    qDebug() << "Tiene de amigos a " << persona->amigos->size() << " personas:";
+    ui->txbConsultas->append("_________________________________________________");
+    ui->txbConsultas->append("Tiene de amigos a " + QString::number(persona->amigos->size()) + " personas:");
     for(int i = 0; i<persona->amigos->size();i++){
         Amigo* amigo = persona->amigos->ver(i);
-        qDebug() << amigo->ID << " | " <<amigo->nombre << " " << amigo->apellido << " | " << amigo->pais << " | " << amigo->creencia << " | " << amigo->profesion;
-        qDebug() << "__________";
+        if(amigo != nullptr){
+            ui->txbConsultas->append(QString::number(amigo->ID) + " | " + amigo->nombre + " " + amigo->apellido + " | " + amigo->pais + " | " + amigo->creencia + " | " + amigo->profesion);
+        }
     }
-    qDebug() << "_________________________________________________";
+    ui->txbConsultas->append("_________________________________________________");
 
-    qDebug() << "Es amigo de:";
-        //TODO
+    ui->txbConsultas->append("Es amigo de:");
+    NodoOrdenado<Persona*>* tmp = _listaHumanos->primerNodo;
+    while(tmp != nullptr){
+        if(tmp->data == persona){
+            tmp = tmp->next;
+            continue;
+        }
+        if(tmp->data->revisarAmigos(persona)){
+            ui->txbConsultas->append(QString::number(tmp->data->ID) + " | " + tmp->data->nombre + " " + tmp->data->apellido + " | " + tmp->data->pais + " | " + tmp->data->creencia + " | " + tmp->data->profesion);
+        }
+        tmp = tmp->next;
+    }
 
 }
 
@@ -166,13 +171,13 @@ void MainWindow::on_pushButton_5_clicked()
             amigos += idAmigo + " " + persona->amigos->ver(i)->nombre ;
         };
         QString cantReencarnaciones = QString::number(persona->reencarnaciones->cantItems);
-        textoBitacora += personaIdString + "    "
-                         + persona -> nombre + "    " +
-                         persona -> apellido + "    " +
-                         persona -> pais + "    " +
-                         persona -> creencia + "    " +
-                         persona -> profesion + "    " +
-                         persona -> timestampNacimiento + "    " +
+        textoBitacora += personaIdString + "\t"
+                         + persona -> nombre + "\t" +
+                         persona -> apellido + "\t" +
+                         persona -> pais + "\t" +
+                         persona -> creencia + "\t" +
+                         persona -> profesion + "\t" +
+                         persona -> timestampNacimiento + "\t" +
                          personaPecadosTotales;
         lector->appendTextToFile(filePath, textoBitacora);
         lector->appendTextToFile(fileBitacora, textoBitacora);
@@ -204,7 +209,7 @@ void MainWindow::on_pushButton_5_clicked()
 void MainWindow::on_pushButton_6_clicked()
 {
     double prob = (ui->spinBox_2->value())/100.0;
-    qDebug() << prob;
+    // qDebug() << prob;
     GenerarPandemia(_listaHumanos, prob);
     QString baseDir = QCoreApplication::applicationDirPath();
     QTcpSocket socket;
@@ -265,15 +270,12 @@ void MainWindow::on_pushButton_8_clicked()
 
 void MainWindow::on_btnConsultarHumanidad_clicked()
 {
-
+    ui->txbConsultas->clear();
     //TODO vaciar la consulta humanidad
     NodoOrdenado<Persona*>* personaNodo = _listaHumanos->primerNodo;
-    QString baseDir = QCoreApplication::applicationDirPath();
-    QString path = baseDir + "/Archivostxt/humanidad.txt";
-    lectorArchivos* lector = new lectorArchivos();
-    qDebug() << path;
     while(personaNodo != nullptr){
-        lector->appendTextToFile(path, personaNodo->data->getInfo());
+        ui->txbConsultas->append((personaNodo->data->getInfo()));
+        ui->txbConsultas->append("");
         personaNodo = personaNodo->next;
     }
 }
@@ -293,11 +295,12 @@ void MainWindow::on_pushButton_9_clicked()
 
 void MainWindow::on_pushButton_10_clicked()
 {
+    ui->txbConsultas->clear();
     NodoOrdenado<Persona*>* personaNodo = _listaHumanos->primerNodo;
     int reencBuscadas = ui->spinBox_4->value();
     while(personaNodo != nullptr){
         if(personaNodo->data->reencarnaciones->size() == reencBuscadas){
-            qDebug() << personaNodo->data->getInfo();
+            ui->txbConsultas->append((personaNodo->data->getInfo()));
         }
         personaNodo = personaNodo->next;
     }
@@ -306,7 +309,8 @@ void MainWindow::on_pushButton_10_clicked()
 
 void MainWindow::on_pushButton_11_clicked()
 {
-    algoritmoPaisesPecadores(humanosCadaPais);
+    ui->txbConsultas->clear();
+    algoritmoPaisesPecadores(humanosCadaPais, ui->txbConsultas);
 }
 
 

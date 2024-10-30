@@ -30,8 +30,8 @@ struct Reencarnacion{
         timestampNacimiento = QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss");
     }
 
-    void imprimirReencarnacion(){
-        qDebug() << ID << " | " << nombre << " " << apellido << " | " << pais << " | " << creencia << " | " << profesion << " | Número de Reencarnación: " << numeroDeReencarnacion;
+    QString infoReencarnacion(){
+        return QString::number(ID) + " | " + nombre + " " + apellido + " | " + pais + " | " + creencia + " | " + profesion + " | Número de vida: " + QString::number(numeroDeReencarnacion);
     }
 };
 
