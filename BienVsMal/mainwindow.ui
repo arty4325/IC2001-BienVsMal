@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Test Human Creation</string>
+     <string>Creación de personas</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -96,7 +96,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </rect>
     </property>
     <property name="text">
-     <string>PECAR</string>
+     <string>Pecar</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_5">
@@ -109,7 +109,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </rect>
     </property>
     <property name="text">
-     <string>Test Muerte Heap</string>
+     <string>Muerte Heap</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_6">
@@ -122,7 +122,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </rect>
     </property>
     <property name="text">
-     <string>Test Muerte Pandemia</string>
+     <string>Muerte Pandemia</string>
     </property>
    </widget>
    <widget class="QSpinBox" name="spinBox_2">
@@ -151,7 +151,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </rect>
     </property>
     <property name="text">
-     <string>Test Muerte Id</string>
+     <string>Muerte por ID</string>
     </property>
    </widget>
    <widget class="QSpinBox" name="spinBox_3">
@@ -268,7 +268,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </rect>
     </property>
     <property name="text">
-     <string>Test Salvacion</string>
+     <string>Salvación</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
