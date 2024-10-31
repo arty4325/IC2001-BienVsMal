@@ -81,6 +81,36 @@ public:
         }
         return resultado;
     }
+
+    QString printHeap() {
+        QString resultado;
+        int niveles = 0;
+
+        // Calculamos el número de niveles en función del tamaño actual del heap
+        int size = elementos.size();
+        while ((1 << niveles) - 1 < size) {
+            niveles++;
+        }
+
+        // Recorremos nivel por nivel
+        for (int nivel = 0; nivel < niveles; nivel++) {
+            int startIndex = (1 << nivel) - 1;
+            int numNodosNivel = 1 << nivel;
+            resultado +=  QString::number(nivel) + " ";
+            for (int i = 0; i < numNodosNivel; i++) {
+                int index = startIndex + i;
+                if (index < size) {
+                    resultado += elementos.ver(index)->nombre + " ";  // Accedemos al nombre de cada persona
+                } else {
+                    break;
+                }
+            }
+            resultado += "\n";  // Al final de cada nivel, agregamos un salto de línea
+        }
+
+        return resultado;
+    }
+
 };
 
 #endif // HEAPMUERTE_H
