@@ -80,6 +80,9 @@ struct ArbolBinario{
     NodoOrdenado<Persona*>* buscarNodoEnListaDerecha(int ID, NodoAB* nodo, int nodosARecorrer){
         NodoOrdenado<Persona*>* tmp = nodo->nodoPuntero;
         for(int i=0;i<nodosARecorrer;i++){
+            if(tmp == nullptr){
+                break;
+            }
             if(ID == tmp->data->ID){
                 return tmp;
             } else{
@@ -92,6 +95,9 @@ struct ArbolBinario{
     NodoOrdenado<Persona*>* buscarNodoEnListaIzquierda(int ID, NodoAB* nodo, int nodosARecorrer){
         NodoOrdenado<Persona*>* tmp = nodo->nodoPuntero;
         for(int i=0;i<nodosARecorrer;i++){
+            if(tmp == nullptr){
+                break;
+            }
             if(ID == tmp->data->ID){
                 return tmp;
             } else{
