@@ -1,6 +1,1 @@
-228160	Abby	Brown	Armenia	Taoísmo	Médico	2024-11-02 18:23:29	636
-144654	Abby	Brown	Antigua y Barbuda	Jainismo	Ingeniero	2024-11-02 18:23:29	595
-236392	Aaron	Williams	Andorra	Hinduismo	Médico	2024-11-02 18:23:29	573
-537177	Abbot	Martinez	Afganistan	Budismo	Profesor	2024-11-02 18:23:29	582
-322768	Abby	Brown	Argentina	Jainismo	Arquitecto	2024-11-02 18:23:29	581
-749982	Abdel	Jones	Antigua y Barbuda	Islam	Médico	2024-11-02 18:23:29	583
+15083	Abbot	Johnson	Armenia	Islam	Contador	2024-11-03 11:35:40	0
