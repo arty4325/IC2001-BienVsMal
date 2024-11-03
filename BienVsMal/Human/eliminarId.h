@@ -12,6 +12,7 @@ void EliminarId(ArbolBinario* arbolBinario, int persona, QString _correo){
     if(candidato == nullptr){
         // qDebug() << "El candidato no existe";
     } else {
+        if(candidato->data->vivo){
         // qDebug() << "El candidato existe";
         candidato->data->vivo = false;
         QString textoBitacora = "";
@@ -61,6 +62,9 @@ void EliminarId(ArbolBinario* arbolBinario, int persona, QString _correo){
             // qDebug() << "Mensaje enviado y conexión cerrada.";
         } else {
             // qDebug() << "Error al conectar al servidor!";
+        }
+        } else {
+            qDebug() << "El candidato no esta vivo";
         }
     }
 }

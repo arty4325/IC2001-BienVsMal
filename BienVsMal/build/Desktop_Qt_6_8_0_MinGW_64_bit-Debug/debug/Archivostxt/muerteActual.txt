@@ -1,15 +1,1 @@
-235314	Abdul	Miller	Argelia	Budismo	Electricista	2024-11-02 18:23:29	641
-228160	Abby	Brown	Armenia	Taoísmo	Médico	2024-11-02 18:23:29	636
-713772	Abdel	Miller	Antigua y Barbuda	Cristianismo	Abogado	2024-11-02 18:23:29	602
-918806	Abbie	Martinez	Argentina	Budismo	Profesor	2024-11-02 18:23:29	590
-144654	Abby	Brown	Antigua y Barbuda	Jainismo	Ingeniero	2024-11-02 18:23:29	595
-658549	Abbott	Smith	Andorra	Islam	Electricista	2024-11-02 18:23:29	597
-819091	Abbott	Johnson	Alemania	Hinduismo	Programador	2024-11-02 18:23:29	599
-236392	Aaron	Williams	Andorra	Hinduismo	Médico	2024-11-02 18:23:29	573
-936613	Aamir	Williams	Argentina	Taoísmo	Ingeniero	2024-11-02 18:23:29	582
-537177	Abbot	Martinez	Afganistan	Budismo	Profesor	2024-11-02 18:23:29	582
-599154	Abbot	Martinez	Alemania	Shintoísmo	Abogado	2024-11-02 18:23:29	573
-322768	Abby	Brown	Argentina	Jainismo	Arquitecto	2024-11-02 18:23:29	581
-688594	Aamir	Johnson	Andorra	Islam	Arquitecto	2024-11-02 18:23:29	592
-749982	Abdel	Jones	Antigua y Barbuda	Islam	Médico	2024-11-02 18:23:29	583
-776343	Abdul	Miller	Argentina	Shintoísmo	Contador	2024-11-02 18:23:29	582
+976047	Abdel	Brown	Afganistan	Jainismo	Profesor	2024-11-03 11:58:12	0
