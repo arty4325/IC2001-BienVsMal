@@ -136,7 +136,7 @@ void MainWindow::on_pushButton_4_clicked()
 
 void MainWindow::on_pushButton_5_clicked()
 {
-    HeapMuerte<Persona*> heap(-1);
+    HeapMuerte<Persona*> heap(ui->heapMatar->value());
 
     for(int i = 0; i < _listaHumanos->size(); i++){
         if(_listaHumanos-> ver(i)->vivo){
@@ -145,7 +145,7 @@ void MainWindow::on_pushButton_5_clicked()
     }
 
     heap.construirHeap();
-    ListaOrdenada<Persona*> personasRecorridas = heap.recorrerNiveles(4);
+    ListaOrdenada<Persona*> personasRecorridas = heap.recorrerNiveles(ui->nivelesMatar->value());
 
     // Mostrar las personas recorridas
     std::cout << "Personas en los niveles recorridos:" << std::endl;
@@ -346,4 +346,26 @@ void MainWindow::on_pushButton_12_clicked()
     }
 
 }
+
+
+void MainWindow::on_pushButton_13_clicked()
+{
+    HeapMuerte<Persona*> heap(ui->verHeapMuerte->value());
+
+    for(int i = 0; i < _listaHumanos->size(); i++) {
+        if(_listaHumanos->ver(i)->vivo) {
+            heap.agregarElemento(_listaHumanos->ver(i));
+        }
+    }
+
+    //qDebug() << heap.printHeap();
+
+    // Configuración para habilitar el scroll en el QTextEdit
+    ui->txbHeap->clear();
+    ui->txbHeap->setWordWrapMode(QTextOption::NoWrap); // Evita el ajuste de línea
+    ui->txbHeap->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded); // Scroll horizontal
+    ui->txbHeap->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded); // Scroll vertical
+    ui->txbHeap->append(heap.printHeap());
+}
+
 

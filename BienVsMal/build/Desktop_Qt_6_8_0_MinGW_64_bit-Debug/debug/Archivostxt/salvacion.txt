@@ -1,0 +1,9 @@
+2024-11-02 18:23:29	Humano 936613	Aamir	Williams	Argentina	Ingeniero	Taoísmo	Salvado por San Aniel (0)	G3	Reencarnado como Barron	Stark	Islandia	Guía turístico	Hinduismo
+2024-11-02 18:23:29	Humano 688594	Aamir	Johnson	Andorra	Arquitecto	Islam	Salvado por San Gabriel (0)	G3	Reencarnado como Cy	Young	Benin	Geólogo	Islam
+2024-11-02 18:23:29	Humano 235314	Abdul	Miller	Argelia	Electricista	Budismo	Salvado por San Nuriel (0)	G3	Reencarnado como Geri	Ferguson	Grecia	Secretario	Agnosticismo
+2024-11-02 18:23:29	Humano 918806	Abbie	Martinez	Argentina	Profesor	Budismo	Salvado por San Nuriel (1)	G3	Reencarnado como Florian	Choi	Irlanda	Escultor	Zoroastrismo
+2024-11-02 18:23:29	Humano 776343	Abdul	Miller	Argentina	Contador	Shintoísmo	Salvado por San Azrael (0)	G3	Reencarnado como Gasper	Perkins	Chad	Enfermero	Agnosticismo
+2024-11-02 18:23:29	Humano 658549	Abbott	Smith	Andorra	Electricista	Islam	Salvado por San Uriel (0)	G3	Reencarnado como Andres	Reyna	Cabo Verde	Técnico de soporte	Rastafarianismo
+2024-11-02 18:23:29	Humano 819091	Abbott	Johnson	Alemania	Programador	Hinduismo	Salvado por San Rafael (0)	G3	Reencarnado como Frederich	Winters	Eritrea	Panadero	Neopaganismo
+2024-11-02 18:23:29	Humano 599154	Abbot	Martinez	Alemania	Abogado	Shintoísmo	Salvado por San Nuriel (2)	G3	Reencarnado como Eddie	Saunders	Guyana	Psicólogo	Cristianismo
+2024-11-02 18:23:29	Humano 713772	Abdel	Miller	Antigua y Barbuda	Abogado	Cristianismo	Salvado por San Sariel (0)	G3	Reencarnado como Connie	Baxter	Kazajistan	Azafata	Confucianismo
