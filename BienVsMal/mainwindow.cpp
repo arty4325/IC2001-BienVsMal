@@ -296,6 +296,9 @@ void MainWindow::on_pushButton_9_clicked()
 void MainWindow::on_pushButton_10_clicked()
 {
     ui->txbConsultas->clear();
+    ui->txbConsultas->setWordWrapMode(QTextOption::NoWrap); // Evita el ajuste de línea
+    ui->txbConsultas->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded); // Scroll horizontal
+    ui->txbConsultas->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded); // Scroll vertical
     NodoOrdenado<Persona*>* personaNodo = _listaHumanos->primerNodo;
     int reencBuscadas = ui->spinBox_4->value();
     while(personaNodo != nullptr){
