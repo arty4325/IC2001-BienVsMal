@@ -352,11 +352,13 @@ void MainWindow::on_pushButton_13_clicked()
 {
     HeapMuerte<Persona*> heap(ui->verHeapMuerte->value());
 
-    for(int i = 0; i < _listaHumanos->size(); i++) {
-        if(_listaHumanos->ver(i)->vivo) {
+    for(int i = 0; i < _listaHumanos->size(); i++){
+        if(_listaHumanos-> ver(i)->vivo){
             heap.agregarElemento(_listaHumanos->ver(i));
         }
     }
+
+    heap.construirHeap();
 
     //qDebug() << heap.printHeap();
 
