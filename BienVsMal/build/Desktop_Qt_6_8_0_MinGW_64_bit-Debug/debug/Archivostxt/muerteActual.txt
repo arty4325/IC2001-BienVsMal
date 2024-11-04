@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+976047	Abdel	Brown	Afganistan	Jainismo	Profesor	2024-11-03 11:58:12	0
+=======
 15083	Abbot	Johnson	Armenia	Islam	Contador	2024-11-03 11:35:40	0
+>>>>>>> 35ddda38c2f1514c4019acb3a8643b261a41b564
